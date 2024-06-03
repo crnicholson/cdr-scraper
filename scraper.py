@@ -1,27 +1,11 @@
-# import requests 
-# from bs4 import BeautifulSoup 
+from urllib.request import Request, urlopen
+from bs4 import BeautifulSoup as soup
 
-# page = requests.get("https://www.scienceopen.com/search#('v'~4_'id'~''_'queryType'~1_'context'~null_'kind'~77_'order'~0_'orderLowestFirst'~false_'query'~'carbon%20removal'_'filters'~!('kind'~37_'not'~false_'dateFrom'~1641013200000_'dateTo'~1717300799999)*_'hideOthers'~false)") 
+url = "https://doaj.org/search/articles?ref=homepage-box&source=%7B%22query%22%3A%7B%22bool%22%3A%7B%22must%22%3A%5B%7B%22range%22%3A%7B%22index.date%22%3A%7B%22lt%22%3A%221704067200000%22%2C%22gte%22%3A%221672531200000%22%2C%22format%22%3A%22epoch_millis%22%7D%7D%7D%2C%7B%22query_string%22%3A%7B%22query%22%3A%22carbon%20removal%22%2C%22default_operator%22%3A%22AND%22%7D%7D%5D%7D%7D%2C%22track_total_hits%22%3Atrue%7D"
 
-# soup = BeautifulSoup(page.content, 'html.parser') 
+req = Request(url, headers={"User-Agent": "Mozilla/5.0"})
+webpage = urlopen(req).read()
 
-# results = soup.find(id="d4777409e111")
+page = soup(webpage, 'html.parser')
 
-# print(results)
-
-import requests
-from bs4 import BeautifulSoup
-
-page = requests.get("https://webscraper.io/test-sites/e-commerce/allinone")
-
-soup = BeautifulSoup(page.content, 'html.parser')
-
-results = soup.find_all(class_="nav-link")
-
-for results in results:
-    found = results.find("p")
-    string = str(found)
-    if found != None:
-        length = len(string)
-        string = string[3:length-4]
-        print(string)
+print(page.prettify())
