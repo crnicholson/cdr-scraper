@@ -1,11 +1,25 @@
-from urllib.request import Request, urlopen
+import time
+from selenium import webdriver
 from bs4 import BeautifulSoup as soup
+from selenium.webdriver.chrome.options import Options
 
-url = "https://doaj.org/search/articles?ref=homepage-box&source=%7B%22query%22%3A%7B%22bool%22%3A%7B%22must%22%3A%5B%7B%22range%22%3A%7B%22index.date%22%3A%7B%22lt%22%3A%221704067200000%22%2C%22gte%22%3A%221672531200000%22%2C%22format%22%3A%22epoch_millis%22%7D%7D%7D%2C%7B%22query_string%22%3A%7B%22query%22%3A%22carbon%20removal%22%2C%22default_operator%22%3A%22AND%22%7D%7D%5D%7D%7D%2C%22track_total_hits%22%3Atrue%7D"
+path = "chromedriver"
+url = "https://www.scienceopen.com/search"
 
-req = Request(url, headers={"User-Agent": "Mozilla/5.0"})
-webpage = urlopen(req).read()
+options = Options()
+options.add_argument("--headless")
+options.add_argument("--disable-gpu")
 
-page = soup(webpage, 'html.parser')
+driver = webdriver.Chrome(path, options=options)
+
+time.sleep(5)
+
+driver.get(url)
+
+content = driver.page_source
+
+driver.quit()
+
+page = soup(content, 'html.parser')
 
 print(page.prettify())
