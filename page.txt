@@ -503,7 +503,7 @@ so_main()
                 Use operators
                </option>
               </select>
-              <button class="so-b3" id="8dde69f1-ff60-4c75-967c-dd5fb30178ff" type="button">
+              <button class="so-b3" id="9966c531-0e6f-4d23-a61f-801bd8f4e965" type="button">
                <span class="so-select-button-label">
                 Phrase search
                </span>
@@ -522,36 +522,13 @@ so_main()
             <input class="so-text-input so-m-b-10" placeholder="Enter some words to filter items below"/>
            </div>
           </div>
-          <div class="so-dismissable-message so-m-t-0 so--hint">
-           <div class="so-floats">
-            <div class="so-floats-start">
-             <span class="so-icon so--hint so-m-r-10">
-             </span>
-            </div>
-            <div class="so-floats-end">
-             <button class="so-b3 so--transparent so--borderless so--compressed false" type="button">
-              <span class="so-icon so--cross">
-              </span>
-             </button>
-            </div>
-            <div class="so-floats-center">
-             <span>
-              The default search filter is set to
-              <i>
-               Indexed on ScienceOpen in the last 1 week
-              </i>
-              . If you want to browse or search in all content on ScienceOpen, simply remove this filter or start a new search.
-             </span>
-            </div>
-           </div>
-          </div>
           <div class="so-groups">
            <div class="so-group">
             <div class="so-floats so--1">
              <div class="so-group-title so-floats-start so--p-0">
               <div class="so-b3-container so--1">
                <div class="so-b3-label so--transparent so--short" style="padding-right: 0px;">
-                Indexed on ScienceOpen
+                Publication date
                </div>
               </div>
              </div>
@@ -575,7 +552,7 @@ so_main()
                   is NOT
                  </option>
                 </select>
-                <button class="so-b3 so--green-1" id="512c0aeb-3c07-4f3c-a7dd-7e0fc4bb3b89" type="button">
+                <button class="so-b3 so--green-1" id="e1750a27-ebf6-4e07-8a8e-ff8cfe86d25b" type="button">
                  <span class="so-select-button-label">
                   is
                  </span>
@@ -592,21 +569,21 @@ so_main()
                <div class="so-b3-container so--0">
                 <select class="so-select so--3" style="display: none;">
                  <option value="4">
-                  day
+                  days
                  </option>
                  <option value="5">
-                  week
+                  weeks
                  </option>
                  <option value="6">
-                  month
+                  months
                  </option>
                  <option value="7">
-                  year
+                  years
                  </option>
                 </select>
-                <button class="so-b3" id="afa5cd4d-4868-4252-b384-cd354d826cc3" type="button">
+                <button class="so-b3" id="ba653eda-77ed-4f56-9b9e-d8bbe37843d9" type="button">
                  <span class="so-select-button-label">
-                  week
+                  years
                  </span>
                  <span class="so-icon so--dropdown">
                  </span>
@@ -621,7 +598,7 @@ so_main()
            <div class="so-floats-start">
             <div class="so-b3-container so--5 so--top">
              <div class="so-b3-label so--borderless so--gray-5 so--secondary">
-              32,369 results
+              789 results
              </div>
              <button class="so-b3" id="177909f4-719f-f3bd-4def-fc30e920e375" type="button">
               Add filter
@@ -631,7 +608,7 @@ so_main()
              <button class="so-b3 so--teal-4" type="button">
               Save search
              </button>
-             <button class="so-b3 so--teal-4" id="4e5545f2-785c-4b59-8e79-828e36d19dde" type="button">
+             <button class="so-b3 so--teal-4" id="87187ace-5017-445e-832f-81361fc91ac6" type="button">
               Share search
               <span class="so-icon so--dropdown">
               </span>
@@ -670,15 +647,15 @@ so_main()
                  Sort by indexed date
                 </option>
                </select>
-               <button class="so-b3" id="c55fd2e6-8bf7-4ed8-84c1-e046ab49cf34" type="button">
+               <button class="so-b3" id="fc01b7f1-0005-4b1f-b587-344ba2228683" type="button">
                 <span class="so-select-button-label">
-                 Sort by Altmetric score
+                 Sort by relevance
                 </span>
                 <span class="so-icon so--dropdown">
                 </span>
                </button>
               </div>
-              <button class="so-b3 so--short" type="button">
+              <button class="so-b3 so--short" disabled="" type="button">
                <span class="so-icon so--accordion-closed">
                </span>
               </button>
@@ -694,112 +671,9 @@ so_main()
           <div class="so-m-t-20">
            <div>
             <div class="so-article-list-item">
-             <div class="so-article-list-item-text">
-              <div class="so-m-b-5 so-clearfix">
-               <ul class="so-tiers so-f-l" title="This record is validated by trusted, cross-referenced repositories such as PubMed, CrossRef, PMC or ArXiv. The abstract of the article is available.">
-                <li class="">
-                 Record
-                 <span class="so-sr">
-                  :  found
-                 </span>
-                </li>
-                <li class="">
-                 Abstract
-                 <span class="so-sr">
-                  :  found
-                 </span>
-                </li>
-                <li class="so--disabled">
-                 Article
-                 <span class="so-sr">
-                  : not found
-                 </span>
-                </li>
-               </ul>
-               <span class="so-tiers-open-access so-icon so--open-access" title="Open Access">
-                <span class="so-sr">
-                 Open Access
-                </span>
-               </span>
-              </div>
-              <h3 class="so-article-list-item-title" dir="auto">
-               <a href="https://www.scienceopen.com/document?vid=95ba3ccc-6c4b-4e28-b13c-a90753a35da1" target="_blank">
-                Case report: Boundaries of oncological and traumatological medical care in ancient Egypt: new palaeopathological insights from two human skulls
-               </a>
-              </h3>
-              <div class="so-secondary so-m-y-2">
-               <a dir="auto" href="/search#author/2b06636c-9f56-4115-8a80-1a29eea9abb8" target="_blank">
-                Tatiana Tondini
-               </a>
-               ,
-               <a dir="auto" href="/search#author/a738d9d4-fc6a-4443-9fef-049beb8347c5" target="_blank">
-                Albert Isidro
-               </a>
-               ,
-               <a dir="auto" href="/search#author/55fd4a8b-c578-4817-9b90-e724c0460f93" target="_blank">
-                Edgard Camarós
-               </a>
-               (2024)
-              </div>
-              <div class="so-article-list-item-abstract so-widgets-TextCropper" dir="auto" style="height: 40px;">
-               <div>
-                <div class="so-d">
-                 The present case studies report malignant neoplastic and traumatic lesions observed on two ancient Egyptian skulls held at the Duckworth Collection (Cambridge University). The analysis aims to characterise the lesions and provide a diagnosis using a methodology based on micro-CT scanning and microscopic bone surface analysis. Results pointed towards neoplastic lesions in both cases and healed severe skull trauma in one of them suggesting successful traumatological therapy. Interestingly, our analysis has identified the presence of perimortem cutmarks associated with metastatic lytic lesions in one of the skulls, indicating a potential surgical treatment attempt or postmortem medical exploration. We argue that the two cases, although not contemporary, allow a palaeopathological discussion on oncological and traumatological understanding and management of such conditions in the past. The confrontation of two potential managements represented by two different types of lesions represent a clear boundary in ancient Egyptian medical care and a milestone in the history of medicine.
-                </div>
-               </div>
-               <button class="so-widgets-TextCropper-button" type="button">
-                <span class="so-icon so--accordion-closed">
-                </span>
-                Show more
-               </button>
-              </div>
-             </div>
-             <div class="so-c-b so-o-h">
-              <div class="so-group so-m-t-10">
-               <div class="so-floats so--5">
-                <div class="so-floats-start">
-                 <div class="so-b3-container so--1">
-                  <div class="so-b3-label so--prop">
-                   <img alt="" class="so-small-icon" src="/wicket/resource/org.apache.wicket.Application/css/images/small-icon/article.png"/>
-                  </div>
-                  <div class="so-b3-label so--green-1 so--prop">
-                   <span class="so-d-h5">
-                    2
-                   </span>
-                   views
-                  </div>
-                  <a class="so-b3 so--prop" href="/wicket/bookmarkable/com.ovitas.scienceopen.wicket.presenter_view.document.reviews.ArticleReviewsPage?vid=95ba3ccc-6c4b-4e28-b13c-a90753a35da1" role="button" tabindex="0" target="_blank">
-                   <span class="so-icon" title="No reviews">
-                        
-                   </span>
-                   <span class="so-sr">
-                    No reviews
-                   </span>
-                   <span class="so-d-h5">
-                    0
-                   </span>
-                  </a>
-                 </div>
-                </div>
-                <div class="so-floats-end">
-                 <div class="so-b3-container so--1">
-                  <div class="so-b3 so--prop so--disabled so--am so-m-l-5">
-                   <div class="altmetric-embed" data-badge-type="4" data-condensed="" data-doi="10.3389/fmed.2024.1371645" data-link-target="_blank" data-uuid="2ccff304-5596-2cc4-9730-c0e1e04136d0">
-                    <a href="https://www.altmetric.com/details.php?domain=www.scienceopen.com&amp;citation_id=163901352" style="display:inline-block;" target="_blank">
-                     <img alt="Article has an altmetric score of 2790" height="15" src="https://d1uo4w7k31k5mn.cloudfront.net/v4/2790.png" style="border:0; margin:0; max-width: none;" width="85"/>
-                    </a>
-                   </div>
-                  </div>
-                 </div>
-                </div>
-               </div>
-              </div>
-             </div>
-            </div>
-            <div class="so-article-list-item">
-             <a href="https://www.scienceopen.com/document?vid=d7958bff-1ad0-4c48-982b-c5ea8d7e5232" target="_blank">
+             <a href="https://www.scienceopen.com/document?vid=af69a724-0f56-4e4a-aaa9-7bde2f866333" target="_blank">
               <div class="so-article-list-item-image so-user-image-wrapper so--2-cols">
-               <img alt="" class="so-user-image" src="./document_file/73031c5f-a089-4d9a-854a-1c054cd5644f/PubMedCentral/medium.png"/>
+               <img alt="" class="so-user-image" src="./document_file/7c3d2e2c-5a4b-4979-8bc0-3a6b1a5dd09d/PubMedCentral/medium.png"/>
               </div>
              </a>
              <div class="so-article-list-item-text">
@@ -831,36 +705,327 @@ so_main()
                </span>
               </div>
               <h3 class="so-article-list-item-title" dir="auto">
-               <a href="https://www.scienceopen.com/document?vid=d7958bff-1ad0-4c48-982b-c5ea8d7e5232" target="_blank">
-                Global fertility in 204 countries and territories, 1950–2021, with forecasts to 2100: a comprehensive demographic analysis for the Global Burden of Disease Study 2021
+               <a href="https://www.scienceopen.com/document?vid=af69a724-0f56-4e4a-aaa9-7bde2f866333" target="_blank">
+                Carbon capture in polymer-based electrolytes
                </a>
               </h3>
               <div class="so-secondary so-m-y-2">
+               <a dir="auto" href="/search#author/4ab9ee9f-9542-4fdd-b4d9-fe6a8477f0ea" target="_blank">
+                Yang Wang
+               </a>
+               ,
+               <a dir="auto" href="/search#author/b59d521e-89da-49df-b8e0-eaf022a7a7c1" target="_blank">
+                Tony G. Feric
+               </a>
+               ,
+               <a dir="auto" href="/search#author/39eeda60-6537-427d-a08d-d836202cb0ac" target="_blank">
+                Jing Tang
+               </a>
+               ,
+               <a dir="auto" href="/search#author/22ffd337-cba0-4419-bf3f-068d8eb18ce2" target="_blank">
+                Chao Fang
+               </a>
+               ,
+               <a dir="auto" href="/search#author/405b2078-87bc-4c34-92b0-3594bf098e14" target="_blank">
+                Sara T. Hamilton
+               </a>
+               ,
+               <a href="https://www.scienceopen.com/document?vid=af69a724-0f56-4e4a-aaa9-7bde2f866333" target="_blank">
+                9 more...
+               </a>
                (2024)
               </div>
               <div class="so-article-list-item-abstract so-widgets-TextCropper" dir="auto" style="height: 40px;">
                <div>
                 <div class="so-d">
-                 Summary
-   
-      Background
-      Accurate assessments of current and future fertility—including overall trends and changing population age structures across countries and regions—are essential to help plan for the profound social, economic, environmental, and geopolitical challenges that these changes will bring. Estimates and projections of fertility are necessary to inform policies involving resource and health-care needs, labour supply, education, gender equality, and family planning and support. The Global Burden of Diseases, Injuries, and Risk Factors Study (GBD) 2021 produced up-to-date and comprehensive demographic assessments of key fertility indicators at global, regional, and national levels from 1950 to 2021 and forecast fertility metrics to 2100 based on a reference scenario and key policy-dependent alternative scenarios.
-   
-   
-      Methods
-      To estimate fertility indicators from 1950 to 2021, mixed-effects regression models and spatiotemporal Gaussian process regression were used to synthesise data from 8709 country-years of vital and sample registrations, 1455 surveys and censuses, and 150 other sources, and to generate age-specific fertility rates (ASFRs) for 5-year age groups from age 10 years to 54 years. ASFRs were summed across age groups to produce estimates of total fertility rate (TFR). Livebirths were calculated by multiplying ASFR and age-specific female population, then summing across ages 10–54 years. To forecast future fertility up to 2100, our Institute for Health Metrics and Evaluation (IHME) forecasting model was based on projections of completed cohort fertility at age 50 years (CCF50; the average number of children born over time to females from a specified birth cohort), which yields more stable and accurate measures of fertility than directly modelling TFR. CCF50 was modelled using an ensemble approach in which three sub-models (with two, three, and four covariates variously consisting of female educational attainment, contraceptive met need, population density in habitable areas, and under-5 mortality) were given equal weights, and analyses were conducted utilising the MR-BRT (meta-regression—Bayesian, regularised, trimmed) tool. To capture time-series trends in CCF50 not explained by these covariates, we used a first-order autoregressive model on the residual term. CCF50 as a proportion of each 5-year ASFR was predicted using a linear mixed-effects model with fixed-effects covariates (female educational attainment and contraceptive met need) and random intercepts for geographical regions. Projected TFRs were then computed for each calendar year as the sum of single-year ASFRs across age groups. The reference forecast is our estimate of the most likely fertility future given the model, past fertility, forecasts of covariates, and historical relationships between covariates and fertility. We additionally produced forecasts for multiple alternative scenarios in each location: the UN Sustainable Development Goal (SDG) for education is achieved by 2030; the contraceptive met need SDG is achieved by 2030; pro-natal policies are enacted to create supportive environments for those who give birth; and the previous three scenarios combined. Uncertainty from past data inputs and model estimation was propagated throughout analyses by taking 1000 draws for past and present fertility estimates and 500 draws for future forecasts from the estimated distribution for each metric, with 95% uncertainty intervals (UIs) given as the 2·5 and 97·5 percentiles of the draws. To evaluate the forecasting performance of our model and others, we computed skill values—a metric assessing gain in forecasting accuracy—by comparing predicted versus observed ASFRs from the past 15 years (2007–21). A positive skill metric indicates that the model being evaluated performs better than the baseline model (here, a simplified model holding 2007 values constant in the future), and a negative metric indicates that the evaluated model performs worse than baseline.
-   
-   
-      Findings
-      During the period from 1950 to 2021, global TFR more than halved, from 4·84 (95% UI 4·63–5·06) to 2·23 (2·09–2·38). Global annual livebirths peaked in 2016 at 142 million (95% UI 137–147), declining to 129 million (121–138) in 2021. Fertility rates declined in all countries and territories since 1950, with TFR remaining above 2·1—canonically considered replacement-level fertility—in 94 (46·1%) countries and territories in 2021. This included 44 of 46 countries in sub-Saharan Africa, which was the super-region with the largest share of livebirths in 2021 (29·2% [28·7–29·6]). 47 countries and territories in which lowest estimated fertility between 1950 and 2021 was below replacement experienced one or more subsequent years with higher fertility; only three of these locations rebounded above replacement levels. Future fertility rates were projected to continue to decline worldwide, reaching a global TFR of 1·83 (1·59–2·08) in 2050 and 1·59 (1·25–1·96) in 2100 under the reference scenario. The number of countries and territories with fertility rates remaining above replacement was forecast to be 49 (24·0%) in 2050 and only six (2·9%) in 2100, with three of these six countries included in the 2021 World Bank-defined low-income group, all located in the GBD super-region of sub-Saharan Africa. The proportion of livebirths occurring in sub-Saharan Africa was forecast to increase to more than half of the world's livebirths in 2100, to 41·3% (39·6–43·1) in 2050 and 54·3% (47·1–59·5) in 2100. The share of livebirths was projected to decline between 2021 and 2100 in most of the six other super-regions—decreasing, for example, in south Asia from 24·8% (23·7–25·8) in 2021 to 16·7% (14·3–19·1) in 2050 and 7·1% (4·4–10·1) in 2100—but was forecast to increase modestly in the north Africa and Middle East and high-income super-regions. Forecast estimates for the alternative combined scenario suggest that meeting SDG targets for education and contraceptive met need, as well as implementing pro-natal policies, would result in global TFRs of 1·65 (1·40–1·92) in 2050 and 1·62 (1·35–1·95) in 2100. The forecasting skill metric values for the IHME model were positive across all age groups, indicating that the model is better than the constant prediction.
-   
-   
-      Interpretation
-      Fertility is declining globally, with rates in more than half of all countries and territories in 2021 below replacement level. Trends since 2000 show considerable heterogeneity in the steepness of declines, and only a small number of countries experienced even a slight fertility rebound after their lowest observed rate, with none reaching replacement level. Additionally, the distribution of livebirths across the globe is shifting, with a greater proportion occurring in the lowest-income countries. Future fertility rates will continue to decline worldwide and will remain low even under successful implementation of pro-natal policies. These changes will have far-reaching economic and societal consequences due to ageing populations and declining workforces in higher-income countries, combined with an increasing share of livebirths among the already poorest regions of the world.
-   
-   
-      Funding
-      Bill &amp; Melinda Gates Foundation.
+                 Nanoparticle organic hybrid materials (NOHMs) have been proposed as excellent electrolytes for combined CO2 capture and electrochemical conversion due to their conductive nature and chemical tunability. However, CO2 capture behavior and transport properties of these electrolytes after CO2 capture have not yet been studied. Here, we use a variety of nuclear magnetic resonance (NMR) techniques to explore the carbon speciation and transport properties of branched polyethylenimine (PEI) and PEI-grafted silica nanoparticles (denoted as NOHM-I-PEI) after CO2 capture. Quantitative 13C NMR spectra collected at variable temperatures reveal that absorbed CO2 exists as carbamates (RHNCOO− or RR′NCOO−) and carbonate/bicarbonate (CO3
+      2−/HCO3
+      −). The transport properties of PEI and NOHM-I-PEI studied using 1H pulsed-field-gradient NMR, combined with molecular dynamics simulations, demonstrate that coulombic interactions between negatively and positively charged chains dominate in PEI, while the self-diffusion in NOHM-I-PEI is dominated by silica nanoparticles. These results provide strategies for selecting adsorbed forms of carbon for electrochemical reduction.
+                </div>
+               </div>
+               <button class="so-widgets-TextCropper-button" type="button">
+                <span class="so-icon so--accordion-closed">
+                </span>
+                Show more
+               </button>
+              </div>
+             </div>
+             <div class="so-c-b so-o-h">
+              <div class="so-group so-m-t-10">
+               <div class="so-floats so--5">
+                <div class="so-floats-start">
+                 <div class="so-b3-container so--1">
+                  <div class="so-b3-label so--prop">
+                   <img alt="" class="so-small-icon" src="/wicket/resource/org.apache.wicket.Application/css/images/small-icon/article.png"/>
+                  </div>
+                  <a class="so-b3 so--prop" href="/wicket/bookmarkable/com.ovitas.scienceopen.wicket.presenter_view.document.reviews.ArticleReviewsPage?vid=af69a724-0f56-4e4a-aaa9-7bde2f866333" role="button" tabindex="0" target="_blank">
+                   <span class="so-icon" title="No reviews">
+                        
+                   </span>
+                   <span class="so-sr">
+                    No reviews
+                   </span>
+                   <span class="so-d-h5">
+                    0
+                   </span>
+                  </a>
+                 </div>
+                </div>
+                <div class="so-floats-end">
+                 <div class="so-b3-container so--1">
+                  <div class="so-b3 so--prop so--disabled so--am so-m-l-5">
+                   <div class="altmetric-embed" data-badge-type="4" data-condensed="" data-doi="10.1126/sciadv.adk2350" data-link-target="_blank" data-uuid="069ca0fa-0ffd-3a87-3d15-3e7db2aac1ef">
+                    <a href="https://www.altmetric.com/details.php?domain=www.scienceopen.com&amp;citation_id=162667187" style="display:inline-block;" target="_blank">
+                     <img alt="Article has an altmetric score of 7" height="15" src="https://d1uo4w7k31k5mn.cloudfront.net/v4/7.png" style="border:0; margin:0; max-width: none;" width="85"/>
+                    </a>
+                   </div>
+                  </div>
+                 </div>
+                </div>
+               </div>
+              </div>
+             </div>
+            </div>
+            <div class="so-article-list-item">
+             <a href="https://www.scienceopen.com/document?vid=c3f8cb31-e482-40cf-89f8-1d382db0bb44" target="_blank">
+              <div class="so-article-list-item-image so-user-image-wrapper so--2-cols">
+               <img alt="" class="so-user-image" src="./document_file/0456a289-e842-4210-808b-0c725bec408a/PubMedCentral/medium.png"/>
+              </div>
+             </a>
+             <div class="so-article-list-item-text">
+              <div class="so-m-b-5 so-clearfix">
+               <ul class="so-tiers so-f-l" title="This record is validated by trusted, cross-referenced repositories such as PubMed, CrossRef, PMC or ArXiv. The abstract of the article is available and you can read the full article by clicking on the read button.">
+                <li class="">
+                 Record
+                 <span class="so-sr">
+                  :  found
+                 </span>
+                </li>
+                <li class="">
+                 Abstract
+                 <span class="so-sr">
+                  :  found
+                 </span>
+                </li>
+                <li class="">
+                 Article
+                 <span class="so-sr">
+                  :  found
+                 </span>
+                </li>
+               </ul>
+               <span class="so-tiers-open-access so-icon so--open-access" title="Open Access">
+                <span class="so-sr">
+                 Open Access
+                </span>
+               </span>
+              </div>
+              <h3 class="so-article-list-item-title" dir="auto">
+               <a href="https://www.scienceopen.com/document?vid=c3f8cb31-e482-40cf-89f8-1d382db0bb44" target="_blank">
+                Graphene-Based Composite for Carbon Capture
+               </a>
+              </h3>
+              <div class="so-secondary so-m-y-2">
+               <a dir="auto" href="/search#author/0102eae5-8292-48c2-8022-9e2f3c8c904a" target="_blank">
+                Tri Komala Junita
+               </a>
+               ,
+               <a dir="auto" href="/search#author/de27fa74-4c83-48c3-acdf-7c8ef8ffac37" target="_blank">
+                Norman Syakir
+               </a>
+               ,
+               <a dir="auto" href="/search#author/22b3077d-84b8-446e-b213-6bebca7da335" target="_blank">
+                Ferry Faizal
+               </a>
+               ,
+               <a dir="auto" href="/search#author/bf35cb13-6d22-44ff-86ad-a9b4130894eb" target="_blank">
+                Fitrilawati
+               </a>
+               (2024)
+              </div>
+              <div class="so-article-list-item-abstract so-widgets-TextCropper" dir="auto" style="height: 40px;">
+               <div>
+                <div class="so-d">
+                 <p class="first" dir="auto" id="d3074029e160" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                 </p>
+                 <div class="figure-container so-text-align-c">
+                  <img alt="" class="figure" src="/document_file/0456a289-e842-4210-808b-0c725bec408a/PubMedCentral/image/ao3c08722_0008"/>
+                 </div>
+                 <p>
+                 </p>
+                 <p dir="auto" id="d3074029e162" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                  The current energy system is based largely on fossil
+            fuels that
+            emit carbon dioxide (CO
+                  <sub>
+                   2
+                  </sub>
+                  ) and contribute to global climate
+            change. Global energy demand is expected to increase, with growth
+            approximately doubled by the year 2050 and tripled by the end of the
+            century. Therefore, research and development on emissions management
+            and carbon cycle solutions that meet energy sustainability is critical
+            to reduce the effects of global warming. The key point of this literature
+            review is the selection of suitable materials for carbon capture.
+            The selection is based on the consideration that the CO
+                  <sub>
+                   2
+                  </sub>
+                  reduction properties are influenced by the type of material/composite
+            that is being used, the preparation, and the possible characterization
+            method. This Review covers graphene-based materials and their composites
+            as appropriate materials for reducing CO
+                  <sub>
+                   2
+                  </sub>
+                  and their performance
+            assessment through experiments and theoretical analysis. It is very
+            important to improve the efficiency performance of materials and its
+            scalability. Recently, graphene has become a widely used material
+            for environmental applications, one of which shows good performance
+            in reducing CO
+                  <sub>
+                   2
+                  </sub>
+                  concentration. To separate CO
+                  <sub>
+                   2
+                  </sub>
+                  , graphene has been developed and is now being showcased and reviewed
+            in this study. Given the measuring technique used, this Review is
+            intended to be a valuable resource for individuals researching CO
+                  <sub>
+                   2
+                  </sub>
+                  separation employing graphene material in combination with
+            other materials.
+                 </p>
+                </div>
+               </div>
+               <button class="so-widgets-TextCropper-button" type="button">
+                <span class="so-icon so--accordion-closed">
+                </span>
+                Show more
+               </button>
+              </div>
+             </div>
+             <div class="so-c-b so-o-h">
+              <div class="so-group so-m-t-10">
+               <div class="so-floats so--5">
+                <div class="so-floats-start">
+                 <div class="so-b3-container so--1">
+                  <div class="so-b3-label so--prop">
+                   <img alt="" class="so-small-icon" src="/wicket/resource/org.apache.wicket.Application/css/images/small-icon/article.png"/>
+                  </div>
+                  <button class="so-b3 so--prop" tabindex="0" title="Added to 1 collection" type="button">
+                   <span class="so-icon so--collection">
+                   </span>
+                   <span class="so-sr">
+                    Added to
+                   </span>
+                   <span class="so-d-h5">
+                    1
+                   </span>
+                   <span class="so-sr">
+                    collection
+                   </span>
+                  </button>
+                  <a class="so-b3 so--prop" href="/wicket/bookmarkable/com.ovitas.scienceopen.wicket.presenter_view.document.reviews.ArticleReviewsPage?vid=c3f8cb31-e482-40cf-89f8-1d382db0bb44" role="button" tabindex="0" target="_blank">
+                   <span class="so-icon" title="No reviews">
+                        
+                   </span>
+                   <span class="so-sr">
+                    No reviews
+                   </span>
+                   <span class="so-d-h5">
+                    0
+                   </span>
+                  </a>
+                 </div>
+                </div>
+                <div class="so-floats-end">
+                 <div class="so-b3-container so--1">
+                  <div class="so-b3 so--prop so--disabled so--am so-m-l-5">
+                   <div class="altmetric-embed" data-badge-type="4" data-condensed="" data-doi="10.1021/acsomega.3c08722" data-link-target="_blank" data-uuid="34ba1c22-94a1-d4dd-dc23-ffd6a074722f">
+                    <a href="https://www.altmetric.com/details.php?domain=www.scienceopen.com&amp;doi=10.1021%2Facsomega.3c08722" style='cursor: pointer; display: inline-block; background-image: url("https://d1uo4w7k31k5mn.cloudfront.net/v4/0.png"); background-repeat: no-repeat; width: 85px; height: 15px;' target="_blank">
+                    </a>
+                   </div>
+                  </div>
+                 </div>
+                </div>
+               </div>
+              </div>
+             </div>
+            </div>
+            <div class="so-article-list-item">
+             <a href="https://www.scienceopen.com/document?vid=08b4f0fd-553e-4ed1-9a12-4365b5d664b8" target="_blank">
+              <div class="so-article-list-item-image so-user-image-wrapper so--2-cols">
+               <img alt="" class="so-user-image" src="./document_file/7634d7f0-9f7b-4bfd-b7fa-6bc3e8949030/PubMedCentral/medium.png"/>
+              </div>
+             </a>
+             <div class="so-article-list-item-text">
+              <div class="so-m-b-5 so-clearfix">
+               <ul class="so-tiers so-f-l" title="This record is validated by trusted, cross-referenced repositories such as PubMed, CrossRef, PMC or ArXiv. The abstract of the article is available and you can read the full article by clicking on the read button.">
+                <li class="">
+                 Record
+                 <span class="so-sr">
+                  :  found
+                 </span>
+                </li>
+                <li class="">
+                 Abstract
+                 <span class="so-sr">
+                  :  found
+                 </span>
+                </li>
+                <li class="">
+                 Article
+                 <span class="so-sr">
+                  :  found
+                 </span>
+                </li>
+               </ul>
+               <span class="so-tiers-open-access so-icon so--open-access" title="Open Access">
+                <span class="so-sr">
+                 Open Access
+                </span>
+               </span>
+              </div>
+              <h3 class="so-article-list-item-title" dir="auto">
+               <a href="https://www.scienceopen.com/document?vid=08b4f0fd-553e-4ed1-9a12-4365b5d664b8" target="_blank">
+                Redox-tunable isoindigos for electrochemically mediated carbon capture
+               </a>
+              </h3>
+              <div class="so-secondary so-m-y-2">
+               <a dir="auto" href="/search#author/be4d5b1b-d084-447f-b6b9-0596b06ae49c" target="_blank">
+                Xing Li
+               </a>
+               ,
+               <a dir="auto" href="/search#author/4590c667-4788-402a-b55c-733a3e415cff" target="_blank">
+                Xunhua Zhao
+               </a>
+               ,
+               <a dir="auto" href="/search#author/9c196bdf-e8d9-4dbc-b092-48881607eb5d" target="_blank">
+                Lingyu Zhang
+               </a>
+               ,
+               <a dir="auto" href="/search#author/9a8d58ad-6e77-4e21-a44a-4e1082452000" target="_blank">
+                Anmol Mathur
+               </a>
+               ,
+               <a dir="auto" href="/search#author/edf686c7-5513-42b7-9bff-da261ee16049" target="_blank">
+                Yu Xu
+               </a>
+               ,
+               <a href="https://www.scienceopen.com/document?vid=08b4f0fd-553e-4ed1-9a12-4365b5d664b8" target="_blank">
+                4 more...
+               </a>
+               (2024)
+              </div>
+              <div class="so-article-list-item-abstract so-widgets-TextCropper" dir="auto" style="height: 40px;">
+               <div>
+                <div class="so-d">
+                 Efficient CO2 separation technologies are essential for mitigating climate change. Compared to traditional thermochemical methods, electrochemically mediated carbon capture using redox-tunable sorbents emerges as a promising alternative due to its versatility and energy efficiency. However, the undesirable linear free-energy relationship between redox potential and CO2 binding affinity in existing chemistry makes it fundamentally challenging to optimise key sorbent properties independently via chemical modifications. Here, we demonstrate a design paradigm for electrochemically mediated carbon capture sorbents, which breaks the undesirable scaling relationship by leveraging intramolecular hydrogen bonding in isoindigo derivatives. The redox potentials of isoindigos can be anodically shifted by &gt;350 mV to impart sorbents with high oxygen stability without compromising CO2 binding, culminating in a system with minimised parasitic reactions. With the synthetic space presented, our effort provides a generalisable strategy to finetune interactions between redox-active organic molecules and CO2, addressing a longstanding challenge in developing effective carbon capture methods driven by non-conventional stimuli.
                 </div>
                </div>
                <button class="so-widgets-TextCropper-button" type="button">
@@ -880,18 +1045,582 @@ so_main()
                   </div>
                   <div class="so-b3-label so--green-1 so--prop">
                    <span class="so-d-h5">
-                    11
+                    2
                    </span>
                    views
                   </div>
-                  <button class="so-b3 so--prop" tabindex="0" title="Cited 3 times" type="button">
+                  <button class="so-b3 so--prop" tabindex="0" title="Added to 1 collection" type="button">
+                   <span class="so-icon so--collection">
+                   </span>
+                   <span class="so-sr">
+                    Added to
+                   </span>
+                   <span class="so-d-h5">
+                    1
+                   </span>
+                   <span class="so-sr">
+                    collection
+                   </span>
+                  </button>
+                  <a class="so-b3 so--prop" href="/wicket/bookmarkable/com.ovitas.scienceopen.wicket.presenter_view.document.reviews.ArticleReviewsPage?vid=08b4f0fd-553e-4ed1-9a12-4365b5d664b8" role="button" tabindex="0" target="_blank">
+                   <span class="so-icon" title="No reviews">
+                        
+                   </span>
+                   <span class="so-sr">
+                    No reviews
+                   </span>
+                   <span class="so-d-h5">
+                    0
+                   </span>
+                  </a>
+                 </div>
+                </div>
+                <div class="so-floats-end">
+                 <div class="so-b3-container so--1">
+                  <div class="so-b3 so--prop so--disabled so--am so-m-l-5">
+                   <div class="altmetric-embed" data-badge-type="4" data-condensed="" data-doi="10.1038/s41467-024-45410-z" data-link-target="_blank" data-uuid="6d43c21e-5ef4-7a07-039c-0e58a506b416">
+                    <a href="https://www.altmetric.com/details.php?domain=www.scienceopen.com&amp;citation_id=159241286" style="display:inline-block;" target="_blank">
+                     <img alt="Article has an altmetric score of 8" height="15" src="https://d1uo4w7k31k5mn.cloudfront.net/v4/8.png" style="border:0; margin:0; max-width: none;" width="85"/>
+                    </a>
+                   </div>
+                  </div>
+                 </div>
+                </div>
+               </div>
+              </div>
+             </div>
+            </div>
+            <div class="so-article-list-item">
+             <a href="https://www.scienceopen.com/document?vid=2aa72d40-72ac-437b-aa7e-6a296b217821" target="_blank">
+              <div class="so-article-list-item-image so-user-image-wrapper so--2-cols">
+               <img alt="" class="so-user-image" src="./document_file/17cf3a04-823d-49a9-ac0b-2f5bd537f733/PubMedCentral/medium.png"/>
+              </div>
+             </a>
+             <div class="so-article-list-item-text">
+              <div class="so-m-b-5 so-clearfix">
+               <ul class="so-tiers so-f-l" title="This record is validated by trusted, cross-referenced repositories such as PubMed, CrossRef, PMC or ArXiv. The abstract of the article is available and you can read the full article by clicking on the read button.">
+                <li class="">
+                 Record
+                 <span class="so-sr">
+                  :  found
+                 </span>
+                </li>
+                <li class="">
+                 Abstract
+                 <span class="so-sr">
+                  :  found
+                 </span>
+                </li>
+                <li class="">
+                 Article
+                 <span class="so-sr">
+                  :  found
+                 </span>
+                </li>
+               </ul>
+               <span class="so-tiers-open-access so-icon so--open-access" title="Open Access">
+                <span class="so-sr">
+                 Open Access
+                </span>
+               </span>
+              </div>
+              <h3 class="so-article-list-item-title" dir="auto">
+               <a href="https://www.scienceopen.com/document?vid=2aa72d40-72ac-437b-aa7e-6a296b217821" target="_blank">
+                Electrochemical Cation-Swing for Carbon Capture under Ambient Conditions
+               </a>
+              </h3>
+              <div class="so-secondary so-m-y-2">
+               <a dir="auto" href="/search#author/43183522-22d6-4248-aa35-343f1156bff7" target="_blank">
+                Yayuan Liu
+               </a>
+               (2023)
+              </div>
+              <div class="so-article-list-item-abstract so-widgets-TextCropper" dir="auto">
+               <div>
+                <div class="so-d">
+                </div>
+               </div>
+              </div>
+             </div>
+             <div class="so-c-b so-o-h">
+              <div class="so-group so-m-t-10">
+               <div class="so-floats so--5">
+                <div class="so-floats-start">
+                 <div class="so-b3-container so--1">
+                  <div class="so-b3-label so--prop">
+                   <img alt="" class="so-small-icon" src="/wicket/resource/org.apache.wicket.Application/css/images/small-icon/article.png"/>
+                  </div>
+                  <a class="so-b3 so--prop" href="/wicket/bookmarkable/com.ovitas.scienceopen.wicket.presenter_view.document.reviews.ArticleReviewsPage?vid=2aa72d40-72ac-437b-aa7e-6a296b217821" role="button" tabindex="0" target="_blank">
+                   <span class="so-icon" title="No reviews">
+                        
+                   </span>
+                   <span class="so-sr">
+                    No reviews
+                   </span>
+                   <span class="so-d-h5">
+                    0
+                   </span>
+                  </a>
+                 </div>
+                </div>
+                <div class="so-floats-end">
+                 <div class="so-b3-container so--1">
+                  <div class="so-b3 so--prop so--disabled so--am so-m-l-5">
+                   <div class="altmetric-embed" data-badge-type="4" data-condensed="" data-doi="10.1021/acscentsci.3c01064" data-link-target="_blank" data-uuid="fb11012c-2481-467b-a833-ad900d8dffe0">
+                    <a href="https://www.altmetric.com/details.php?domain=www.scienceopen.com&amp;citation_id=154905777" style="display:inline-block;" target="_blank">
+                     <img alt="Article has an altmetric score of 3" height="15" src="https://d1uo4w7k31k5mn.cloudfront.net/v4/3.png" style="border:0; margin:0; max-width: none;" width="85"/>
+                    </a>
+                   </div>
+                  </div>
+                 </div>
+                </div>
+               </div>
+              </div>
+             </div>
+            </div>
+            <div class="so-article-list-item">
+             <a href="https://www.scienceopen.com/document?vid=e4507017-54c7-4198-ab64-83f4e83ac850" target="_blank">
+              <div class="so-article-list-item-image so-user-image-wrapper so--2-cols">
+               <img alt="" class="so-user-image" src="./document_file/32e946b0-db5d-43ea-8fad-6db7aba319db/PubMedCentral/medium.png"/>
+              </div>
+             </a>
+             <div class="so-article-list-item-text">
+              <div class="so-m-b-5 so-clearfix">
+               <ul class="so-tiers so-f-l" title="This record is validated by trusted, cross-referenced repositories such as PubMed, CrossRef, PMC or ArXiv. The abstract of the article is available and you can read the full article by clicking on the read button.">
+                <li class="">
+                 Record
+                 <span class="so-sr">
+                  :  found
+                 </span>
+                </li>
+                <li class="">
+                 Abstract
+                 <span class="so-sr">
+                  :  found
+                 </span>
+                </li>
+                <li class="">
+                 Article
+                 <span class="so-sr">
+                  :  found
+                 </span>
+                </li>
+               </ul>
+               <span class="so-tiers-open-access so-icon so--open-access" title="Open Access">
+                <span class="so-sr">
+                 Open Access
+                </span>
+               </span>
+              </div>
+              <h3 class="so-article-list-item-title" dir="auto">
+               <a href="https://www.scienceopen.com/document?vid=e4507017-54c7-4198-ab64-83f4e83ac850" target="_blank">
+                Oxyfuel Combustion
+Makes Carbon Capture More Efficient
+               </a>
+              </h3>
+              <div class="so-secondary so-m-y-2">
+               <a dir="auto" href="/search#author/3efba468-89ff-4e1d-a7bd-79f9303347cd" target="_blank">
+                Saeed Talei
+               </a>
+               ,
+               <a dir="auto" href="/search#author/93c9ad88-2b3f-4eae-b1d7-892b945f898f" target="_blank">
+                Daniel Fozer
+               </a>
+               ,
+               <a dir="auto" href="/search#author/da759d6c-2122-4c3c-85a9-92d99e635e49" target="_blank">
+                Petar Sabev Varbanov
+               </a>
+               ,
+               <a dir="auto" href="/search#author/eb6793ea-c2db-4750-8fbd-37d9e4fb243c" target="_blank">
+                Agnes Szanyi
+               </a>
+               ,
+               <a dir="auto" href="/search#author/3ed2bccb-daa9-4440-a13a-4fda8d546c90" target="_blank">
+                Peter Mizsey
+               </a>
+               (2024)
+              </div>
+              <div class="so-article-list-item-abstract so-widgets-TextCropper" dir="auto" style="height: 40px;">
+               <div>
+                <div class="so-d">
+                 Fossil energy carriers cannot be totally replaced, especially
+if
+nuclear power stations are stopped and renewable energy is not available.
+To fulfill emission regulations, however, points such as emission
+sources should be addressed. Besides desulfurization, carbon capture
+and utilization have become increasingly important engineering activities.
+Oxyfuel technologies offer new options to reduce greenhouse gas emissions;
+however, the use of clean oxygen instead of air can be dangerous in
+the case of certain existing technologies. To replace the inert effect
+of nitrogen, carbon dioxide is mixed with oxygen gas in the case of
+such air combustion processes. In this work, the features of carbon
+capture in five different flue gases of air combustion and such oxyfuel
+combustion where additional carbon dioxide is mixed with clean oxygen
+are studied and compared. The five different flue gases originate
+from the gas-fired power plant, coal-fired power plant, coal-fired
+combined heat and power plant, the aluminum production industry, and
+the cement manufacturing industry. Monoethanolamine, which is an industrially
+preferred solvent for carbon dioxide capture from gas streams at low
+pressures, is selected as an absorbent, and the same amount of carbon
+dioxide is captured; that is, always that amount of carbon dioxide
+is captured, which is the result of the fossil combustion process.
+ASPEN Plus is used for mathematical modeling. The results show that
+the oxyfuel combustion cases need significantly less energy, especially
+at high carbon dioxide removal rates, e.g., higher than 90%, than
+that of the air combustion cases. The savings can even be as high
+as 84%. Moreover, 100% carbon capture was also be completed. This
+finding can be due to the fact that in the oxyfuel combustion cases,
+the carbon dioxide concentration is much higher than that of the air
+combustion cases because of the inert carbon dioxide and that higher
+carbon dioxide concentration results in a higher driving force for
+the mass transfer. The oxyfuel combustion processes also show another
+advantage over the air combustion processes since no nitrogen oxides
+are produced in the combustion process.
+                </div>
+               </div>
+               <button class="so-widgets-TextCropper-button" type="button">
+                <span class="so-icon so--accordion-closed">
+                </span>
+                Show more
+               </button>
+              </div>
+             </div>
+             <div class="so-c-b so-o-h">
+              <div class="so-group so-m-t-10">
+               <div class="so-floats so--5">
+                <div class="so-floats-start">
+                 <div class="so-b3-container so--1">
+                  <div class="so-b3-label so--prop">
+                   <img alt="" class="so-small-icon" src="/wicket/resource/org.apache.wicket.Application/css/images/small-icon/article.png"/>
+                  </div>
+                  <a class="so-b3 so--prop" href="/wicket/bookmarkable/com.ovitas.scienceopen.wicket.presenter_view.document.reviews.ArticleReviewsPage?vid=e4507017-54c7-4198-ab64-83f4e83ac850" role="button" tabindex="0" target="_blank">
+                   <span class="so-icon" title="No reviews">
+                        
+                   </span>
+                   <span class="so-sr">
+                    No reviews
+                   </span>
+                   <span class="so-d-h5">
+                    0
+                   </span>
+                  </a>
+                 </div>
+                </div>
+                <div class="so-floats-end">
+                 <div class="so-b3-container so--1">
+                  <div class="so-b3 so--prop so--disabled so--am so-m-l-5">
+                   <div class="altmetric-embed" data-badge-type="4" data-condensed="" data-doi="10.1021/acsomega.3c05034" data-link-target="_blank" data-uuid="9b499dc8-f428-4c3b-578d-1b8589e7d2aa">
+                    <a href="https://www.altmetric.com/details.php?domain=www.scienceopen.com&amp;doi=10.1021%2Facsomega.3c05034" style='cursor: pointer; display: inline-block; background-image: url("https://d1uo4w7k31k5mn.cloudfront.net/v4/0.png"); background-repeat: no-repeat; width: 85px; height: 15px;' target="_blank">
+                    </a>
+                   </div>
+                  </div>
+                 </div>
+                </div>
+               </div>
+              </div>
+             </div>
+            </div>
+            <div class="so-article-list-item">
+             <div class="so-article-list-item-text">
+              <div class="so-m-b-5 so-clearfix">
+               <ul class="so-tiers so-f-l" title="This record is validated by trusted, cross-referenced repositories such as PubMed, CrossRef, PMC or ArXiv. The abstract of the article is available and you can read the full article by clicking on the read button.">
+                <li class="">
+                 Record
+                 <span class="so-sr">
+                  :  found
+                 </span>
+                </li>
+                <li class="">
+                 Abstract
+                 <span class="so-sr">
+                  :  found
+                 </span>
+                </li>
+                <li class="">
+                 Article
+                 <span class="so-sr">
+                  :  found
+                 </span>
+                </li>
+               </ul>
+               <span class="so-tiers-open-access so-icon so--open-access" title="Open Access">
+                <span class="so-sr">
+                 Open Access
+                </span>
+               </span>
+              </div>
+              <h3 class="so-article-list-item-title" dir="auto">
+               <a href="https://www.scienceopen.com/document?vid=9a144b74-7f8e-4ae1-98a2-50cb1c790a9d" target="_blank">
+                Reproducible Sorbent Materials Foundry for Carbon Capture at Scale
+               </a>
+              </h3>
+              <div class="so-secondary so-m-y-2">
+               <a dir="auto" href="/search#author/923c2925-b83a-4d2e-87ad-8aa16a302d6a" target="_blank">
+                Austin McDannald
+               </a>
+               ,
+               <a dir="auto" href="/search#author/b476d32b-7217-4187-9c70-22b15e1e825c" target="_blank">
+                Howie Joress
+               </a>
+               ,
+               <a dir="auto" href="/search#author/35da1e88-ffd1-4a74-b33e-3860ff40102c" target="_blank">
+                Brian DeCost
+               </a>
+               ,
+               <a dir="auto" href="/search#author/addb849c-854a-441c-bc5c-c9cb7b0281f8" target="_blank">
+                Avery Baumann
+               </a>
+               ,
+               <a dir="auto" href="/search#author/8c932ee7-ec0a-44f9-8e1e-98e6ed024cb0" target="_blank">
+                A. Gilad Kusne
+               </a>
+               ,
+               <a href="https://www.scienceopen.com/document?vid=9a144b74-7f8e-4ae1-98a2-50cb1c790a9d" target="_blank">
+                7 more...
+               </a>
+               (2022)
+              </div>
+              <div class="so-article-list-item-abstract so-widgets-TextCropper" dir="auto" style="height: 40px;">
+               <div>
+                <div class="so-d">
+                 We envision an autonomous sorbent materials foundry (SMF) for rapidly
+evaluating materials for direct air capture of carbon dioxide (CO2),
+specifically targeting novel metal organic framework materials. Our proposed
+SMF is hierarchical, simultaneously addressing the most critical gaps in the
+inter-related space of sorbent material synthesis, processing, properties, and
+performance. The ability to collect these critical data streams in an agile,
+coordinated, and automated fashion will enable efficient end-to-end sorbent
+materials design through machine learning driven research framework.
+                </div>
+               </div>
+               <button class="so-widgets-TextCropper-button" type="button">
+                <span class="so-icon so--accordion-closed">
+                </span>
+                Show more
+               </button>
+              </div>
+             </div>
+             <div class="so-c-b so-o-h">
+              <div class="so-group so-m-t-10">
+               <div class="so-floats so--5">
+                <div class="so-floats-start">
+                 <div class="so-b3-container so--1">
+                  <div class="so-b3-label so--prop">
+                   <img alt="" class="so-small-icon" src="/wicket/resource/org.apache.wicket.Application/css/images/small-icon/article.png"/>
+                  </div>
+                  <a class="so-b3 so--prop" href="/wicket/bookmarkable/com.ovitas.scienceopen.wicket.presenter_view.document.reviews.ArticleReviewsPage?vid=9a144b74-7f8e-4ae1-98a2-50cb1c790a9d" role="button" tabindex="0" target="_blank">
+                   <span class="so-icon" title="No reviews">
+                        
+                   </span>
+                   <span class="so-sr">
+                    No reviews
+                   </span>
+                   <span class="so-d-h5">
+                    0
+                   </span>
+                  </a>
+                  <div class="so-b3-label so--prop so--teal-1">
+                   Preprint
+                  </div>
+                 </div>
+                </div>
+                <div class="so-floats-end">
+                 <div class="so-b3-container so--1">
+                  <div class="so-b3 so--prop so--disabled so--am so-m-l-5">
+                   <div class="altmetric-embed" data-arxiv-id="2207.12467" data-badge-type="4" data-condensed="" data-link-target="_blank" data-uuid="39aa22af-383e-6128-9882-4aeb1e9f0713">
+                    <a href="https://www.altmetric.com/details.php?domain=www.scienceopen.com&amp;citation_id=133172669" style="display:inline-block;" target="_blank">
+                     <img alt="Article has an altmetric score of 2" height="15" src="https://d1uo4w7k31k5mn.cloudfront.net/v4/2.png" style="border:0; margin:0; max-width: none;" width="85"/>
+                    </a>
+                   </div>
+                  </div>
+                 </div>
+                </div>
+               </div>
+              </div>
+             </div>
+            </div>
+            <div class="so-article-list-item">
+             <div class="so-article-list-item-text">
+              <div class="so-m-b-5 so-clearfix">
+               <ul class="so-tiers so-f-l" title="This record is validated by trusted, cross-referenced repositories such as PubMed, CrossRef, PMC or ArXiv. The abstract of the article is available and you can read the full article by clicking on the read button.">
+                <li class="">
+                 Record
+                 <span class="so-sr">
+                  :  found
+                 </span>
+                </li>
+                <li class="">
+                 Abstract
+                 <span class="so-sr">
+                  :  found
+                 </span>
+                </li>
+                <li class="">
+                 Article
+                 <span class="so-sr">
+                  :  found
+                 </span>
+                </li>
+               </ul>
+               <span class="so-tiers-open-access so-icon so--open-access" title="Open Access">
+                <span class="so-sr">
+                 Open Access
+                </span>
+               </span>
+              </div>
+              <h3 class="so-article-list-item-title" dir="auto">
+               <a href="https://www.scienceopen.com/document?vid=d549e151-4605-40a0-8e3a-fa66ac20951c" target="_blank">
+                Quantum Simulations for Carbon Capture on Metal-Organic Frameworks
+               </a>
+              </h3>
+              <div class="so-secondary so-m-y-2">
+               <a dir="auto" href="/search#author/92ac0af9-3fa5-48ea-b888-71d178a47762" target="_blank">
+                Gopal Ramesh Dahale
+               </a>
+               (2023)
+              </div>
+              <div class="so-article-list-item-abstract so-widgets-TextCropper" dir="auto" style="height: 40px;">
+               <div>
+                <div class="so-d">
+                 Direct air capture of Carbon Dioxide is a technical solution that does not
+rely on natural processes to capture CO2 from the atmosphere. In DAC, the
+filter material is designed to specifically bind CO2 molecules. Hence a
+high-capacity filter is sought. We aim to leverage the potential of quantum
+computing to improve the filters used in DAC. Metal-Organic Frameworks (MOFs)
+have high surface area and tunable pore sizes which makes them an attractive
+material for gas storage and separation. Using the variational quantum
+eigensolver (VQE) algorithm, we find the minimum of the potential energy
+surface (PES) by first considering only the active site of the MOF (the metal
+ion). For complex systems, we employ Density Matrix Embedding Theory and use
+VQE as a fragment solver at the binding site. Techniques like
+deparameterisation are used to minimise the count of trainable parameters. We
+present results of ideal and noisy simulations as well as from a real hardware
+device. Resources are estimated for MOFs unit cell. The findings from our study
+demonstrates the potential of quantum computing to effectively perform quantum
+simulations of strongly correlated fragments.
+                </div>
+               </div>
+               <button class="so-widgets-TextCropper-button" type="button">
+                <span class="so-icon so--accordion-closed">
+                </span>
+                Show more
+               </button>
+              </div>
+             </div>
+             <div class="so-c-b so-o-h">
+              <div class="so-group so-m-t-10">
+               <div class="so-floats so--5">
+                <div class="so-floats-start">
+                 <div class="so-b3-container so--1">
+                  <div class="so-b3-label so--prop">
+                   <img alt="" class="so-small-icon" src="/wicket/resource/org.apache.wicket.Application/css/images/small-icon/article.png"/>
+                  </div>
+                  <a class="so-b3 so--prop" href="/wicket/bookmarkable/com.ovitas.scienceopen.wicket.presenter_view.document.reviews.ArticleReviewsPage?vid=d549e151-4605-40a0-8e3a-fa66ac20951c" role="button" tabindex="0" target="_blank">
+                   <span class="so-icon" title="No reviews">
+                        
+                   </span>
+                   <span class="so-sr">
+                    No reviews
+                   </span>
+                   <span class="so-d-h5">
+                    0
+                   </span>
+                  </a>
+                  <div class="so-b3-label so--prop so--teal-1">
+                   Preprint
+                  </div>
+                 </div>
+                </div>
+                <div class="so-floats-end">
+                 <div class="so-b3-container so--1">
+                  <div class="so-b3 so--prop so--disabled so--am so-m-l-5">
+                   <div class="altmetric-embed" data-arxiv-id="2311.12411" data-badge-type="4" data-condensed="" data-link-target="_blank" data-uuid="412de84c-4415-302b-ce24-196f63b436d8">
+                    <a href="https://www.altmetric.com/details.php?domain=www.scienceopen.com&amp;citation_id=156720274" style="display:inline-block;" target="_blank">
+                     <img alt="Article has an altmetric score of 1" height="15" src="https://d1uo4w7k31k5mn.cloudfront.net/v4/1.png" style="border:0; margin:0; max-width: none;" width="85"/>
+                    </a>
+                   </div>
+                  </div>
+                 </div>
+                </div>
+               </div>
+              </div>
+             </div>
+            </div>
+            <div class="so-article-list-item">
+             <div class="so-article-list-item-text">
+              <div class="so-m-b-5 so-clearfix">
+               <ul class="so-tiers so-f-l" title="This record is validated by trusted, cross-referenced repositories such as PubMed, CrossRef, PMC or ArXiv. The abstract of the article is available and you can read the full article by clicking on the read button.">
+                <li class="">
+                 Record
+                 <span class="so-sr">
+                  :  found
+                 </span>
+                </li>
+                <li class="">
+                 Abstract
+                 <span class="so-sr">
+                  :  found
+                 </span>
+                </li>
+                <li class="">
+                 Article
+                 <span class="so-sr">
+                  :  found
+                 </span>
+                </li>
+               </ul>
+               <span class="so-tiers-open-access so-icon so--open-access" title="Open Access">
+                <span class="so-sr">
+                 Open Access
+                </span>
+               </span>
+              </div>
+              <h3 class="so-article-list-item-title" dir="auto">
+               <a href="https://www.scienceopen.com/document?vid=77eaa692-93ca-4093-8518-2b071376518c" target="_blank">
+                Engineering photosynthesis, nature’s carbon capture machine
+               </a>
+              </h3>
+              <div class="so-secondary so-m-y-2">
+               <a dir="auto" href="/search#author/5979422e-b03d-4ea4-89ca-d96363700106" target="_blank">
+                Megan L. Matthews
+               </a>
+               (2023)
+              </div>
+              <div class="so-article-list-item-abstract so-widgets-TextCropper" dir="auto" style="height: 40px;">
+               <div>
+                <div class="so-d">
+                 Mitigating climate change and sustainably feeding our growing population in the changing climate are 2 significant challenges facing the global community. Engineering photosynthesis, nature’s carbon capture machinery, can help us surmount these threats.
+                </div>
+               </div>
+               <button class="so-widgets-TextCropper-button" type="button">
+                <span class="so-icon so--accordion-closed">
+                </span>
+                Show more
+               </button>
+              </div>
+             </div>
+             <div class="so-c-b so-o-h">
+              <div class="so-group so-m-t-10">
+               <div class="so-floats so--5">
+                <div class="so-floats-start">
+                 <div class="so-b3-container so--1">
+                  <div class="so-b3-label so--prop">
+                   <img alt="" class="so-small-icon" src="/wicket/resource/org.apache.wicket.Application/css/images/small-icon/article.png"/>
+                  </div>
+                  <div class="so-b3-label so--green-1 so--prop">
+                   <span class="so-d-h5">
+                    3
+                   </span>
+                   views
+                  </div>
+                  <button class="so-b3 so--prop" tabindex="0" title="Cited 2 times" type="button">
                    <span class="so-icon so--citation">
                    </span>
                    <span class="so-sr">
                     Cited
                    </span>
                    <span class="so-d-h5">
-                    3
+                    2
                    </span>
                    <span class="so-sr">
                     times
@@ -910,7 +1639,7 @@ so_main()
                     collection
                    </span>
                   </button>
-                  <a class="so-b3 so--prop" href="/wicket/bookmarkable/com.ovitas.scienceopen.wicket.presenter_view.document.reviews.ArticleReviewsPage?vid=d7958bff-1ad0-4c48-982b-c5ea8d7e5232" role="button" tabindex="0" target="_blank">
+                  <a class="so-b3 so--prop" href="/wicket/bookmarkable/com.ovitas.scienceopen.wicket.presenter_view.document.reviews.ArticleReviewsPage?vid=77eaa692-93ca-4093-8518-2b071376518c" role="button" tabindex="0" target="_blank">
                    <span class="so-icon" title="No reviews">
                         
                    </span>
@@ -926,9 +1655,9 @@ so_main()
                 <div class="so-floats-end">
                  <div class="so-b3-container so--1">
                   <div class="so-b3 so--prop so--disabled so--am so-m-l-5">
-                   <div class="altmetric-embed" data-badge-type="4" data-condensed="" data-doi="10.1016/S0140-6736(24)00550-6" data-link-target="_blank" data-uuid="ab3bbe86-3575-8d6a-527a-40ca3e1438f5">
-                    <a href="https://www.altmetric.com/details.php?domain=www.scienceopen.com&amp;citation_id=160970560" style="display:inline-block;" target="_blank">
-                     <img alt="Article has an altmetric score of 2403" height="15" src="https://d1uo4w7k31k5mn.cloudfront.net/v4/2403.png" style="border:0; margin:0; max-width: none;" width="85"/>
+                   <div class="altmetric-embed" data-badge-type="4" data-condensed="" data-doi="10.1371/journal.pbio.3002183" data-link-target="_blank" data-uuid="c715ba6b-0a38-d7c2-cdc1-2147eefe57df">
+                    <a href="https://www.altmetric.com/details.php?domain=www.scienceopen.com&amp;citation_id=151254629" style="display:inline-block;" target="_blank">
+                     <img alt="Article has an altmetric score of 112" height="15" src="https://d1uo4w7k31k5mn.cloudfront.net/v4/112.png" style="border:0; margin:0; max-width: none;" width="85"/>
                     </a>
                    </div>
                   </div>
@@ -939,9 +1668,9 @@ so_main()
              </div>
             </div>
             <div class="so-article-list-item">
-             <a href="https://www.scienceopen.com/document?vid=f219d0be-ff03-4f57-a4fb-fd27a0a6780d" target="_blank">
+             <a href="https://www.scienceopen.com/document?vid=b33252c1-bf19-4ef2-a3d4-1e207a90b04c" target="_blank">
               <div class="so-article-list-item-image so-user-image-wrapper so--2-cols">
-               <img alt="" class="so-user-image" src="./document_file/dabd85b3-8ceb-4b09-bdf2-0438cd65c36a/PubMedCentral/medium.png"/>
+               <img alt="" class="so-user-image" src="./document_file/b63af285-eb3f-4c70-99c3-1e3ca5bbb22b/PubMedCentral/medium.png"/>
               </div>
              </a>
              <div class="so-article-list-item-text">
@@ -973,36 +1702,54 @@ so_main()
                </span>
               </div>
               <h3 class="so-article-list-item-title" dir="auto">
-               <a href="https://www.scienceopen.com/document?vid=f219d0be-ff03-4f57-a4fb-fd27a0a6780d" target="_blank">
-                Global age-sex-specific mortality, life expectancy, and population estimates in 204 countries and territories and 811 subnational locations, 1950–2021, and the impact of the COVID-19 pandemic: a comprehensive demographic analysis for the Global Burden of Disease Study 2021
+               <a href="https://www.scienceopen.com/document?vid=b33252c1-bf19-4ef2-a3d4-1e207a90b04c" target="_blank">
+                Navigating
+within the Safe Operating Space with Carbon
+Capture On-Board
                </a>
               </h3>
               <div class="so-secondary so-m-y-2">
-               (2024)
+               <a dir="auto" href="/search#author/ebcc7dfa-4df6-4297-a586-965a80ed5d4f" target="_blank">
+                Valentina Negri
+               </a>
+               ,
+               <a dir="auto" href="/search#author/8db6b50a-e756-40f3-bf71-cef4f4f88891" target="_blank">
+                Margarita A. Charalambous
+               </a>
+               ,
+               <a dir="auto" href="/search#author/d0cabb66-45c3-45e4-9b56-3ac0f314aa11" target="_blank">
+                Juan D. Medrano-García
+               </a>
+               ,
+               <a dir="auto" href="/search#author/e2f00ffb-54ac-434e-8b3e-ecc75647070b" target="_blank">
+                Gonzalo Guillén-Gosálbez
+               </a>
+               (2022)
               </div>
               <div class="so-article-list-item-abstract so-widgets-TextCropper" dir="auto" style="height: 40px;">
                <div>
                 <div class="so-d">
-                 Summary
-   
-      Background
-      Estimates of demographic metrics are crucial to assess levels and trends of population health outcomes. The profound impact of the COVID-19 pandemic on populations worldwide has underscored the need for timely estimates to understand this unprecedented event within the context of long-term population health trends. The Global Burden of Diseases, Injuries, and Risk Factors Study (GBD) 2021 provides new demographic estimates for 204 countries and territories and 811 additional subnational locations from 1950 to 2021, with a particular emphasis on changes in mortality and life expectancy that occurred during the 2020–21 COVID-19 pandemic period.
-   
-   
-      Methods
-      22 223 data sources from vital registration, sample registration, surveys, censuses, and other sources were used to estimate mortality, with a subset of these sources used exclusively to estimate excess mortality due to the COVID-19 pandemic. 2026 data sources were used for population estimation. Additional sources were used to estimate migration; the effects of the HIV epidemic; and demographic discontinuities due to conflicts, famines, natural disasters, and pandemics, which are used as inputs for estimating mortality and population. Spatiotemporal Gaussian process regression (ST-GPR) was used to generate under-5 mortality rates, which synthesised 30 763 location-years of vital registration and sample registration data, 1365 surveys and censuses, and 80 other sources. ST-GPR was also used to estimate adult mortality (between ages 15 and 59 years) based on information from 31 642 location-years of vital registration and sample registration data, 355 surveys and censuses, and 24 other sources. Estimates of child and adult mortality rates were then used to generate life tables with a relational model life table system. For countries with large HIV epidemics, life tables were adjusted using independent estimates of HIV-specific mortality generated via an epidemiological analysis of HIV prevalence surveys, antenatal clinic serosurveillance, and other data sources. Excess mortality due to the COVID-19 pandemic in 2020 and 2021 was determined by subtracting observed all-cause mortality (adjusted for late registration and mortality anomalies) from the mortality expected in the absence of the pandemic. Expected mortality was calculated based on historical trends using an ensemble of models. In location-years where all-cause mortality data were unavailable, we estimated excess mortality rates using a regression model with covariates pertaining to the pandemic. Population size was computed using a Bayesian hierarchical cohort component model. Life expectancy was calculated using age-specific mortality rates and standard demographic methods. Uncertainty intervals (UIs) were calculated for every metric using the 25th and 975th ordered values from a 1000-draw posterior distribution.
-   
-   
-      Findings
-      Global all-cause mortality followed two distinct patterns over the study period: age-standardised mortality rates declined between 1950 and 2019 (a 62·8% [95% UI 60·5–65·1] decline), and increased during the COVID-19 pandemic period (2020–21; 5·1% [0·9–9·6] increase). In contrast with the overall reverse in mortality trends during the pandemic period, child mortality continued to decline, with 4·66 million (3·98–5·50) global deaths in children younger than 5 years in 2021 compared with 5·21 million (4·50–6·01) in 2019. An estimated 131 million (126–137) people died globally from all causes in 2020 and 2021 combined, of which 15·9 million (14·7–17·2) were due to the COVID-19 pandemic (measured by excess mortality, which includes deaths directly due to SARS-CoV-2 infection and those indirectly due to other social, economic, or behavioural changes associated with the pandemic). Excess mortality rates exceeded 150 deaths per 100 000 population during at least one year of the pandemic in 80 countries and territories, whereas 20 nations had a negative excess mortality rate in 2020 or 2021, indicating that all-cause mortality in these countries was lower during the pandemic than expected based on historical trends. Between 1950 and 2021, global life expectancy at birth increased by 22·7 years (20·8–24·8), from 49·0 years (46·7–51·3) to 71·7 years (70·9–72·5). Global life expectancy at birth declined by 1·6 years (1·0–2·2) between 2019 and 2021, reversing historical trends. An increase in life expectancy was only observed in 32 (15·7%) of 204 countries and territories between 2019 and 2021. The global population reached 7·89 billion (7·67–8·13) people in 2021, by which time 56 of 204 countries and territories had peaked and subsequently populations have declined. The largest proportion of population growth between 2020 and 2021 was in sub-Saharan Africa (39·5% [28·4–52·7]) and south Asia (26·3% [9·0–44·7]). From 2000 to 2021, the ratio of the population aged 65 years and older to the population aged younger than 15 years increased in 188 (92·2%) of 204 nations.
-   
-   
-      Interpretation
-      Global adult mortality rates markedly increased during the COVID-19 pandemic in 2020 and 2021, reversing past decreasing trends, while child mortality rates continued to decline, albeit more slowly than in earlier years. Although COVID-19 had a substantial impact on many demographic indicators during the first 2 years of the pandemic, overall global health progress over the 72 years evaluated has been profound, with considerable improvements in mortality and life expectancy. Additionally, we observed a deceleration of global population growth since 2017, despite steady or increasing growth in lower-income countries, combined with a continued global shift of population age structures towards older ages. These demographic changes will likely present future challenges to health systems, economies, and societies. The comprehensive demographic estimates reported here will enable researchers, policy makers, health practitioners, and other key stakeholders to better understand and address the profound changes that have occurred in the global health landscape following the first 2 years of the COVID-19 pandemic, and longer-term trends beyond the pandemic.
-   
-   
-      Funding
-      Bill &amp; Melinda Gates Foundation.
+                 Despite the global
+pandemic that recently affected human
+and cargo
+transportation, the emissions of the maritime sector are projected
+to keep growing steadily. The International Maritime Organization
+focused on boosting the fleets’ efficiency to improve their
+environmental performance, while more sustainable fuels are currently
+under investigation. Here, we assess the economic, technical, and
+environmental feasibility of an interim solution for low-carbon shipping
+using state-of-the-art CO2 capture technology, namely,
+chemical absorption, on-board cargo ships. We compute the carbon footprint
+of this alternative and perform an absolute sustainability study based
+on seven planetary boundaries. Our results show that the capture on-board
+scenario can achieve 94% efficiency on the net CO2 emissions
+at 85 $/tCO2 while substantially reducing impacts on core
+planetary boundaries (relative to the business as usual) and outperforming
+a direct air capture scenario in global warming and all planetary
+boundaries, except for the nitrogen flow. Hence, capture on-board
+seems an appealing solution to decarbonize shipping in the short term
+while alternative carbon-free fuels and related infrastructure are
+developed and deployed.
                 </div>
                </div>
                <button class="so-widgets-TextCropper-button" type="button">
@@ -1019,425 +1766,6 @@ so_main()
                  <div class="so-b3-container so--1">
                   <div class="so-b3-label so--prop">
                    <img alt="" class="so-small-icon" src="/wicket/resource/org.apache.wicket.Application/css/images/small-icon/article.png"/>
-                  </div>
-                  <div class="so-b3-label so--green-1 so--prop">
-                   <span class="so-d-h5">
-                    11
-                   </span>
-                   views
-                  </div>
-                  <button class="so-b3 so--prop" tabindex="0" title="Cited 10 times" type="button">
-                   <span class="so-icon so--citation">
-                   </span>
-                   <span class="so-sr">
-                    Cited
-                   </span>
-                   <span class="so-d-h5">
-                    10
-                   </span>
-                   <span class="so-sr">
-                    times
-                   </span>
-                  </button>
-                  <button class="so-b3 so--prop" tabindex="0" title="Added to 2 collections" type="button">
-                   <span class="so-icon so--collection">
-                   </span>
-                   <span class="so-sr">
-                    Added to
-                   </span>
-                   <span class="so-d-h5">
-                    2
-                   </span>
-                   <span class="so-sr">
-                    collections
-                   </span>
-                  </button>
-                  <a class="so-b3 so--prop" href="/wicket/bookmarkable/com.ovitas.scienceopen.wicket.presenter_view.document.reviews.ArticleReviewsPage?vid=f219d0be-ff03-4f57-a4fb-fd27a0a6780d" role="button" tabindex="0" target="_blank">
-                   <span class="so-icon" title="No reviews">
-                        
-                   </span>
-                   <span class="so-sr">
-                    No reviews
-                   </span>
-                   <span class="so-d-h5">
-                    0
-                   </span>
-                  </a>
-                 </div>
-                </div>
-                <div class="so-floats-end">
-                 <div class="so-b3-container so--1">
-                  <div class="so-b3 so--prop so--disabled so--am so-m-l-5">
-                   <div class="altmetric-embed" data-badge-type="4" data-condensed="" data-doi="10.1016/S0140-6736(24)00476-8" data-link-target="_blank" data-uuid="bfd10028-7de2-3b10-2954-9905ec2aa2fa">
-                    <a href="https://www.altmetric.com/details.php?domain=www.scienceopen.com&amp;citation_id=160680249" style="display:inline-block;" target="_blank">
-                     <img alt="Article has an altmetric score of 2356" height="15" src="https://d1uo4w7k31k5mn.cloudfront.net/v4/2356.png" style="border:0; margin:0; max-width: none;" width="85"/>
-                    </a>
-                   </div>
-                  </div>
-                 </div>
-                </div>
-               </div>
-              </div>
-             </div>
-            </div>
-            <div class="so-article-list-item">
-             <a href="https://www.scienceopen.com/document?vid=bcef194d-e05f-4b86-954f-a6be3a206b3a" target="_blank">
-              <div class="so-article-list-item-image so-user-image-wrapper so--2-cols">
-               <img alt="" class="so-user-image" src="./document_file/c312b30a-903c-4258-a0f8-beeeec45098c/PubMedCentral/medium.png"/>
-              </div>
-             </a>
-             <div class="so-article-list-item-text">
-              <div class="so-m-b-5 so-clearfix">
-               <ul class="so-tiers so-f-l" title="This record is validated by trusted, cross-referenced repositories such as PubMed, CrossRef, PMC or ArXiv. The abstract of the article is available and you can read the full article by clicking on the read button.">
-                <li class="">
-                 Record
-                 <span class="so-sr">
-                  :  found
-                 </span>
-                </li>
-                <li class="">
-                 Abstract
-                 <span class="so-sr">
-                  :  found
-                 </span>
-                </li>
-                <li class="">
-                 Article
-                 <span class="so-sr">
-                  :  found
-                 </span>
-                </li>
-               </ul>
-               <span class="so-tiers-open-access so-icon so--open-access" title="Open Access">
-                <span class="so-sr">
-                 Open Access
-                </span>
-               </span>
-              </div>
-              <h3 class="so-article-list-item-title" dir="auto">
-               <a href="https://www.scienceopen.com/document?vid=bcef194d-e05f-4b86-954f-a6be3a206b3a" target="_blank">
-                Southern Ocean drives multidecadal atmospheric CO 2  rise during Heinrich Stadials
-               </a>
-              </h3>
-              <div class="so-secondary so-m-y-2">
-               <a dir="auto" href="/search#author/4450b2ff-b54d-4a6b-9cb1-3a0ad59dc6fc" target="_blank">
-                Kathleen A. Wendt
-               </a>
-               ,
-               <a dir="auto" href="/search#author/671c809d-26a8-471c-8805-c368e2d7c750" target="_blank">
-                Christoph Nehrbass-Ahles
-               </a>
-               ,
-               <a dir="auto" href="/search#author/6f5b2896-cfbd-4ac7-aa81-09066ee7b815" target="_blank">
-                Kyle Niezgoda
-               </a>
-               ,
-               <a dir="auto" href="/search#author/d71993d3-5227-4a76-b508-046927c49960" target="_blank">
-                David Noone
-               </a>
-               ,
-               <a dir="auto" href="/search#author/7d1c7f1d-03df-4bf5-92f2-d4024afd5eff" target="_blank">
-                Michael Kalk
-               </a>
-               ,
-               <a href="https://www.scienceopen.com/document?vid=bcef194d-e05f-4b86-954f-a6be3a206b3a" target="_blank">
-                11 more...
-               </a>
-               (2024)
-              </div>
-              <div class="so-article-list-item-abstract so-widgets-TextCropper" dir="auto" style="height: 40px;">
-               <div>
-                <div class="so-d">
-                 Significance
-   Earth’s climate system and carbon cycle interact in myriad ways that can add or remove CO2 from the atmosphere. We use Antarctic ice cores to resolve four multi-decadal-scale CO2 rises of up to 14 ppm that occurred during the most recent glacial period. These abrupt rises coincide with cold periods and iceberg discharge in the North Atlantic. Ice cores show synchronous abrupt warming in Antarctica and vapor source regions, which is consistent with increasing Southern Ocean ventilation due to shifting Southern Hemisphere westerly winds. Our results highlight past periods of dynamic changes in Southern Ocean biogeochemistry and circulation that occurred on human timescales and suggest that Southern Ocean CO2 uptake may weaken as Southern Hemisphere westerlies strengthen in the future.
-                </div>
-               </div>
-               <button class="so-widgets-TextCropper-button" type="button">
-                <span class="so-icon so--accordion-closed">
-                </span>
-                Show more
-               </button>
-              </div>
-             </div>
-             <div class="so-c-b so-o-h">
-              <div class="so-group so-m-t-10">
-               <div class="so-floats so--5">
-                <div class="so-floats-start">
-                 <div class="so-b3-container so--1">
-                  <div class="so-b3-label so--prop">
-                   <img alt="" class="so-small-icon" src="/wicket/resource/org.apache.wicket.Application/css/images/small-icon/article.png"/>
-                  </div>
-                  <div class="so-b3-label so--green-1 so--prop">
-                   <span class="so-d-h5">
-                    1
-                   </span>
-                   view
-                  </div>
-                  <a class="so-b3 so--prop" href="/wicket/bookmarkable/com.ovitas.scienceopen.wicket.presenter_view.document.reviews.ArticleReviewsPage?vid=bcef194d-e05f-4b86-954f-a6be3a206b3a" role="button" tabindex="0" target="_blank">
-                   <span class="so-icon" title="No reviews">
-                        
-                   </span>
-                   <span class="so-sr">
-                    No reviews
-                   </span>
-                   <span class="so-d-h5">
-                    0
-                   </span>
-                  </a>
-                 </div>
-                </div>
-                <div class="so-floats-end">
-                 <div class="so-b3-container so--1">
-                  <div class="so-b3 so--prop so--disabled so--am so-m-l-5">
-                   <div class="altmetric-embed" data-badge-type="4" data-condensed="" data-doi="10.1073/pnas.2319652121" data-link-target="_blank" data-uuid="2374a871-e5d5-7fad-46a9-3faa44ad367d">
-                    <a href="https://www.altmetric.com/details.php?domain=www.scienceopen.com&amp;citation_id=163339264" style="display:inline-block;" target="_blank">
-                     <img alt="Article has an altmetric score of 1772" height="15" src="https://d1uo4w7k31k5mn.cloudfront.net/v4/1772.png" style="border:0; margin:0; max-width: none;" width="85"/>
-                    </a>
-                   </div>
-                  </div>
-                 </div>
-                </div>
-               </div>
-              </div>
-             </div>
-            </div>
-            <div class="so-article-list-item">
-             <a href="https://www.scienceopen.com/document?vid=b43640fa-b194-4722-848e-f2c7ad6e5246" target="_blank">
-              <div class="so-article-list-item-image so-user-image-wrapper so--2-cols">
-               <img alt="" class="so-user-image" src="./document_file/e1c273d3-acd0-488c-8139-b385ebae50fe/PubMedCentral/medium.png"/>
-              </div>
-             </a>
-             <div class="so-article-list-item-text">
-              <div class="so-m-b-5 so-clearfix">
-               <ul class="so-tiers so-f-l" title="This record is validated by trusted, cross-referenced repositories such as PubMed, CrossRef, PMC or ArXiv. The abstract of the article is available and you can read the full article by clicking on the read button.">
-                <li class="">
-                 Record
-                 <span class="so-sr">
-                  :  found
-                 </span>
-                </li>
-                <li class="">
-                 Abstract
-                 <span class="so-sr">
-                  :  found
-                 </span>
-                </li>
-                <li class="">
-                 Article
-                 <span class="so-sr">
-                  :  found
-                 </span>
-                </li>
-               </ul>
-               <span class="so-tiers-open-access so-icon so--open-access" title="Open Access">
-                <span class="so-sr">
-                 Open Access
-                </span>
-               </span>
-              </div>
-              <h3 class="so-article-list-item-title" dir="auto">
-               <a href="https://www.scienceopen.com/document?vid=b43640fa-b194-4722-848e-f2c7ad6e5246" target="_blank">
-                Clinical effectiveness of an online supervised group physical and mental health rehabilitation programme for adults with post-covid-19 condition (REGAIN study): multicentre randomised controlled trial
-               </a>
-              </h3>
-              <div class="so-secondary so-m-y-2">
-               <a dir="auto" href="/search#author/4b1784ec-7483-4dfa-ada3-2ff1ca3fe0fb" target="_blank">
-                Gordon McGregor
-               </a>
-               ,
-               <a dir="auto" href="/search#author/a65d796b-736d-4abd-9124-b39bdbddc8dc" target="_blank">
-                Harbinder Sandhu
-               </a>
-               ,
-               <a dir="auto" href="/search#author/541a897e-4cf2-46d4-910a-b39ec337d426" target="_blank">
-                Julie Bruce
-               </a>
-               ,
-               <a dir="auto" href="/search#author/ba731cff-22fb-4559-ab02-4e30fd04903b" target="_blank">
-                Bartholomew Sheehan
-               </a>
-               ,
-               <a dir="auto" href="/search#author/0d78f570-9d22-42cd-b286-8b7bad470608" target="_blank">
-                David McWilliams
-               </a>
-               ,
-               <a href="https://www.scienceopen.com/document?vid=b43640fa-b194-4722-848e-f2c7ad6e5246" target="_blank">
-                17 more...
-               </a>
-               (2024)
-              </div>
-              <div class="so-article-list-item-abstract so-widgets-TextCropper" dir="auto" style="height: 40px;">
-               <div>
-                <div class="so-d">
-                 <div class="section" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-                  <a class="named-anchor" id="d4813332e383">
-                   <!--
-				named anchor
-			-->
-                  </a>
-                  <h5 class="section-title" id="d4813332e384">
-                   Objective
-                  </h5>
-                  <p dir="auto" id="d4813332e386">
-                   To evaluate whether a structured online supervised group physical and mental health
-               rehabilitation programme can improve health related quality of life compared with
-               usual care in adults with post-covid-19 condition (long covid).
-                  </p>
-                 </div>
-                 <div class="section" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-                  <a class="named-anchor" id="d4813332e388">
-                   <!--
-				named anchor
-			-->
-                  </a>
-                  <h5 class="section-title" id="d4813332e389">
-                   Design
-                  </h5>
-                  <p dir="auto" id="d4813332e391">
-                   Pragmatic, multicentre, parallel group, superiority randomised controlled trial.
-                  </p>
-                 </div>
-                 <div class="section" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-                  <a class="named-anchor" id="d4813332e393">
-                   <!--
-				named anchor
-			-->
-                  </a>
-                  <h5 class="section-title" id="d4813332e394">
-                   Setting
-                  </h5>
-                  <p dir="auto" id="d4813332e396">
-                   England and Wales, with home based interventions delivered remotely online from a
-               single trial hub.
-                  </p>
-                 </div>
-                 <div class="section" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-                  <a class="named-anchor" id="d4813332e398">
-                   <!--
-				named anchor
-			-->
-                  </a>
-                  <h5 class="section-title" id="d4813332e399">
-                   Participants
-                  </h5>
-                  <p dir="auto" id="d4813332e401">
-                   585 adults (26-86 years) discharged from NHS hospitals at least three months previously
-               after covid-19 and with ongoing physical and/or mental health sequelae (post-covid-19
-               condition), randomised (1:1.03) to receive the Rehabilitation Exercise and psycholoGical
-               support After covid-19 InfectioN (REGAIN) intervention (n=298) or usual care (n=287).
-                  </p>
-                 </div>
-                 <div class="section" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-                  <a class="named-anchor" id="d4813332e403">
-                   <!--
-				named anchor
-			-->
-                  </a>
-                  <h5 class="section-title" id="d4813332e404">
-                   Interventions
-                  </h5>
-                  <p dir="auto" id="d4813332e406">
-                   Best practice usual care was a single online session of advice and support with a
-               trained practitioner. The REGAIN intervention was delivered online over eight weeks
-               and consisted of weekly home based, live, supervised, group exercise and psychological
-               support sessions.
-                  </p>
-                 </div>
-                 <div class="section" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-                  <a class="named-anchor" id="d4813332e408">
-                   <!--
-				named anchor
-			-->
-                  </a>
-                  <h5 class="section-title" id="d4813332e409">
-                   Main outcome measures
-                  </h5>
-                  <p dir="auto" id="d4813332e411">
-                   The primary outcome was health related quality of life using the patient reported
-               outcomes measurement information system (PROMIS) preference (PROPr) score at three
-               months. Secondary outcomes, measured at three, six, and 12 months, included PROMIS
-               subscores (depression, fatigue, sleep disturbance, pain interference, physical function,
-               social roles/activities, and cognitive function), severity of post-traumatic stress
-               disorder, general health, and adverse events.
-                  </p>
-                 </div>
-                 <div class="section" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-                  <a class="named-anchor" id="d4813332e413">
-                   <!--
-				named anchor
-			-->
-                  </a>
-                  <h5 class="section-title" id="d4813332e414">
-                   Results
-                  </h5>
-                  <p dir="auto" id="d4813332e416">
-                   Between January 2021 and July 2022, 39 697 people were invited to take part in the
-               study and 725 were contacted and eligible. 585 participants were randomised. Mean
-               age was 56 (standard deviation (SD) 12) years, 52% were female participants, mean
-               health related quality of life PROMIS-PROPr score was 0.20 (SD 0.17), and mean time
-               from hospital discharge was 323 (SD 144) days. Compared with usual care, the REGAIN
-               intervention led to improvements in health related quality of life (adjusted mean
-               difference in PROPr score 0.03 (95% confidence interval 0.01 to 0.05), P=0.02) at
-               three months, driven predominantly by greater improvements in the PROMIS subscores
-               for depression (1.39 (0.06 to 2.71), P=0.04), fatigue (2.50 (1.19 to 3.81), P&lt;0.001),
-               and pain interference (1.80 (0.50 to 3.11), P=0.01). Effects were sustained at 12
-               months (0.03 (0.01 to 0.06), P=0.02). Of 21 serious adverse events, only one was possibly
-               related to the REGAIN intervention. In the intervention group, 141 (47%) participants
-               fully adhered to the programme, 117 (39%) partially adhered, and 40 (13%) did not
-               receive the intervention.
-                  </p>
-                 </div>
-                 <div class="section" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-                  <a class="named-anchor" id="d4813332e418">
-                   <!--
-				named anchor
-			-->
-                  </a>
-                  <h5 class="section-title" id="d4813332e419">
-                   Conclusions
-                  </h5>
-                  <p dir="auto" id="d4813332e421">
-                   In adults with post-covid-19 condition, at least three months after hospital discharge
-               for covid-19, an online, home based, supervised, group physical and mental health
-               rehabilitation programme was clinically effective at improving health related quality
-               of life at three and 12 months compared with usual care.
-                  </p>
-                 </div>
-                 <div class="section" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-                  <a class="named-anchor" id="d4813332e423">
-                   <!--
-				named anchor
-			-->
-                  </a>
-                  <h5 class="section-title" id="d4813332e424">
-                   Trial registration
-                  </h5>
-                  <p dir="auto" id="d4813332e426">
-                   ISRCTN registry ISRCTN11466448.
-                  </p>
-                 </div>
-                </div>
-               </div>
-               <button class="so-widgets-TextCropper-button" type="button">
-                <span class="so-icon so--accordion-closed">
-                </span>
-                Show more
-               </button>
-              </div>
-             </div>
-             <div class="so-c-b so-o-h">
-              <div class="so-group so-m-t-10">
-               <div class="so-floats so--5">
-                <div class="so-floats-start">
-                 <div class="so-b3-container so--1">
-                  <div class="so-b3-label so--prop">
-                   <img alt="" class="so-small-icon" src="/wicket/resource/org.apache.wicket.Application/css/images/small-icon/article.png"/>
-                  </div>
-                  <div class="so-b3-label so--green-1 so--prop">
-                   <span class="so-d-h5">
-                    5
-                   </span>
-                   views
                   </div>
                   <button class="so-b3 so--prop" tabindex="0" title="Cited 1 times" type="button">
                    <span class="so-icon so--citation">
@@ -1452,20 +1780,7 @@ so_main()
                     times
                    </span>
                   </button>
-                  <button class="so-b3 so--prop" tabindex="0" title="Added to 2 collections" type="button">
-                   <span class="so-icon so--collection">
-                   </span>
-                   <span class="so-sr">
-                    Added to
-                   </span>
-                   <span class="so-d-h5">
-                    2
-                   </span>
-                   <span class="so-sr">
-                    collections
-                   </span>
-                  </button>
-                  <a class="so-b3 so--prop" href="/wicket/bookmarkable/com.ovitas.scienceopen.wicket.presenter_view.document.reviews.ArticleReviewsPage?vid=b43640fa-b194-4722-848e-f2c7ad6e5246" role="button" tabindex="0" target="_blank">
+                  <a class="so-b3 so--prop" href="/wicket/bookmarkable/com.ovitas.scienceopen.wicket.presenter_view.document.reviews.ArticleReviewsPage?vid=b33252c1-bf19-4ef2-a3d4-1e207a90b04c" role="button" tabindex="0" target="_blank">
                    <span class="so-icon" title="No reviews">
                         
                    </span>
@@ -1481,9 +1796,8 @@ so_main()
                 <div class="so-floats-end">
                  <div class="so-b3-container so--1">
                   <div class="so-b3 so--prop so--disabled so--am so-m-l-5">
-                   <div class="altmetric-embed" data-badge-type="4" data-condensed="" data-doi="10.1136/bmj-2023-076506" data-link-target="_blank" data-uuid="af73256f-4683-e0b6-4fb7-f544eaf94576">
-                    <a href="https://www.altmetric.com/details.php?domain=www.scienceopen.com&amp;citation_id=159208193" style="display:inline-block;" target="_blank">
-                     <img alt="Article has an altmetric score of 1647" height="15" src="https://d1uo4w7k31k5mn.cloudfront.net/v4/1647.png" style="border:0; margin:0; max-width: none;" width="85"/>
+                   <div class="altmetric-embed" data-badge-type="4" data-condensed="" data-doi="10.1021/acssuschemeng.2c04627" data-link-target="_blank" data-uuid="8df3fee9-d78e-d9a8-1afc-eee1e8860bfe">
+                    <a href="https://www.altmetric.com/details.php?domain=www.scienceopen.com&amp;doi=10.1021%2Facssuschemeng.2c04627" style='cursor: pointer; display: inline-block; background-image: url("https://d1uo4w7k31k5mn.cloudfront.net/v4/0.png"); background-repeat: no-repeat; width: 85px; height: 15px;' target="_blank">
                     </a>
                    </div>
                   </div>
@@ -1494,221 +1808,9 @@ so_main()
              </div>
             </div>
             <div class="so-article-list-item">
-             <div class="so-article-list-item-text">
-              <div class="so-m-b-5 so-clearfix">
-               <ul class="so-tiers so-f-l" title="This record is validated by trusted, cross-referenced repositories such as PubMed, CrossRef, PMC or ArXiv. The abstract of the article is available.">
-                <li class="">
-                 Record
-                 <span class="so-sr">
-                  :  found
-                 </span>
-                </li>
-                <li class="">
-                 Abstract
-                 <span class="so-sr">
-                  :  found
-                 </span>
-                </li>
-                <li class="so--disabled">
-                 Article
-                 <span class="so-sr">
-                  : not found
-                 </span>
-                </li>
-               </ul>
-               <span class="so-tiers-open-access so-icon so--open-access" title="Open Access">
-                <span class="so-sr">
-                 Open Access
-                </span>
-               </span>
-              </div>
-              <h3 class="so-article-list-item-title" dir="auto">
-               <a href="https://www.scienceopen.com/document?vid=bc8d1775-a5b0-4698-bb88-8b4d5b562724" target="_blank">
-                Three-year outcomes of post-acute sequelae of COVID-19
-               </a>
-              </h3>
-              <div class="so-secondary so-m-y-2">
-               <a dir="auto" href="/search#author/fc526cea-d763-409a-9558-5078a4c9f8fb" target="_blank">
-                Miao Cai
-               </a>
-               ,
-               <a dir="auto" href="/search#author/a0998488-4ee2-4822-9484-7a70174dba3a" target="_blank">
-                Yan Xie
-               </a>
-               ,
-               <a dir="auto" href="/search#author/14584899-fd0b-42bc-8c3e-626ffbce8e26" target="_blank">
-                Eric J. Topol
-               </a>
-               ,
-               <a dir="auto" href="/search#author/9861ef17-8ca3-47bf-8770-b48001ece4e3" target="_blank">
-                Ziyad Al-Aly
-               </a>
-               (2024)
-              </div>
-              <div class="so-article-list-item-abstract so-widgets-TextCropper" dir="auto" style="height: 40px;">
-               <div>
-                <div class="so-d">
-                 Severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2) infection causes post-acute sequelae of coronavirus disease 2019 (COVID-19) (PASC) in many organ systems. Risks of these sequelae have been characterized up to 2 years after infection, but longer-term follow-up is limited. Here we built a cohort of 135,161 people with SARS-CoV-2 infection and 5,206,835 controls from the US Department of Veterans Affairs who were followed for 3 years to estimate risks of death and PASC. Among non-hospitalized individuals, the increased risk of death was no longer present after the first year of infection, and risk of incident PASC declined over the 3 years but still contributed 9.6 (95% confidence interval (CI): 0.4–18.7) disability-adjusted life years (DALYs) per 1,000 persons in the third year. Among hospitalized individuals, risk of death declined but remained significantly elevated in the third year after infection (incidence rate ratio: 1.29 (95% CI: 1.19–1.40)). Risk of incident PASC declined over the 3 years, but substantial residual risk remained in the third year, leading to 90.0 (95% CI: 55.2–124.8) DALYs per 1,000 persons. Altogether, our findings show reduction of risks over time, but the burden of mortality and health loss remains in the third year among hospitalized individuals.
-                </div>
-               </div>
-               <button class="so-widgets-TextCropper-button" type="button">
-                <span class="so-icon so--accordion-closed">
-                </span>
-                Show more
-               </button>
-              </div>
-             </div>
-             <div class="so-c-b so-o-h">
-              <div class="so-group so-m-t-10">
-               <div class="so-floats so--5">
-                <div class="so-floats-start">
-                 <div class="so-b3-container so--1">
-                  <div class="so-b3-label so--prop">
-                   <img alt="" class="so-small-icon" src="/wicket/resource/org.apache.wicket.Application/css/images/small-icon/article.png"/>
-                  </div>
-                  <button class="so-b3 so--prop" tabindex="0" title="Added to 2 collections" type="button">
-                   <span class="so-icon so--collection">
-                   </span>
-                   <span class="so-sr">
-                    Added to
-                   </span>
-                   <span class="so-d-h5">
-                    2
-                   </span>
-                   <span class="so-sr">
-                    collections
-                   </span>
-                  </button>
-                  <a class="so-b3 so--prop" href="/wicket/bookmarkable/com.ovitas.scienceopen.wicket.presenter_view.document.reviews.ArticleReviewsPage?vid=bc8d1775-a5b0-4698-bb88-8b4d5b562724" role="button" tabindex="0" target="_blank">
-                   <span class="so-icon" title="No reviews">
-                        
-                   </span>
-                   <span class="so-sr">
-                    No reviews
-                   </span>
-                   <span class="so-d-h5">
-                    0
-                   </span>
-                  </a>
-                 </div>
-                </div>
-                <div class="so-floats-end">
-                 <div class="so-b3-container so--1">
-                  <div class="so-b3 so--prop so--disabled so--am so-m-l-5">
-                   <div class="altmetric-embed" data-badge-type="4" data-condensed="" data-doi="10.1038/s41591-024-02987-8" data-link-target="_blank" data-uuid="0a1f8eb2-175f-6217-14fc-3c247c5f8f5f">
-                    <a href="https://www.altmetric.com/details.php?domain=www.scienceopen.com&amp;citation_id=163941870" style="display:inline-block;" target="_blank">
-                     <img alt="Article has an altmetric score of 1914" height="15" src="https://d1uo4w7k31k5mn.cloudfront.net/v4/1914.png" style="border:0; margin:0; max-width: none;" width="85"/>
-                    </a>
-                   </div>
-                  </div>
-                 </div>
-                </div>
-               </div>
-              </div>
-             </div>
-            </div>
-            <div class="so-article-list-item">
-             <div class="so-article-list-item-text">
-              <div class="so-m-b-5 so-clearfix">
-               <ul class="so-tiers so-f-l" title="This record is validated by trusted, cross-referenced repositories such as PubMed or CrossRef.">
-                <li class="">
-                 Record
-                 <span class="so-sr">
-                  :  found
-                 </span>
-                </li>
-                <li class="so--disabled">
-                 Abstract
-                 <span class="so-sr">
-                  : not found
-                 </span>
-                </li>
-                <li class="so--disabled">
-                 Article
-                 <span class="so-sr">
-                  : not found
-                 </span>
-                </li>
-               </ul>
-              </div>
-              <h3 class="so-article-list-item-title" dir="auto">
-               <a href="https://www.scienceopen.com/document?vid=1f109d63-c343-434c-afaf-a971842a6117" target="_blank">
-                Follow-up to Adolescence after Early Peanut Introduction for Allergy Prevention
-               </a>
-              </h3>
-              <div class="so-secondary so-m-y-2">
-               <a dir="auto" href="/search#author/fc9ad161-8a75-4bd3-b576-c57bcccb9e5f" target="_blank">
-                George Du Toit
-               </a>
-               ,
-               <a dir="auto" href="/search#author/1a0911d1-c33f-4c85-92a1-657f0563ead6" target="_blank">
-                Michelle F. Huffaker
-               </a>
-               ,
-               <a dir="auto" href="/search#author/cc384ef1-91c1-47bb-91c2-0033f3728d60" target="_blank">
-                Suzana Radulovic
-               </a>
-               ,
-               <a dir="auto" href="/search#author/994d9fa9-4d77-4c94-8ae5-57545d719628" target="_blank">
-                Mary Feeney
-               </a>
-               ,
-               <a dir="auto" href="/search#author/4c6c90b3-95cd-44f9-af70-e8d49c912165" target="_blank">
-                Helen R. Fisher
-               </a>
-               ,
-               <a href="https://www.scienceopen.com/document?vid=1f109d63-c343-434c-afaf-a971842a6117" target="_blank">
-                16 more...
-               </a>
-               (2024)
-              </div>
-              <div class="so-article-list-item-abstract so-widgets-TextCropper" dir="auto">
-               <div>
-                <div class="so-d">
-                </div>
-               </div>
-              </div>
-             </div>
-             <div class="so-c-b so-o-h">
-              <div class="so-group so-m-t-10">
-               <div class="so-floats so--5">
-                <div class="so-floats-start">
-                 <div class="so-b3-container so--1">
-                  <div class="so-b3-label so--prop">
-                   <img alt="" class="so-small-icon" src="/wicket/resource/org.apache.wicket.Application/css/images/small-icon/article.png"/>
-                  </div>
-                  <a class="so-b3 so--prop" href="/wicket/bookmarkable/com.ovitas.scienceopen.wicket.presenter_view.document.reviews.ArticleReviewsPage?vid=1f109d63-c343-434c-afaf-a971842a6117" role="button" tabindex="0" target="_blank">
-                   <span class="so-icon" title="No reviews">
-                        
-                   </span>
-                   <span class="so-sr">
-                    No reviews
-                   </span>
-                   <span class="so-d-h5">
-                    0
-                   </span>
-                  </a>
-                 </div>
-                </div>
-                <div class="so-floats-end">
-                 <div class="so-b3-container so--1">
-                  <div class="so-b3 so--prop so--disabled so--am so-m-l-5">
-                   <div class="altmetric-embed" data-badge-type="4" data-condensed="" data-doi="10.1056/EVIDoa2300311" data-link-target="_blank" data-uuid="37fa9e8f-1af3-90af-712f-57ca649efc5f">
-                    <a href="https://www.altmetric.com/details.php?domain=www.scienceopen.com&amp;citation_id=163892674" style="display:inline-block;" target="_blank">
-                     <img alt="Article has an altmetric score of 1592" height="15" src="https://d1uo4w7k31k5mn.cloudfront.net/v4/1592.png" style="border:0; margin:0; max-width: none;" width="85"/>
-                    </a>
-                   </div>
-                  </div>
-                 </div>
-                </div>
-               </div>
-              </div>
-             </div>
-            </div>
-            <div class="so-article-list-item">
-             <a href="https://www.scienceopen.com/document?vid=311f6d99-e8c3-4582-b763-c7bc5a84ef0a" target="_blank">
+             <a href="https://www.scienceopen.com/document?vid=1e1caf8c-b644-4931-9c93-cc6be366176c" target="_blank">
               <div class="so-article-list-item-image so-user-image-wrapper so--2-cols">
-               <img alt="" class="so-user-image" src="./document_file/e02d08f8-fbcf-46ee-9219-6d828cca1867/PubMedCentral/medium.png"/>
+               <img alt="" class="so-user-image" src="./document_file/4fde6d40-d5b8-46f7-b834-1dabfb504e4e/PubMedCentral/medium.png"/>
               </div>
              </a>
              <div class="so-article-list-item-text">
@@ -1740,183 +1842,40 @@ so_main()
                </span>
               </div>
               <h3 class="so-article-list-item-title" dir="auto">
-               <a href="https://www.scienceopen.com/document?vid=311f6d99-e8c3-4582-b763-c7bc5a84ef0a" target="_blank">
-                Targeting
-                <i>
-                 Pf
-                </i>
-                Prohibitin 2-Hu-Hsp70A1A complex as a unique approach towards malaria vaccine development
+               <a href="https://www.scienceopen.com/document?vid=1e1caf8c-b644-4931-9c93-cc6be366176c" target="_blank">
+                Toward economical application of carbon capture and utilization technology with near-zero carbon emission
                </a>
               </h3>
               <div class="so-secondary so-m-y-2">
-               <a dir="auto" href="/search#author/45e400a2-f165-4594-989c-d2c5e64e3126" target="_blank">
-                Manisha Marothia
+               <a dir="auto" href="/search#author/c4fb5125-895c-43b9-99af-5041f1627e55" target="_blank">
+                Kezia Megagita Gerby Langie
                </a>
                ,
-               <a dir="auto" href="/search#author/d09da24e-fcac-4789-a45e-14fbaa550739" target="_blank">
-                Ankita Behl
+               <a dir="auto" href="/search#author/ebec7eae-6cb5-4966-b816-66fe873b3273" target="_blank">
+                Kyungjae Tak
                </a>
                ,
-               <a dir="auto" href="/search#author/84e48b11-ab98-4bad-a3b2-43d2fc2ad4e6" target="_blank">
-                Preeti Maurya
+               <a dir="auto" href="/search#author/468711e6-9199-48c9-aae3-413a44447026" target="_blank">
+                Changsoo Kim
                </a>
                ,
-               <a dir="auto" href="/search#author/afa2d548-0cb4-4332-85a4-432f68ebfe40" target="_blank">
-                Monika Saini
+               <a dir="auto" href="/search#author/02b92860-4462-4fa4-81fe-3fe13a184e97" target="_blank">
+                Hee Won Lee
                </a>
                ,
-               <a dir="auto" href="/search#author/87f403c6-d166-4d0a-b9aa-61756d2d2db8" target="_blank">
-                Rumaisha Shoaib
+               <a dir="auto" href="/search#author/0a25c9a8-9ea2-4480-9341-69d2f1d49a9b" target="_blank">
+                Kwangho Park
                </a>
                ,
-               <a href="https://www.scienceopen.com/document?vid=311f6d99-e8c3-4582-b763-c7bc5a84ef0a" target="_blank">
-                15 more...
+               <a href="https://www.scienceopen.com/document?vid=1e1caf8c-b644-4931-9c93-cc6be366176c" target="_blank">
+                9 more...
                </a>
-               (2024)
+               (2022)
               </div>
               <div class="so-article-list-item-abstract so-widgets-TextCropper" dir="auto" style="height: 40px;">
                <div>
                 <div class="so-d">
-                 <p dir="auto" id="d4617746e354" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-                  Malaria parasite invasion to host erythrocytes is mediated by multiple interactions
-            between merozoite ligands and erythrocyte receptors that contribute toward the development
-            of disease pathology. Here, we report a novel antigen
-                  <i>
-                   Plasmodium
-                  </i>
-                  prohibitin “
-                  <i>
-                   Pf
-                  </i>
-                  PHB2” and identify its cognate partner “Hsp70A1A” in host erythrocyte that plays a
-            crucial role in mediating host-parasite interaction during merozoite invasion. Using
-            small interfering RNA (siRNA)- and glucosamine-6-phosphate riboswitch (glmS) ribozyme-mediated
-            approach, we show that loss of Hsp70A1A in red blood cells (RBCs) or
-                  <i>
-                   Pf
-                  </i>
-                  PHB2 in infected red blood cells (iRBCs), respectively, inhibit
-                  <i>
-                   Pf
-                  </i>
-                  PHB2-Hsp70A1A interaction leading to invasion inhibition. Antibodies targeting
-                  <i>
-                   Pf
-                  </i>
-                  PHB2 and monoclonal antibody therapeutics against Hsp70A1A efficiently block parasite
-            invasion. Recombinant
-                  <i>
-                   Pf
-                  </i>
-                  PHB2 binds to RBCs which is inhibited by anti-
-                  <i>
-                   Pf
-                  </i>
-                  PHB2 antibody and monoclonal antibody against Hsp70A1A. The validation of
-                  <i>
-                   Pf
-                  </i>
-                  PHB2 to serve as antigen is further supported by detection of anti-
-                  <i>
-                   Pf
-                  </i>
-                  PHB2 antibody in patient sera. Overall, this study proposes
-                  <i>
-                   Pf
-                  </i>
-                  PHB2 as vaccine candidate and highlights the use of monoclonal antibody therapeutics
-            for future malaria treatment.
-                 </p>
-                 <div class="fig panel" id="undfig1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-                  <a class="named-anchor" id="undfig1">
-                   <!--
-				named anchor
-			-->
-                  </a>
-                  <div class="figure-container so-text-align-c">
-                   <img alt="" class="figure" src="/document_file/e02d08f8-fbcf-46ee-9219-6d828cca1867/PubMedCentral/image/fx1"/>
-                  </div>
-                  <div class="panel-content">
-                  </div>
-                  <p dir="auto" id="d4617746e395" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-                  </p>
-                  <div class="list">
-                   <a class="named-anchor" id="ulist0010">
-                    <!--
-				named anchor
-			-->
-                   </a>
-                   <ul class="so-custom-list" style="list-style-type: none">
-                    <li id="u0010">
-                     <div class="so-custom-list-label so-ol">
-                      •
-                     </div>
-                     <div class="so-custom-list-content so-ol">
-                      <p dir="auto" id="p0010">
-                       Hsp70A1A and
-                       <i>
-                        Pf
-                       </i>
-                       PHB2 were identified as novel host-parasite interacting partners
-                      </p>
-                     </div>
-                    </li>
-                    <li id="u0015">
-                     <div class="so-custom-list-label so-ol">
-                      •
-                     </div>
-                     <div class="so-custom-list-content so-ol">
-                      <p dir="auto" id="p0015">
-                       <i>
-                        Pf
-                       </i>
-                       PHB2-Hsp70A1A interaction facilitates merozoite binding and invasion
-                      </p>
-                     </div>
-                    </li>
-                    <li id="u0020">
-                     <div class="so-custom-list-label so-ol">
-                      •
-                     </div>
-                     <div class="so-custom-list-content so-ol">
-                      <p dir="auto" id="p0020">
-                       Anti
-                       <i>
-                        -Pf
-                       </i>
-                       PHB2 and Hsp70A1A antibodies inhibit Hsp70A1A-
-                       <i>
-                        Pf
-                       </i>
-                       PHB2 binding
-                      </p>
-                     </div>
-                    </li>
-                    <li id="u0025">
-                     <div class="so-custom-list-label so-ol">
-                      •
-                     </div>
-                     <div class="so-custom-list-content so-ol">
-                      <p dir="auto" id="p0025">
-                       <i>
-                        Pf
-                       </i>
-                       PHB2 antibodies in patient sera mark
-                       <i>
-                        Pf
-                       </i>
-                       PHB2 as potent vaccine candidate
-                      </p>
-                     </div>
-                    </li>
-                   </ul>
-                  </div>
-                  <p>
-                  </p>
-                  <p class="first" dir="auto" id="d4617746e434" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-                   Biochemistry; Molecular biology; Immunology.
-                  </p>
-                 </div>
+                 Carbon capture and utilization technology has been studied for its practical ability to reduce CO2 emissions and enable economical chemical production. The main challenge of this technology is that a large amount of thermal energy must be provided to supply high-purity CO2 and purify the product. Herein, we propose a new concept called reaction swing absorption, which produces synthesis gas (syngas) with net-zero CO2 emission through direct electrochemical CO2 reduction in a newly proposed amine solution, triethylamine. Experimental investigations show high CO2 absorption rates (&gt;84%) of triethylamine from low CO2 concentrated flue gas. In addition, the CO Faradaic efficiency in a triethylamine supplied membrane electrode assembly electrolyzer is approximately 30% (@−200 mA cm−2), twice higher than those in conventional alkanolamine solvents. Based on the experimental results and rigorous process modeling, we reveal that reaction swing absorption produces high pressure syngas at a reasonable cost with negligible CO2 emissions. This system provides a fundamental solution for the CO2 crossover and low system stability of electrochemical CO2 reduction.
                 </div>
                </div>
                <button class="so-widgets-TextCropper-button" type="button">
@@ -1936,262 +1895,24 @@ so_main()
                   </div>
                   <div class="so-b3-label so--green-1 so--prop">
                    <span class="so-d-h5">
-                    2
+                    7
                    </span>
                    views
                   </div>
-                  <a class="so-b3 so--prop" href="/wicket/bookmarkable/com.ovitas.scienceopen.wicket.presenter_view.document.reviews.ArticleReviewsPage?vid=311f6d99-e8c3-4582-b763-c7bc5a84ef0a" role="button" tabindex="0" target="_blank">
-                   <span class="so-icon" title="No reviews">
-                        
+                  <button class="so-b3 so--prop" tabindex="0" title="Cited 6 times" type="button">
+                   <span class="so-icon so--citation">
                    </span>
                    <span class="so-sr">
-                    No reviews
+                    Cited
                    </span>
                    <span class="so-d-h5">
-                    0
-                   </span>
-                  </a>
-                 </div>
-                </div>
-                <div class="so-floats-end">
-                 <div class="so-b3-container so--1">
-                  <div class="so-b3 so--prop so--disabled so--am so-m-l-5">
-                   <div class="altmetric-embed" data-badge-type="4" data-condensed="" data-doi="10.1016/j.isci.2024.109918" data-link-target="_blank" data-uuid="24a5ff0f-b1f3-234a-66a5-e5c5b50ee358">
-                    <a href="https://www.altmetric.com/details.php?domain=www.scienceopen.com&amp;citation_id=163671595" style="display:inline-block;" target="_blank">
-                     <img alt="Article has an altmetric score of 1282" height="15" src="https://d1uo4w7k31k5mn.cloudfront.net/v4/1282.png" style="border:0; margin:0; max-width: none;" width="85"/>
-                    </a>
-                   </div>
-                  </div>
-                 </div>
-                </div>
-               </div>
-              </div>
-             </div>
-            </div>
-            <div class="so-article-list-item">
-             <a href="https://www.scienceopen.com/document?vid=030630da-e712-40be-a802-9c16937e0356" target="_blank">
-              <div class="so-article-list-item-image so-user-image-wrapper so--2-cols">
-               <img alt="" class="so-user-image" src="./document_file/5f956db3-60e3-48b1-9f94-f15a927e79ba/PubMedCentral/medium.png"/>
-              </div>
-             </a>
-             <div class="so-article-list-item-text">
-              <div class="so-m-b-5 so-clearfix">
-               <ul class="so-tiers so-f-l" title="This record is validated by trusted, cross-referenced repositories such as PubMed, CrossRef, PMC or ArXiv. The abstract of the article is available and you can read the full article by clicking on the read button.">
-                <li class="">
-                 Record
-                 <span class="so-sr">
-                  :  found
-                 </span>
-                </li>
-                <li class="">
-                 Abstract
-                 <span class="so-sr">
-                  :  found
-                 </span>
-                </li>
-                <li class="">
-                 Article
-                 <span class="so-sr">
-                  :  found
-                 </span>
-                </li>
-               </ul>
-               <span class="so-tiers-open-access so-icon so--open-access" title="Open Access">
-                <span class="so-sr">
-                 Open Access
-                </span>
-               </span>
-              </div>
-              <h3 class="so-article-list-item-title" dir="auto">
-               <a href="https://www.scienceopen.com/document?vid=030630da-e712-40be-a802-9c16937e0356" target="_blank">
-                Coronary bypass surgery guided by computed tomography in a low-risk population
-               </a>
-              </h3>
-              <div class="so-secondary so-m-y-2">
-               <a dir="auto" href="/search#author/832444f3-e709-4932-84b6-eb49a6071394" target="_blank">
-                Patrick W Serruys
-               </a>
-               ,
-               <a dir="auto" href="/search#author/b479d08f-8bf4-4b20-9907-ba0ff68f4be0" target="_blank">
-                Shigetaka Kageyama
-               </a>
-               ,
-               <a dir="auto" href="/search#author/5491bcb9-6f4e-4c27-a3b2-40c9fc7994e4" target="_blank">
-                Giulio Pompilio
-               </a>
-               ,
-               <a dir="auto" href="/search#author/7429c910-e1e9-4d80-a454-3b33301757b5" target="_blank">
-                Daniele Andreini
-               </a>
-               ,
-               <a dir="auto" href="/search#author/4861b575-9ebc-46f4-882c-c6e97c3a0fd7" target="_blank">
-                Gianluca Pontone
-               </a>
-               ,
-               <a href="https://www.scienceopen.com/document?vid=030630da-e712-40be-a802-9c16937e0356" target="_blank">
-                18 more...
-               </a>
-               (2024)
-              </div>
-              <div class="so-article-list-item-abstract so-widgets-TextCropper" dir="auto" style="height: 40px;">
-               <div>
-                <div class="so-d">
-                 Abstract
-   
-      Background and Aims
-      In patients with three-vessel disease and/or left main disease, selecting revascularization strategy based on coronary computed tomography angiography (CCTA) has a high level of virtual agreement with treatment decisions based on invasive coronary angiography (ICA).
-   
-   
-      Methods
-      In this study, coronary artery bypass grafting (CABG) procedures were planned based on CCTA without knowledge of ICA. The CABG strategy was recommended by a central core laboratory assessing the anatomy and functionality of the coronary circulation. The primary feasibility endpoint was the percentage of operations performed without access to the ICA. The primary safety endpoint was graft patency on 30-day follow-up CCTA. Secondary endpoints included topographical adequacy of grafting, major adverse cardiac and cerebrovascular (MACCE), and major bleeding events at 30 days. The study was considered positive if the lower boundary of confidence intervals (CI) for feasibility was ≥75% (NCT04142021).
-   
-   
-      Results
-      The study enrolled 114 patients with a mean (standard deviation) anatomical SYNTAX score and Society of Thoracic Surgery score of 43.6 (15.3) and 0.81 (0.63), respectively. Unblinding ICA was required in one case yielding a feasibility of 99.1% (95% CI 95.2%–100%). The concordance and agreement in revascularization planning between the ICA- and CCTA-Heart Teams was 82.9% with a moderate kappa of 0.58 (95% CI 0.50–0.66) and between the CCTA-Heart Team and actual treatment was 83.7% with a substantial kappa of 0.61 (95% CI 0.53–0.68). The 30-day follow-up CCTA in 102 patients (91.9%) showed an anastomosis patency rate of 92.6%, whilst MACCE was 7.2% and major bleeding 2.7%.
-   
-   
-      Conclusions
-      CABG guided by CCTA is feasible and has an acceptable safety profile in a selected population of complex coronary artery disease.
-                </div>
-               </div>
-               <button class="so-widgets-TextCropper-button" type="button">
-                <span class="so-icon so--accordion-closed">
-                </span>
-                Show more
-               </button>
-              </div>
-             </div>
-             <div class="so-c-b so-o-h">
-              <div class="so-group so-m-t-10">
-               <div class="so-floats so--5">
-                <div class="so-floats-start">
-                 <div class="so-b3-container so--1">
-                  <div class="so-b3-label so--prop">
-                   <img alt="" class="so-small-icon" src="/wicket/resource/org.apache.wicket.Application/css/images/small-icon/article.png"/>
-                  </div>
-                  <div class="so-b3-label so--green-1 so--prop">
-                   <span class="so-d-h5">
-                    4
-                   </span>
-                   views
-                  </div>
-                  <a class="so-b3 so--prop" href="/wicket/bookmarkable/com.ovitas.scienceopen.wicket.presenter_view.document.reviews.ArticleReviewsPage?vid=030630da-e712-40be-a802-9c16937e0356" role="button" tabindex="0" target="_blank">
-                   <span class="so-icon" title="No reviews">
-                        
+                    6
                    </span>
                    <span class="so-sr">
-                    No reviews
-                   </span>
-                   <span class="so-d-h5">
-                    0
-                   </span>
-                  </a>
-                 </div>
-                </div>
-                <div class="so-floats-end">
-                 <div class="so-b3-container so--1">
-                  <div class="so-b3 so--prop so--disabled so--am so-m-l-5">
-                   <div class="altmetric-embed" data-badge-type="4" data-condensed="" data-doi="10.1093/eurheartj/ehae199" data-link-target="_blank" data-uuid="824bd11d-7ff5-b1e9-b225-15dd9f0b951c">
-                    <a href="https://www.altmetric.com/details.php?domain=www.scienceopen.com&amp;citation_id=161625980" style="display:inline-block;" target="_blank">
-                     <img alt="Article has an altmetric score of 1307" height="15" src="https://d1uo4w7k31k5mn.cloudfront.net/v4/1307.png" style="border:0; margin:0; max-width: none;" width="85"/>
-                    </a>
-                   </div>
-                  </div>
-                 </div>
-                </div>
-               </div>
-              </div>
-             </div>
-            </div>
-            <div class="so-article-list-item">
-             <div class="so-article-list-item-text">
-              <div class="so-m-b-5 so-clearfix">
-               <ul class="so-tiers so-f-l" title="This record is validated by trusted, cross-referenced repositories such as PubMed or CrossRef.">
-                <li class="">
-                 Record
-                 <span class="so-sr">
-                  :  found
-                 </span>
-                </li>
-                <li class="so--disabled">
-                 Abstract
-                 <span class="so-sr">
-                  : not found
-                 </span>
-                </li>
-                <li class="so--disabled">
-                 Article
-                 <span class="so-sr">
-                  : not found
-                 </span>
-                </li>
-               </ul>
-               <span class="so-tiers-open-access so-icon so--open-access" title="Open Access">
-                <span class="so-sr">
-                 Open Access
-                </span>
-               </span>
-              </div>
-              <h3 class="so-article-list-item-title" dir="auto">
-               <a href="https://www.scienceopen.com/document?vid=3ca8cf80-0667-4e6c-89fd-c04416fdd4ba" target="_blank">
-                Relative efficacy of masks and respirators as source control for viral aerosol shedding from people infected with SARS-CoV-2: a controlled human exhaled breath aerosol experimental study
-               </a>
-              </h3>
-              <div class="so-secondary so-m-y-2">
-               <a dir="auto" href="/search#author/02644cfa-1fd8-410f-b644-eab7a1a31ce9" target="_blank">
-                Jianyu Lai
-               </a>
-               ,
-               <a dir="auto" href="/search#author/070cac69-ab7e-456f-8659-1e03dd64be8a" target="_blank">
-                Kristen K. Coleman
-               </a>
-               ,
-               <a dir="auto" href="/search#author/1221d208-a4a0-448f-8698-36c728bac4f4" target="_blank">
-                S.-H. Sheldon Tai
-               </a>
-               ,
-               <a dir="auto" href="/search#author/889b6e83-90cd-4d09-9067-daa1eb7b4ccf" target="_blank">
-                Jennifer German
-               </a>
-               ,
-               <a dir="auto" href="/search#author/7d470dc9-151b-4d45-9730-f8a084487c0a" target="_blank">
-                Filbert Hong
-               </a>
-               ,
-               <a href="https://www.scienceopen.com/document?vid=3ca8cf80-0667-4e6c-89fd-c04416fdd4ba" target="_blank">
-                15 more...
-               </a>
-               (2024)
-              </div>
-              <div class="so-article-list-item-abstract so-widgets-TextCropper" dir="auto">
-               <div>
-                <div class="so-d">
-                </div>
-               </div>
-              </div>
-             </div>
-             <div class="so-c-b so-o-h">
-              <div class="so-group so-m-t-10">
-               <div class="so-floats so--5">
-                <div class="so-floats-start">
-                 <div class="so-b3-container so--1">
-                  <div class="so-b3-label so--prop">
-                   <img alt="" class="so-small-icon" src="/wicket/resource/org.apache.wicket.Application/css/images/small-icon/article.png"/>
-                  </div>
-                  <button class="so-b3 so--prop" tabindex="0" title="Added to 1 collection" type="button">
-                   <span class="so-icon so--collection">
-                   </span>
-                   <span class="so-sr">
-                    Added to
-                   </span>
-                   <span class="so-d-h5">
-                    1
-                   </span>
-                   <span class="so-sr">
-                    collection
+                    times
                    </span>
                   </button>
-                  <a class="so-b3 so--prop" href="/wicket/bookmarkable/com.ovitas.scienceopen.wicket.presenter_view.document.reviews.ArticleReviewsPage?vid=3ca8cf80-0667-4e6c-89fd-c04416fdd4ba" role="button" tabindex="0" target="_blank">
+                  <a class="so-b3 so--prop" href="/wicket/bookmarkable/com.ovitas.scienceopen.wicket.presenter_view.document.reviews.ArticleReviewsPage?vid=1e1caf8c-b644-4931-9c93-cc6be366176c" role="button" tabindex="0" target="_blank">
                    <span class="so-icon" title="No reviews">
                         
                    </span>
@@ -2207,9 +1928,9 @@ so_main()
                 <div class="so-floats-end">
                  <div class="so-b3-container so--1">
                   <div class="so-b3 so--prop so--disabled so--am so-m-l-5">
-                   <div class="altmetric-embed" data-badge-type="4" data-condensed="" data-doi="10.1016/j.ebiom.2024.105157" data-link-target="_blank" data-uuid="97e8b12a-24ec-5438-a4d0-8bd1598e9046">
-                    <a href="https://www.altmetric.com/details.php?domain=www.scienceopen.com&amp;citation_id=163937705" style="display:inline-block;" target="_blank">
-                     <img alt="Article has an altmetric score of 1195" height="15" src="https://d1uo4w7k31k5mn.cloudfront.net/v4/1195.png" style="border:0; margin:0; max-width: none;" width="85"/>
+                   <div class="altmetric-embed" data-badge-type="4" data-condensed="" data-doi="10.1038/s41467-022-35239-9" data-link-target="_blank" data-uuid="746a798c-4cd4-f79d-e9d8-835cab440d89">
+                    <a href="https://www.altmetric.com/details.php?domain=www.scienceopen.com&amp;citation_id=139692634" style="display:inline-block;" target="_blank">
+                     <img alt="Article has an altmetric score of 63" height="15" src="https://d1uo4w7k31k5mn.cloudfront.net/v4/63.png" style="border:0; margin:0; max-width: none;" width="85"/>
                     </a>
                    </div>
                   </div>
@@ -2255,7 +1976,7 @@ so_main()
     <script>
      /*<![CDATA[*/
 
-		so_init('search', {"id":"id1","contentTypes":[{"id":"article","name":"Article","kind":125},{"id":"poster","name":"Poster","kind":125},{"id":"proceedingsarticle","name":"Conference Proceedings","kind":125},{"id":"review","name":"Peer Review","kind":125},{"id":"book","name":"Book","kind":125},{"id":"book-chapter","name":"Book Chapter","kind":125},{"id":"data","name":"Dataset","kind":125},{"id":"report","name":"Report","kind":125}],"sort":{"collectionValues":[1,2,0],"contentValues":[0,4,2,3,5,1,6],"journalValues":[0,1,2],"publisherValues":[0,1,2],"userValues":[1,2,0]},"searchPageId":"4ced10934b36e4de95d14b689cd9667e21ad2889c57506f5edfccf8812ed22ff","kind":124});
+		so_init('search', {"id":"id1","contentTypes":[{"id":"article","name":"Article","kind":125},{"id":"poster","name":"Poster","kind":125},{"id":"proceedingsarticle","name":"Conference Proceedings","kind":125},{"id":"review","name":"Peer Review","kind":125},{"id":"book","name":"Book","kind":125},{"id":"book-chapter","name":"Book Chapter","kind":125},{"id":"data","name":"Dataset","kind":125},{"id":"report","name":"Report","kind":125}],"sort":{"collectionValues":[1,2,0],"contentValues":[0,4,2,3,5,1,6],"journalValues":[0,1,2],"publisherValues":[0,1,2],"userValues":[1,2,0]},"searchPageId":"f3b4459863bf011aecee8bff04945f9255ccfe1f531868fffd284c870e4b54f9","kind":124});
 	
 /*]]>*/
     </script>
@@ -2579,25 +2300,25 @@ so_main()
     </div>
    </div>
   </aside>
-  <script src="https://api.altmetric.com/v1/doi/10.3389/fmed.2024.1371645?callback=_altmetric.embed_callback&amp;domain=www.scienceopen.com&amp;key=3c130976ca2b8f2e88f8377633751ba1&amp;cache_until=17-3" type="text/javascript">
+  <script src="https://api.altmetric.com/v1/doi/10.1126/sciadv.adk2350?callback=_altmetric.embed_callback&amp;domain=www.scienceopen.com&amp;key=3c130976ca2b8f2e88f8377633751ba1&amp;cache_until=20-3" type="text/javascript">
   </script>
-  <script src="https://api.altmetric.com/v1/doi/10.1016/s0140-6736(24)00550-6?callback=_altmetric.embed_callback&amp;domain=www.scienceopen.com&amp;key=3c130976ca2b8f2e88f8377633751ba1&amp;cache_until=17-3" type="text/javascript">
+  <script src="https://api.altmetric.com/v1/doi/10.1021/acsomega.3c08722?callback=_altmetric.embed_callback&amp;domain=www.scienceopen.com&amp;key=3c130976ca2b8f2e88f8377633751ba1&amp;cache_until=20-3" type="text/javascript">
   </script>
-  <script src="https://api.altmetric.com/v1/doi/10.1016/s0140-6736(24)00476-8?callback=_altmetric.embed_callback&amp;domain=www.scienceopen.com&amp;key=3c130976ca2b8f2e88f8377633751ba1&amp;cache_until=17-3" type="text/javascript">
+  <script src="https://api.altmetric.com/v1/doi/10.1038/s41467-024-45410-z?callback=_altmetric.embed_callback&amp;domain=www.scienceopen.com&amp;key=3c130976ca2b8f2e88f8377633751ba1&amp;cache_until=20-3" type="text/javascript">
   </script>
-  <script src="https://api.altmetric.com/v1/doi/10.1073/pnas.2319652121?callback=_altmetric.embed_callback&amp;domain=www.scienceopen.com&amp;key=3c130976ca2b8f2e88f8377633751ba1&amp;cache_until=17-3" type="text/javascript">
+  <script src="https://api.altmetric.com/v1/doi/10.1021/acscentsci.3c01064?callback=_altmetric.embed_callback&amp;domain=www.scienceopen.com&amp;key=3c130976ca2b8f2e88f8377633751ba1&amp;cache_until=20-3" type="text/javascript">
   </script>
-  <script src="https://api.altmetric.com/v1/doi/10.1136/bmj-2023-076506?callback=_altmetric.embed_callback&amp;domain=www.scienceopen.com&amp;key=3c130976ca2b8f2e88f8377633751ba1&amp;cache_until=17-3" type="text/javascript">
+  <script src="https://api.altmetric.com/v1/doi/10.1021/acsomega.3c05034?callback=_altmetric.embed_callback&amp;domain=www.scienceopen.com&amp;key=3c130976ca2b8f2e88f8377633751ba1&amp;cache_until=20-3" type="text/javascript">
   </script>
-  <script src="https://api.altmetric.com/v1/doi/10.1038/s41591-024-02987-8?callback=_altmetric.embed_callback&amp;domain=www.scienceopen.com&amp;key=3c130976ca2b8f2e88f8377633751ba1&amp;cache_until=17-3" type="text/javascript">
+  <script src="https://api.altmetric.com/v1/arxiv/2207.12467?callback=_altmetric.embed_callback&amp;domain=www.scienceopen.com&amp;key=3c130976ca2b8f2e88f8377633751ba1&amp;cache_until=20-3" type="text/javascript">
   </script>
-  <script src="https://api.altmetric.com/v1/doi/10.1056/evidoa2300311?callback=_altmetric.embed_callback&amp;domain=www.scienceopen.com&amp;key=3c130976ca2b8f2e88f8377633751ba1&amp;cache_until=17-3" type="text/javascript">
+  <script src="https://api.altmetric.com/v1/arxiv/2311.12411?callback=_altmetric.embed_callback&amp;domain=www.scienceopen.com&amp;key=3c130976ca2b8f2e88f8377633751ba1&amp;cache_until=20-3" type="text/javascript">
   </script>
-  <script src="https://api.altmetric.com/v1/doi/10.1016/j.isci.2024.109918?callback=_altmetric.embed_callback&amp;domain=www.scienceopen.com&amp;key=3c130976ca2b8f2e88f8377633751ba1&amp;cache_until=17-3" type="text/javascript">
+  <script src="https://api.altmetric.com/v1/doi/10.1371/journal.pbio.3002183?callback=_altmetric.embed_callback&amp;domain=www.scienceopen.com&amp;key=3c130976ca2b8f2e88f8377633751ba1&amp;cache_until=20-3" type="text/javascript">
   </script>
-  <script src="https://api.altmetric.com/v1/doi/10.1093/eurheartj/ehae199?callback=_altmetric.embed_callback&amp;domain=www.scienceopen.com&amp;key=3c130976ca2b8f2e88f8377633751ba1&amp;cache_until=17-3" type="text/javascript">
+  <script src="https://api.altmetric.com/v1/doi/10.1021/acssuschemeng.2c04627?callback=_altmetric.embed_callback&amp;domain=www.scienceopen.com&amp;key=3c130976ca2b8f2e88f8377633751ba1&amp;cache_until=20-3" type="text/javascript">
   </script>
-  <script src="https://api.altmetric.com/v1/doi/10.1016/j.ebiom.2024.105157?callback=_altmetric.embed_callback&amp;domain=www.scienceopen.com&amp;key=3c130976ca2b8f2e88f8377633751ba1&amp;cache_until=17-3" type="text/javascript">
+  <script src="https://api.altmetric.com/v1/doi/10.1038/s41467-022-35239-9?callback=_altmetric.embed_callback&amp;domain=www.scienceopen.com&amp;key=3c130976ca2b8f2e88f8377633751ba1&amp;cache_until=20-3" type="text/javascript">
   </script>
  </body>
 </html>
