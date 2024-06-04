@@ -62,9 +62,19 @@ keys = list(papers)
 
 # print(papers)
 
-fields = []
-rows = []
+# fields = []
+# rows = []
 
-with open("scimagojr 2023.csv", "w") as file:
-    csvReader = csv.reader(file)
-    
+# with open("scimagojr 2023.csv", "w") as file:
+#     csvReader = csv.reader(file)
+
+#     for row in csvReader:
+#         rows.append(row)
+
+#     print("done")
+
+import pandas as pd
+
+df = pd.read_csv("scimagojr-2023.csv")
+
+print(df.head())
