@@ -51,4 +51,13 @@ for key in keys:
     parsedPage = soup(pageContent, "html.parser")
     issn = parsedPage.find(itemprop="issn")
     if issn != None:
-        print(issn.get_text(strip=True))
+        issn = issn.get_text(strip=True)
+        issn = issn[0:4] + issn[5:9]
+        print(issn)
+        papers[key] = issn
+    else:
+        del papers[key]
+
+keys = list(papers)
+
+print(papers)
