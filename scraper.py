@@ -23,28 +23,32 @@ service = Service(path)
 driver = webdriver.Chrome(service=service, options=options)
 
 driver.get(url)
-
 time.sleep(0.5)
-
-content = driver.page_source
-
+pageContent = driver.page_source
 driver.quit()
 
-page = soup(content, "html.parser")
+parsedPage = soup(pageContent, "html.parser")
+allTitles = parsedPage.find_all(class_="so-article-list-item-title")
 
-results = page.find_all(class_="so-article-list-item-title")
+papers = {}
 
-dict = {}
+for titles in allTitles:
+    foundLink = titles.find("a")
+    if foundLink != None:
+        paperUrl = foundLink["href"]
+        paperTitle = foundLink.get_text(strip=True)
+        papers[paperTitle] = paperUrl
 
-for result in results:
-    # print(result.prettify())
-    found = result.find("a")
-    if found != None:
-        link = found["href"]
-        text = found.get_text(strip=True)
-        dict[text] = link
+keys = list(papers)
 
-print(dict)
-
-with open("page.txt", "w") as f:
-    f.write(page.prettify())
+for key in keys:
+    # print("Testing: " + papers[key])
+    driver = webdriver.Chrome(service=service, options=options)
+    driver.get(papers[key])
+    time.sleep(0.5)
+    pageContent = driver.page_source
+    driver.quit()
+    parsedPage = soup(pageContent, "html.parser")
+    issn = parsedPage.find(itemprop="issn")
+    if issn != None:
+        print(issn.get_text(strip=True))
