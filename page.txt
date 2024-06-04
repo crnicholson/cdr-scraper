@@ -503,7 +503,7 @@ so_main()
                 Use operators
                </option>
               </select>
-              <button class="so-b3" id="b646bf05-10b8-458e-9a75-0cc8fc802fe7" type="button">
+              <button class="so-b3" id="5959351e-db51-4342-90f0-9749f84c0c59" type="button">
                <span class="so-select-button-label">
                 Phrase search
                </span>
@@ -552,7 +552,7 @@ so_main()
                   is NOT
                  </option>
                 </select>
-                <button class="so-b3 so--green-1" id="9dd4f592-e7b5-402d-841f-c6dd3bda7234" type="button">
+                <button class="so-b3 so--green-1" id="f6406c49-4e78-48af-be22-cd8fde9217c2" type="button">
                  <span class="so-select-button-label">
                   is
                  </span>
@@ -581,7 +581,7 @@ so_main()
                   years
                  </option>
                 </select>
-                <button class="so-b3" id="de63c2a3-d977-4c99-9b22-22a2002c1626" type="button">
+                <button class="so-b3" id="bf6ff132-303a-4248-a951-23892ea6a59c" type="button">
                  <span class="so-select-button-label">
                   years
                  </span>
@@ -608,7 +608,7 @@ so_main()
              <button class="so-b3 so--teal-4" type="button">
               Save search
              </button>
-             <button class="so-b3 so--teal-4" id="459e0ddc-6055-417e-a3ea-26645e3ea2a7" type="button">
+             <button class="so-b3 so--teal-4" id="1938ed62-f038-4522-ab84-a64a8794ed88" type="button">
               Share search
               <span class="so-icon so--dropdown">
               </span>
@@ -647,7 +647,7 @@ so_main()
                  Sort by indexed date
                 </option>
                </select>
-               <button class="so-b3" id="a931463e-63f2-4fa5-883e-59f4f9bfc9f9" type="button">
+               <button class="so-b3" id="e2fb7760-0d29-42d2-acfd-b6b97bc41709" type="button">
                 <span class="so-select-button-label">
                  Sort by relevance
                 </span>
@@ -758,6 +758,12 @@ so_main()
                   <div class="so-b3-label so--prop">
                    <img alt="" class="so-small-icon" src="/wicket/resource/org.apache.wicket.Application/css/images/small-icon/article.png"/>
                   </div>
+                  <div class="so-b3-label so--green-1 so--prop">
+                   <span class="so-d-h5">
+                    1
+                   </span>
+                   view
+                  </div>
                   <a class="so-b3 so--prop" href="/wicket/bookmarkable/com.ovitas.scienceopen.wicket.presenter_view.document.reviews.ArticleReviewsPage?vid=af69a724-0f56-4e4a-aaa9-7bde2f866333" role="button" tabindex="0" target="_blank">
                    <span class="so-icon" title="No reviews">
                         
@@ -774,7 +780,7 @@ so_main()
                 <div class="so-floats-end">
                  <div class="so-b3-container so--1">
                   <div class="so-b3 so--prop so--disabled so--am so-m-l-5">
-                   <div class="altmetric-embed" data-badge-type="4" data-condensed="" data-doi="10.1126/sciadv.adk2350" data-link-target="_blank" data-uuid="7996caa1-125d-df90-14c8-e642d3475fa7">
+                   <div class="altmetric-embed" data-badge-type="4" data-condensed="" data-doi="10.1126/sciadv.adk2350" data-link-target="_blank" data-uuid="8da291b0-96e9-0bc8-d4c2-67b77a60621a">
                     <a href="https://www.altmetric.com/details.php?domain=www.scienceopen.com&amp;citation_id=162667187" style="display:inline-block;" target="_blank">
                      <img alt="Article has an altmetric score of 7" height="15" src="https://d1uo4w7k31k5mn.cloudfront.net/v4/7.png" style="border:0; margin:0; max-width: none;" width="85"/>
                     </a>
@@ -946,7 +952,7 @@ so_main()
                 <div class="so-floats-end">
                  <div class="so-b3-container so--1">
                   <div class="so-b3 so--prop so--disabled so--am so-m-l-5">
-                   <div class="altmetric-embed" data-badge-type="4" data-condensed="" data-doi="10.1021/acsomega.3c08722" data-link-target="_blank" data-uuid="c9ac4c57-70cc-1506-b87f-a0e154e9fd76">
+                   <div class="altmetric-embed" data-badge-type="4" data-condensed="" data-doi="10.1021/acsomega.3c08722" data-link-target="_blank" data-uuid="468f257d-fb44-6942-be95-097a966b756d">
                     <a href="https://www.altmetric.com/details.php?domain=www.scienceopen.com&amp;doi=10.1021%2Facsomega.3c08722" style='cursor: pointer; display: inline-block; background-image: url("https://d1uo4w7k31k5mn.cloudfront.net/v4/0.png"); background-repeat: no-repeat; width: 85px; height: 15px;' target="_blank">
                     </a>
                    </div>
@@ -1078,7 +1084,7 @@ so_main()
                 <div class="so-floats-end">
                  <div class="so-b3-container so--1">
                   <div class="so-b3 so--prop so--disabled so--am so-m-l-5">
-                   <div class="altmetric-embed" data-badge-type="4" data-condensed="" data-doi="10.1038/s41467-024-45410-z" data-link-target="_blank" data-uuid="af3fd428-ed27-4b87-4273-4c1eeddf63f7">
+                   <div class="altmetric-embed" data-badge-type="4" data-condensed="" data-doi="10.1038/s41467-024-45410-z" data-link-target="_blank" data-uuid="6a055885-f4a1-20be-06dd-6b23083386e6">
                     <a href="https://www.altmetric.com/details.php?domain=www.scienceopen.com&amp;citation_id=159241286" style="display:inline-block;" target="_blank">
                      <img alt="Article has an altmetric score of 8" height="15" src="https://d1uo4w7k31k5mn.cloudfront.net/v4/8.png" style="border:0; margin:0; max-width: none;" width="85"/>
                     </a>
@@ -1166,7 +1172,7 @@ so_main()
                 <div class="so-floats-end">
                  <div class="so-b3-container so--1">
                   <div class="so-b3 so--prop so--disabled so--am so-m-l-5">
-                   <div class="altmetric-embed" data-badge-type="4" data-condensed="" data-doi="10.1021/acscentsci.3c01064" data-link-target="_blank" data-uuid="3e33ebcd-1c2e-99e3-6677-7f71a60291f3">
+                   <div class="altmetric-embed" data-badge-type="4" data-condensed="" data-doi="10.1021/acscentsci.3c01064" data-link-target="_blank" data-uuid="be18ab92-7645-604f-0e3c-6d8e574bcc8c">
                     <a href="https://www.altmetric.com/details.php?domain=www.scienceopen.com&amp;citation_id=154905777" style="display:inline-block;" target="_blank">
                      <img alt="Article has an altmetric score of 3" height="15" src="https://d1uo4w7k31k5mn.cloudfront.net/v4/3.png" style="border:0; margin:0; max-width: none;" width="85"/>
                     </a>
@@ -1285,7 +1291,7 @@ materials design through machine learning driven research framework.
                 <div class="so-floats-end">
                  <div class="so-b3-container so--1">
                   <div class="so-b3 so--prop so--disabled so--am so-m-l-5">
-                   <div class="altmetric-embed" data-arxiv-id="2207.12467" data-badge-type="4" data-condensed="" data-link-target="_blank" data-uuid="103093b0-8aac-f863-857e-df405d36e5b0">
+                   <div class="altmetric-embed" data-arxiv-id="2207.12467" data-badge-type="4" data-condensed="" data-link-target="_blank" data-uuid="2a9aad54-af5a-e82e-bd40-d6edd71cc1bc">
                     <a href="https://www.altmetric.com/details.php?domain=www.scienceopen.com&amp;citation_id=133172669" style="display:inline-block;" target="_blank">
                      <img alt="Article has an altmetric score of 2" height="15" src="https://d1uo4w7k31k5mn.cloudfront.net/v4/2.png" style="border:0; margin:0; max-width: none;" width="85"/>
                     </a>
@@ -1392,7 +1398,7 @@ simulations of strongly correlated fragments.
                 <div class="so-floats-end">
                  <div class="so-b3-container so--1">
                   <div class="so-b3 so--prop so--disabled so--am so-m-l-5">
-                   <div class="altmetric-embed" data-arxiv-id="2311.12411" data-badge-type="4" data-condensed="" data-link-target="_blank" data-uuid="09c558c0-f12e-5775-fbb5-520671ef1c76">
+                   <div class="altmetric-embed" data-arxiv-id="2311.12411" data-badge-type="4" data-condensed="" data-link-target="_blank" data-uuid="517d2007-a456-8990-9a87-ab05a86dd6ec">
                     <a href="https://www.altmetric.com/details.php?domain=www.scienceopen.com&amp;citation_id=156720274" style="display:inline-block;" target="_blank">
                      <img alt="Article has an altmetric score of 1" height="15" src="https://d1uo4w7k31k5mn.cloudfront.net/v4/1.png" style="border:0; margin:0; max-width: none;" width="85"/>
                     </a>
@@ -1513,7 +1519,7 @@ simulations of strongly correlated fragments.
                 <div class="so-floats-end">
                  <div class="so-b3-container so--1">
                   <div class="so-b3 so--prop so--disabled so--am so-m-l-5">
-                   <div class="altmetric-embed" data-badge-type="4" data-condensed="" data-doi="10.1371/journal.pbio.3002183" data-link-target="_blank" data-uuid="f0a6c9d6-a29b-2ef3-bbc0-0c072b15575f">
+                   <div class="altmetric-embed" data-badge-type="4" data-condensed="" data-doi="10.1371/journal.pbio.3002183" data-link-target="_blank" data-uuid="937f261e-4606-ac14-8997-ccf0b2792493">
                     <a href="https://www.altmetric.com/details.php?domain=www.scienceopen.com&amp;citation_id=151254629" style="display:inline-block;" target="_blank">
                      <img alt="Article has an altmetric score of 112" height="15" src="https://d1uo4w7k31k5mn.cloudfront.net/v4/112.png" style="border:0; margin:0; max-width: none;" width="85"/>
                     </a>
@@ -1656,7 +1662,7 @@ are produced in the combustion process.
                 <div class="so-floats-end">
                  <div class="so-b3-container so--1">
                   <div class="so-b3 so--prop so--disabled so--am so-m-l-5">
-                   <div class="altmetric-embed" data-badge-type="4" data-condensed="" data-doi="10.1021/acsomega.3c05034" data-link-target="_blank" data-uuid="427efa8e-a8cb-18de-e951-ab07bbcb3fb7">
+                   <div class="altmetric-embed" data-badge-type="4" data-condensed="" data-doi="10.1021/acsomega.3c05034" data-link-target="_blank" data-uuid="a47d3895-986e-b8e8-54b0-266103847930">
                     <a href="https://www.altmetric.com/details.php?domain=www.scienceopen.com&amp;doi=10.1021%2Facsomega.3c05034" style='cursor: pointer; display: inline-block; background-image: url("https://d1uo4w7k31k5mn.cloudfront.net/v4/0.png"); background-repeat: no-repeat; width: 85px; height: 15px;' target="_blank">
                     </a>
                    </div>
@@ -1796,7 +1802,7 @@ developed and deployed.
                 <div class="so-floats-end">
                  <div class="so-b3-container so--1">
                   <div class="so-b3 so--prop so--disabled so--am so-m-l-5">
-                   <div class="altmetric-embed" data-badge-type="4" data-condensed="" data-doi="10.1021/acssuschemeng.2c04627" data-link-target="_blank" data-uuid="dad5ab07-cbf9-bb5a-ded1-d3298563d20d">
+                   <div class="altmetric-embed" data-badge-type="4" data-condensed="" data-doi="10.1021/acssuschemeng.2c04627" data-link-target="_blank" data-uuid="1caeb984-748b-dc8e-46a3-301293519415">
                     <a href="https://www.altmetric.com/details.php?domain=www.scienceopen.com&amp;doi=10.1021%2Facssuschemeng.2c04627" style='cursor: pointer; display: inline-block; background-image: url("https://d1uo4w7k31k5mn.cloudfront.net/v4/0.png"); background-repeat: no-repeat; width: 85px; height: 15px;' target="_blank">
                     </a>
                    </div>
@@ -1928,7 +1934,7 @@ developed and deployed.
                 <div class="so-floats-end">
                  <div class="so-b3-container so--1">
                   <div class="so-b3 so--prop so--disabled so--am so-m-l-5">
-                   <div class="altmetric-embed" data-badge-type="4" data-condensed="" data-doi="10.1038/s41467-022-35239-9" data-link-target="_blank" data-uuid="063a2d23-efe4-f21e-15b4-6304cdab6665">
+                   <div class="altmetric-embed" data-badge-type="4" data-condensed="" data-doi="10.1038/s41467-022-35239-9" data-link-target="_blank" data-uuid="044907ec-4005-76c8-55de-2d4290fb5f55">
                     <a href="https://www.altmetric.com/details.php?domain=www.scienceopen.com&amp;citation_id=139692634" style="display:inline-block;" target="_blank">
                      <img alt="Article has an altmetric score of 63" height="15" src="https://d1uo4w7k31k5mn.cloudfront.net/v4/63.png" style="border:0; margin:0; max-width: none;" width="85"/>
                     </a>
@@ -1963,1103 +1969,10 @@ developed and deployed.
         </div>
         <div class="so-col so--c-8 so--c-pull-16 so--d-6 so--d-pull-18">
          <div class="so-m-y-20">
-          <div class="so-layout-section">
-           <h4 class="so-layout-section-title">
-            Narrow by content type
-           </h4>
-           <ul class="so-tab-l-container">
-            <li>
-             <button class="so-tab-l so--normal" type="button">
-              <span class="so-tab-l-counter">
-               778
-              </span>
-              <span class="so-tab-l-label">
-               <img alt="" class="so-small-icon" src="css/images/small-icon/article.png"/>
-               Article
-              </span>
-             </button>
-            </li>
-            <li>
-             <button class="so-tab-l so--normal" type="button">
-              <span class="so-tab-l-counter">
-               5
-              </span>
-              <span class="so-tab-l-label">
-               <img alt="" class="so-small-icon" src="css/images/small-icon/book.png"/>
-               Book Chapter
-              </span>
-             </button>
-            </li>
-            <li>
-             <button class="so-tab-l so--normal" type="button">
-              <span class="so-tab-l-counter">
-               4
-              </span>
-              <span class="so-tab-l-label">
-               <img alt="" class="so-small-icon" src="css/images/small-icon/book.png"/>
-               Book
-              </span>
-             </button>
-            </li>
-            <li>
-             <button class="so-tab-l so--normal" type="button">
-              <span class="so-tab-l-counter">
-               1
-              </span>
-              <span class="so-tab-l-label">
-               <img alt="" class="so-small-icon" src="css/images/small-icon/article.png"/>
-               Conference Proceedings
-              </span>
-             </button>
-            </li>
-            <li>
-             <button class="so-tab-l so--normal" type="button">
-              <span class="so-tab-l-counter">
-               1
-              </span>
-              <span class="so-tab-l-label">
-               <img alt="" class="so-small-icon" src="css/images/small-icon/article.png"/>
-               Report
-              </span>
-             </button>
-            </li>
-           </ul>
+          <div class="so-progress">
           </div>
-          <div class="so-layout-section">
-           <h4 class="so-layout-section-title">
-            Narrow by collection
-           </h4>
-           <ul class="so-tab-l-container">
-            <li>
-             <button class="so-tab-l so--normal" type="button">
-              <span class="so-tab-l-counter">
-               123
-              </span>
-              <span class="so-tab-l-label">
-               Climate Change: Open Access
-              </span>
-             </button>
-            </li>
-            <li>
-             <button class="so-tab-l so--normal" type="button">
-              <span class="so-tab-l-counter">
-               10
-              </span>
-              <span class="so-tab-l-label">
-               UN Sustainable Development Goals
-              </span>
-             </button>
-            </li>
-            <li>
-             <button class="so-tab-l so--normal" type="button">
-              <span class="so-tab-l-counter">
-               8
-              </span>
-              <span class="so-tab-l-label">
-               Novel Coronavirus Disease COVID-19
-              </span>
-             </button>
-            </li>
-            <li>
-             <button class="so-tab-l so--normal" type="button">
-              <span class="so-tab-l-counter">
-               6
-              </span>
-              <span class="so-tab-l-label">
-               Long Covid Research Collection
-              </span>
-             </button>
-            </li>
-            <li>
-             <button class="so-tab-l so--normal" type="button">
-              <span class="so-tab-l-counter">
-               4
-              </span>
-              <span class="so-tab-l-label">
-               UCL: UN SDG 13 Climate Action
-              </span>
-             </button>
-            </li>
-            <li style="display: none;">
-             <button class="so-tab-l so--normal" type="button">
-              <span class="so-tab-l-counter">
-               3
-              </span>
-              <span class="so-tab-l-label">
-               UCL: UN SDG 09 Industry, Innovation, and Infrastructure
-              </span>
-             </button>
-            </li>
-            <li style="display: none;">
-             <button class="so-tab-l so--normal" type="button">
-              <span class="so-tab-l-counter">
-               2
-              </span>
-              <span class="so-tab-l-label">
-               Microbial Genomics
-              </span>
-             </button>
-            </li>
-            <li style="display: none;">
-             <button class="so-tab-l so--normal" type="button">
-              <span class="so-tab-l-counter">
-               2
-              </span>
-              <span class="so-tab-l-label">
-               UCL: UN SDG 12 Responsible Consumption and Production
-              </span>
-             </button>
-            </li>
-            <li style="display: none;">
-             <button class="so-tab-l so--normal" type="button">
-              <span class="so-tab-l-counter">
-               2
-              </span>
-              <span class="so-tab-l-label">
-               ScienceOpen Preprints
-              </span>
-             </button>
-            </li>
-            <li style="display: none;">
-             <button class="so-tab-l so--normal" type="button">
-              <span class="so-tab-l-counter">
-               2
-              </span>
-              <span class="so-tab-l-label">
-               EDP Sciences: UN SDGs research collection
-              </span>
-             </button>
-            </li>
-            <li style="display: none;">
-             <button class="so-tab-l so--normal" type="button">
-              <span class="so-tab-l-counter">
-               1
-              </span>
-              <span class="so-tab-l-label">
-               Nigerian Journal of Tropical Engineering
-              </span>
-             </button>
-            </li>
-            <li style="display: none;">
-             <button class="so-tab-l so--normal" type="button">
-              <span class="so-tab-l-counter">
-               1
-              </span>
-              <span class="so-tab-l-label">
-               UCL: UN SDG 07 Affordable and Clean Energy
-              </span>
-             </button>
-            </li>
-            <li style="display: none;">
-             <button class="so-tab-l so--normal" type="button">
-              <span class="so-tab-l-counter">
-               1
-              </span>
-              <span class="so-tab-l-label">
-               Indigenous Knowledge
-              </span>
-             </button>
-            </li>
-            <li style="display: none;">
-             <button class="so-tab-l so--normal" type="button">
-              <span class="so-tab-l-counter">
-               1
-              </span>
-              <span class="so-tab-l-label">
-               UCL: UN SDG 08 Decent Work and Economic Growth
-              </span>
-             </button>
-            </li>
-            <li style="display: none;">
-             <button class="so-tab-l so--normal" type="button">
-              <span class="so-tab-l-counter">
-               1
-              </span>
-              <span class="so-tab-l-label">
-               Research from Sudan
-              </span>
-             </button>
-            </li>
-            <li style="display: none;">
-             <button class="so-tab-l so--normal" type="button">
-              <span class="so-tab-l-counter">
-               1
-              </span>
-              <span class="so-tab-l-label">
-               South African Journal of Science
-              </span>
-             </button>
-            </li>
-            <li style="display: none;">
-             <button class="so-tab-l so--normal" type="button">
-              <span class="so-tab-l-counter">
-               1
-              </span>
-              <span class="so-tab-l-label">
-               PLOS Climate
-              </span>
-             </button>
-            </li>
-           </ul>
-           <div class="so-b3-container so-ta-c">
-            <button class="so-b3 so--transparent so--borderless so--roundless" title="Show all" type="button">
-             <span class="so-icon so--accordion-closed">
-             </span>
-            </button>
-           </div>
-          </div>
-          <div class="so-layout-section">
-           <h4 class="so-layout-section-title">
-            Narrow by publisher
-           </h4>
-           <ul class="so-tab-l-container">
-            <li>
-             <button class="so-tab-l so--normal" type="button">
-              <span class="so-tab-l-counter">
-               125
-              </span>
-              <span class="so-tab-l-label">
-               Elsevier BV
-              </span>
-             </button>
-            </li>
-            <li>
-             <button class="so-tab-l so--normal" type="button">
-              <span class="so-tab-l-counter">
-               91
-              </span>
-              <span class="so-tab-l-label">
-               Nature Publishing Group UK
-              </span>
-             </button>
-            </li>
-            <li>
-             <button class="so-tab-l so--normal" type="button">
-              <span class="so-tab-l-counter">
-               84
-              </span>
-              <span class="so-tab-l-label">
-               American Chemical Society
-              </span>
-             </button>
-            </li>
-            <li>
-             <button class="so-tab-l so--normal" type="button">
-              <span class="so-tab-l-counter">
-               43
-              </span>
-              <span class="so-tab-l-label">
-               MDPI
-              </span>
-             </button>
-            </li>
-            <li>
-             <button class="so-tab-l so--normal" type="button">
-              <span class="so-tab-l-counter">
-               36
-              </span>
-              <span class="so-tab-l-label">
-               Elsevier
-              </span>
-             </button>
-            </li>
-            <li style="display: none;">
-             <button class="so-tab-l so--normal" type="button">
-              <span class="so-tab-l-counter">
-               32
-              </span>
-              <span class="so-tab-l-label">
-               Frontiers Media S.A.
-              </span>
-             </button>
-            </li>
-            <li style="display: none;">
-             <button class="so-tab-l so--normal" type="button">
-              <span class="so-tab-l-counter">
-               29
-              </span>
-              <span class="so-tab-l-label">
-               Royal Society of Chemistry (RSC)
-              </span>
-             </button>
-            </li>
-            <li style="display: none;">
-             <button class="so-tab-l so--normal" type="button">
-              <span class="so-tab-l-counter">
-               28
-              </span>
-              <span class="so-tab-l-label">
-               Springer Science and Business Media LLC
-              </span>
-             </button>
-            </li>
-            <li style="display: none;">
-             <button class="so-tab-l so--normal" type="button">
-              <span class="so-tab-l-counter">
-               27
-              </span>
-              <span class="so-tab-l-label">
-               American Chemical Society (ACS)
-              </span>
-             </button>
-            </li>
-            <li style="display: none;">
-             <button class="so-tab-l so--normal" type="button">
-              <span class="so-tab-l-counter">
-               25
-              </span>
-              <span class="so-tab-l-label">
-               Wiley
-              </span>
-             </button>
-            </li>
-            <li style="display: none;">
-             <button class="so-tab-l so--normal" type="button">
-              <span class="so-tab-l-counter">
-               13
-              </span>
-              <span class="so-tab-l-label">
-               The Royal Society of Chemistry
-              </span>
-             </button>
-            </li>
-            <li style="display: none;">
-             <button class="so-tab-l so--normal" type="button">
-              <span class="so-tab-l-counter">
-               12
-              </span>
-              <span class="so-tab-l-label">
-               John Wiley and Sons Inc.
-              </span>
-             </button>
-            </li>
-            <li style="display: none;">
-             <button class="so-tab-l so--normal" type="button">
-              <span class="so-tab-l-counter">
-               11
-              </span>
-              <span class="so-tab-l-label">
-               National Academy of Sciences
-              </span>
-             </button>
-            </li>
-            <li style="display: none;">
-             <button class="so-tab-l so--normal" type="button">
-              <span class="so-tab-l-counter">
-               9
-              </span>
-              <span class="so-tab-l-label">
-               Springer
-              </span>
-             </button>
-            </li>
-            <li style="display: none;">
-             <button class="so-tab-l so--normal" type="button">
-              <span class="so-tab-l-counter">
-               6
-              </span>
-              <span class="so-tab-l-label">
-               American Association for the Advancement of Science (AAAS)
-              </span>
-             </button>
-            </li>
-            <li style="display: none;">
-             <button class="so-tab-l so--normal" type="button">
-              <span class="so-tab-l-counter">
-               6
-              </span>
-              <span class="so-tab-l-label">
-               IOP Publishing
-              </span>
-             </button>
-            </li>
-            <li style="display: none;">
-             <button class="so-tab-l so--normal" type="button">
-              <span class="so-tab-l-counter">
-               5
-              </span>
-              <span class="so-tab-l-label">
-               American Geophysical Union (AGU)
-              </span>
-             </button>
-            </li>
-            <li style="display: none;">
-             <button class="so-tab-l so--normal" type="button">
-              <span class="so-tab-l-counter">
-               5
-              </span>
-              <span class="so-tab-l-label">
-               Oxford University Press
-              </span>
-             </button>
-            </li>
-            <li style="display: none;">
-             <button class="so-tab-l so--normal" type="button">
-              <span class="so-tab-l-counter">
-               4
-              </span>
-              <span class="so-tab-l-label">
-               BioMed Central
-              </span>
-             </button>
-            </li>
-            <li style="display: none;">
-             <button class="so-tab-l so--normal" type="button">
-              <span class="so-tab-l-counter">
-               4
-              </span>
-              <span class="so-tab-l-label">
-               Public Library of Science
-              </span>
-             </button>
-            </li>
-           </ul>
-           <div class="so-b3-container so-ta-c">
-            <button class="so-b3 so--transparent so--borderless so--roundless" title="Show all" type="button">
-             <span class="so-icon so--accordion-closed">
-             </span>
-            </button>
-           </div>
-          </div>
-          <div class="so-layout-section">
-           <h4 class="so-layout-section-title">
-            Narrow by journal
-           </h4>
-           <ul class="so-tab-l-container">
-            <li>
-             <button class="so-tab-l so--normal" type="button">
-              <span class="so-tab-l-counter">
-               41
-              </span>
-              <span class="so-tab-l-label">
-               Scientific Reports
-              </span>
-             </button>
-            </li>
-            <li>
-             <button class="so-tab-l so--normal" type="button">
-              <span class="so-tab-l-counter">
-               36
-              </span>
-              <span class="so-tab-l-label">
-               Nature Communications
-              </span>
-             </button>
-            </li>
-            <li>
-             <button class="so-tab-l so--normal" type="button">
-              <span class="so-tab-l-counter">
-               25
-              </span>
-              <span class="so-tab-l-label">
-               ACS Omega
-              </span>
-             </button>
-            </li>
-            <li>
-             <button class="so-tab-l so--normal" type="button">
-              <span class="so-tab-l-counter">
-               23
-              </span>
-              <span class="so-tab-l-label">
-               Environmental Science &amp; Technology
-              </span>
-             </button>
-            </li>
-            <li>
-             <button class="so-tab-l so--normal" type="button">
-              <span class="so-tab-l-counter">
-               23
-              </span>
-              <span class="so-tab-l-label">
-               Heliyon
-              </span>
-             </button>
-            </li>
-            <li style="display: none;">
-             <button class="so-tab-l so--normal" type="button">
-              <span class="so-tab-l-counter">
-               20
-              </span>
-              <span class="so-tab-l-label">
-               Carbon Capture Science &amp; Technology
-              </span>
-             </button>
-            </li>
-            <li style="display: none;">
-             <button class="so-tab-l so--normal" type="button">
-              <span class="so-tab-l-counter">
-               16
-              </span>
-              <span class="so-tab-l-label">
-               ACS Applied Materials &amp; Interfaces
-              </span>
-             </button>
-            </li>
-            <li style="display: none;">
-             <button class="so-tab-l so--normal" type="button">
-              <span class="so-tab-l-counter">
-               13
-              </span>
-              <span class="so-tab-l-label">
-               Science
-              </span>
-             </button>
-            </li>
-            <li style="display: none;">
-             <button class="so-tab-l so--normal" type="button">
-              <span class="so-tab-l-counter">
-               11
-              </span>
-              <span class="so-tab-l-label">
-               Fuel
-              </span>
-             </button>
-            </li>
-            <li style="display: none;">
-             <button class="so-tab-l so--normal" type="button">
-              <span class="so-tab-l-counter">
-               11
-              </span>
-              <span class="so-tab-l-label">
-               Proceedings of the National Academy of Sciences of the United States of America
-              </span>
-             </button>
-            </li>
-            <li style="display: none;">
-             <button class="so-tab-l so--normal" type="button">
-              <span class="so-tab-l-counter">
-               10
-              </span>
-              <span class="so-tab-l-label">
-               ACS Sustainable Chemistry &amp; Engineering
-              </span>
-             </button>
-            </li>
-            <li style="display: none;">
-             <button class="so-tab-l so--normal" type="button">
-              <span class="so-tab-l-counter">
-               10
-              </span>
-              <span class="so-tab-l-label">
-               Communications Chemistry
-              </span>
-             </button>
-            </li>
-            <li style="display: none;">
-             <button class="so-tab-l so--normal" type="button">
-              <span class="so-tab-l-counter">
-               10
-              </span>
-              <span class="so-tab-l-label">
-               Energies
-              </span>
-             </button>
-            </li>
-            <li style="display: none;">
-             <button class="so-tab-l so--normal" type="button">
-              <span class="so-tab-l-counter">
-               9
-              </span>
-              <span class="so-tab-l-label">
-               Journal of Cleaner Production
-              </span>
-             </button>
-            </li>
-            <li style="display: none;">
-             <button class="so-tab-l so--normal" type="button">
-              <span class="so-tab-l-counter">
-               9
-              </span>
-              <span class="so-tab-l-label">
-               Sustainability
-              </span>
-             </button>
-            </li>
-            <li style="display: none;">
-             <button class="so-tab-l so--normal" type="button">
-              <span class="so-tab-l-counter">
-               8
-              </span>
-              <span class="so-tab-l-label">
-               Energy &amp; Environmental Science
-              </span>
-             </button>
-            </li>
-            <li style="display: none;">
-             <button class="so-tab-l so--normal" type="button">
-              <span class="so-tab-l-counter">
-               8
-              </span>
-              <span class="so-tab-l-label">
-               Nature
-              </span>
-             </button>
-            </li>
-            <li style="display: none;">
-             <button class="so-tab-l so--normal" type="button">
-              <span class="so-tab-l-counter">
-               8
-              </span>
-              <span class="so-tab-l-label">
-               Renewable and Sustainable Energy Reviews
-              </span>
-             </button>
-            </li>
-            <li style="display: none;">
-             <button class="so-tab-l so--normal" type="button">
-              <span class="so-tab-l-counter">
-               7
-              </span>
-              <span class="so-tab-l-label">
-               Bioresource Technology
-              </span>
-             </button>
-            </li>
-            <li style="display: none;">
-             <button class="so-tab-l so--normal" type="button">
-              <span class="so-tab-l-counter">
-               7
-              </span>
-              <span class="so-tab-l-label">
-               Environmental Research Letters
-              </span>
-             </button>
-            </li>
-           </ul>
-           <div class="so-b3-container so-ta-c">
-            <button class="so-b3 so--transparent so--borderless so--roundless" title="Show all" type="button">
-             <span class="so-icon so--accordion-closed">
-             </span>
-            </button>
-           </div>
-          </div>
-          <div class="so-layout-section">
-           <h4 class="so-layout-section-title">
-            Narrow by discipline
-           </h4>
-           <ul class="so-tab-l-container">
-            <li>
-             <button class="so-tab-l so--normal" type="button">
-              <span class="so-tab-l-counter">
-               83
-              </span>
-              <span class="so-tab-l-label">
-               Uncategorized
-              </span>
-             </button>
-            </li>
-            <li>
-             <button class="so-tab-l so--normal" type="button">
-              <span class="so-tab-l-counter">
-               17
-              </span>
-              <span class="so-tab-l-label">
-               General environmental science
-              </span>
-             </button>
-            </li>
-            <li>
-             <button class="so-tab-l so--normal" type="button">
-              <span class="so-tab-l-counter">
-               15
-              </span>
-              <span class="so-tab-l-label">
-               Artificial intelligence
-              </span>
-             </button>
-            </li>
-            <li>
-             <button class="so-tab-l so--normal" type="button">
-              <span class="so-tab-l-counter">
-               13
-              </span>
-              <span class="so-tab-l-label">
-               Condensed matter
-              </span>
-             </button>
-            </li>
-            <li>
-             <button class="so-tab-l so--normal" type="button">
-              <span class="so-tab-l-counter">
-               13
-              </span>
-              <span class="so-tab-l-label">
-               Performance, Systems &amp; Control
-              </span>
-             </button>
-            </li>
-            <li style="display: none;">
-             <button class="so-tab-l so--normal" type="button">
-              <span class="so-tab-l-counter">
-               11
-              </span>
-              <span class="so-tab-l-label">
-               Geophysics
-              </span>
-             </button>
-            </li>
-            <li style="display: none;">
-             <button class="so-tab-l so--normal" type="button">
-              <span class="so-tab-l-counter">
-               10
-              </span>
-              <span class="so-tab-l-label">
-               Plant science &amp; Botany
-              </span>
-             </button>
-            </li>
-            <li style="display: none;">
-             <button class="so-tab-l so--normal" type="button">
-              <span class="so-tab-l-counter">
-               9
-              </span>
-              <span class="so-tab-l-label">
-               Physical chemistry
-              </span>
-             </button>
-            </li>
-            <li style="display: none;">
-             <button class="so-tab-l so--normal" type="button">
-              <span class="so-tab-l-counter">
-               9
-              </span>
-              <span class="so-tab-l-label">
-               Materials technology
-              </span>
-             </button>
-            </li>
-            <li style="display: none;">
-             <button class="so-tab-l so--normal" type="button">
-              <span class="so-tab-l-counter">
-               8
-              </span>
-              <span class="so-tab-l-label">
-               Life sciences
-              </span>
-             </button>
-            </li>
-            <li style="display: none;">
-             <button class="so-tab-l so--normal" type="button">
-              <span class="so-tab-l-counter">
-               6
-              </span>
-              <span class="so-tab-l-label">
-               Chemistry
-              </span>
-             </button>
-            </li>
-            <li style="display: none;">
-             <button class="so-tab-l so--normal" type="button">
-              <span class="so-tab-l-counter">
-               6
-              </span>
-              <span class="so-tab-l-label">
-               Numerical methods
-              </span>
-             </button>
-            </li>
-            <li style="display: none;">
-             <button class="so-tab-l so--normal" type="button">
-              <span class="so-tab-l-counter">
-               5
-              </span>
-              <span class="so-tab-l-label">
-               Microbiology &amp; Virology
-              </span>
-             </button>
-            </li>
-            <li style="display: none;">
-             <button class="so-tab-l so--normal" type="button">
-              <span class="so-tab-l-counter">
-               4
-              </span>
-              <span class="so-tab-l-label">
-               Mathematical &amp; Computational physics
-              </span>
-             </button>
-            </li>
-            <li style="display: none;">
-             <button class="so-tab-l so--normal" type="button">
-              <span class="so-tab-l-counter">
-               4
-              </span>
-              <span class="so-tab-l-label">
-               Technical &amp; Applied physics
-              </span>
-             </button>
-            </li>
-            <li style="display: none;">
-             <button class="so-tab-l so--normal" type="button">
-              <span class="so-tab-l-counter">
-               4
-              </span>
-              <span class="so-tab-l-label">
-               Thermal physics &amp; Statistical mechanics
-              </span>
-             </button>
-            </li>
-            <li style="display: none;">
-             <button class="so-tab-l so--normal" type="button">
-              <span class="so-tab-l-counter">
-               3
-              </span>
-              <span class="so-tab-l-label">
-               Applied computer science
-              </span>
-             </button>
-            </li>
-            <li style="display: none;">
-             <button class="so-tab-l so--normal" type="button">
-              <span class="so-tab-l-counter">
-               3
-              </span>
-              <span class="so-tab-l-label">
-               Earth &amp; Environmental sciences
-              </span>
-             </button>
-            </li>
-            <li style="display: none;">
-             <button class="so-tab-l so--normal" type="button">
-              <span class="so-tab-l-counter">
-               3
-              </span>
-              <span class="so-tab-l-label">
-               Biotechnology
-              </span>
-             </button>
-            </li>
-            <li style="display: none;">
-             <button class="so-tab-l so--normal" type="button">
-              <span class="so-tab-l-counter">
-               3
-              </span>
-              <span class="so-tab-l-label">
-               Materials for energy
-              </span>
-             </button>
-            </li>
-           </ul>
-           <div class="so-b3-container so-ta-c">
-            <button class="so-b3 so--transparent so--borderless so--roundless" title="Show all" type="button">
-             <span class="so-icon so--accordion-closed">
-             </span>
-            </button>
-           </div>
-          </div>
-          <div class="so-layout-section">
-           <h4 class="so-layout-section-title">
-            Narrow by keyword
-           </h4>
-           <ul class="so-tab-l-container">
-            <li>
-             <button class="so-tab-l so--normal" type="button">
-              <span class="so-tab-l-counter">
-               75
-              </span>
-              <span class="so-tab-l-label">
-               carbon capture and storage
-              </span>
-             </button>
-            </li>
-            <li>
-             <button class="so-tab-l so--normal" type="button">
-              <span class="so-tab-l-counter">
-               42
-              </span>
-              <span class="so-tab-l-label">
-               carbon capture
-              </span>
-             </button>
-            </li>
-            <li>
-             <button class="so-tab-l so--normal" type="button">
-              <span class="so-tab-l-counter">
-               19
-              </span>
-              <span class="so-tab-l-label">
-               chemical engineering
-              </span>
-             </button>
-            </li>
-            <li>
-             <button class="so-tab-l so--normal" type="button">
-              <span class="so-tab-l-counter">
-               18
-              </span>
-              <span class="so-tab-l-label">
-               electrocatalysis
-              </span>
-             </button>
-            </li>
-            <li>
-             <button class="so-tab-l so--normal" type="button">
-              <span class="so-tab-l-counter">
-               10
-              </span>
-              <span class="so-tab-l-label">
-               climate-change mitigation
-              </span>
-             </button>
-            </li>
-            <li style="display: none;">
-             <button class="so-tab-l so--normal" type="button">
-              <span class="so-tab-l-counter">
-               9
-              </span>
-              <span class="so-tab-l-label">
-               hydrology
-              </span>
-             </button>
-            </li>
-            <li style="display: none;">
-             <button class="so-tab-l so--normal" type="button">
-              <span class="so-tab-l-counter">
-               8
-              </span>
-              <span class="so-tab-l-label">
-               carbon capture and utilization
-              </span>
-             </button>
-            </li>
-            <li style="display: none;">
-             <button class="so-tab-l so--normal" type="button">
-              <span class="so-tab-l-counter">
-               7
-              </span>
-              <span class="so-tab-l-label">
-               metal-organic frameworks
-              </span>
-             </button>
-            </li>
-            <li style="display: none;">
-             <button class="so-tab-l so--normal" type="button">
-              <span class="so-tab-l-counter">
-               7
-              </span>
-              <span class="so-tab-l-label">
-               biomass
-              </span>
-             </button>
-            </li>
-            <li style="display: none;">
-             <button class="so-tab-l so--normal" type="button">
-              <span class="so-tab-l-counter">
-               7
-              </span>
-              <span class="so-tab-l-label">
-               climate change
-              </span>
-             </button>
-            </li>
-            <li style="display: none;">
-             <button class="so-tab-l so--normal" type="button">
-              <span class="so-tab-l-counter">
-               6
-              </span>
-              <span class="so-tab-l-label">
-               environmental impact
-              </span>
-             </button>
-            </li>
-            <li style="display: none;">
-             <button class="so-tab-l so--normal" type="button">
-              <span class="so-tab-l-counter">
-               6
-              </span>
-              <span class="so-tab-l-label">
-               chemistry
-              </span>
-             </button>
-            </li>
-            <li style="display: none;">
-             <button class="so-tab-l so--normal" type="button">
-              <span class="so-tab-l-counter">
-               5
-              </span>
-              <span class="so-tab-l-label">
-               civil engineering
-              </span>
-             </button>
-            </li>
-            <li style="display: none;">
-             <button class="so-tab-l so--normal" type="button">
-              <span class="so-tab-l-counter">
-               5
-              </span>
-              <span class="so-tab-l-label">
-               carbon sequestration
-              </span>
-             </button>
-            </li>
-            <li style="display: none;">
-             <button class="so-tab-l so--normal" type="button">
-              <span class="so-tab-l-counter">
-               5
-              </span>
-              <span class="so-tab-l-label">
-               carbon neutrality
-              </span>
-             </button>
-            </li>
-            <li style="display: none;">
-             <button class="so-tab-l so--normal" type="button">
-              <span class="so-tab-l-counter">
-               5
-              </span>
-              <span class="so-tab-l-label">
-               ccs
-              </span>
-             </button>
-            </li>
-            <li style="display: none;">
-             <button class="so-tab-l so--normal" type="button">
-              <span class="so-tab-l-counter">
-               5
-              </span>
-              <span class="so-tab-l-label">
-               algae
-              </span>
-             </button>
-            </li>
-            <li style="display: none;">
-             <button class="so-tab-l so--normal" type="button">
-              <span class="so-tab-l-counter">
-               5
-              </span>
-              <span class="so-tab-l-label">
-               carbon dioxide
-              </span>
-             </button>
-            </li>
-            <li style="display: none;">
-             <button class="so-tab-l so--normal" type="button">
-              <span class="so-tab-l-counter">
-               5
-              </span>
-              <span class="so-tab-l-label">
-               co2 capture
-              </span>
-             </button>
-            </li>
-            <li style="display: none;">
-             <button class="so-tab-l so--normal" type="button">
-              <span class="so-tab-l-counter">
-               5
-              </span>
-              <span class="so-tab-l-label">
-               decarbonization
-              </span>
-             </button>
-            </li>
-           </ul>
-           <div class="so-b3-container so-ta-c">
-            <button class="so-b3 so--transparent so--borderless so--roundless" title="Show all" type="button">
-             <span class="so-icon so--accordion-closed">
-             </span>
-            </button>
-           </div>
-          </div>
+         </div>
+         <div class="so-m-y-20">
          </div>
         </div>
        </div>

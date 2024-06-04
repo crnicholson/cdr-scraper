@@ -29,17 +29,17 @@ page = soup(content, "html.parser")
 
 results = page.find_all(class_="so-article-list-item-title")
 
-array = []
+dict = {}
 
 for result in results:
     # print(result.prettify())
     found = result.find("a")
     if found != None:
-        string = found.get_text(strip=True)
-        array.append(string)
-        # print(string)
+        link = found["href"]
+        text = found.get_text(strip=True)
+        dict[text] = link
 
-print(array)
+print(dict)
 
 with open("page.txt", "w") as f:
     f.write(page.prettify())
