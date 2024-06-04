@@ -78,4 +78,14 @@ import pandas as pd
 
 df = pd.read_csv("scimagojr-2023.csv", sep=";", decimal=",")
 
-print(df.head())
+issn = df["Issn"] == "17594782, 17594774"
+
+newDf = df[issn]
+
+print(newDf)
+
+sjr = newDf.iloc[0, 5]
+
+print(sjr)
+
+# print(df[issn])
