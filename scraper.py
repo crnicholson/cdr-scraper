@@ -4,6 +4,7 @@
 # - Input the ISSN into the SJR
 
 import time
+import csv
 from selenium import webdriver
 from bs4 import BeautifulSoup as soup
 from selenium.webdriver.chrome.service import Service
@@ -41,23 +42,29 @@ for titles in allTitles:
 
 keys = list(papers)
 
-for key in keys:
-    # print("Testing: " + papers[key])
-    driver = webdriver.Chrome(service=service, options=options)
-    driver.get(papers[key])
-    time.sleep(0.5)
-    pageContent = driver.page_source
-    driver.quit()
-    parsedPage = soup(pageContent, "html.parser")
-    issn = parsedPage.find(itemprop="issn")
-    if issn != None:
-        issn = issn.get_text(strip=True)
-        issn = issn[0:4] + issn[5:9]
-        print(issn)
-        papers[key] = issn
-    else:
-        del papers[key]
+# for key in keys:
+#     driver = webdriver.Chrome(service=service, options=options)
+#     driver.get(papers[key])
+#     time.sleep(0.5)
+#     pageContent = driver.page_source
+#     driver.quit()
+#     parsedPage = soup(pageContent, "html.parser")
+#     issn = parsedPage.find(itemprop="issn")
+#     if issn != None:
+#         issn = issn.get_text(strip=True)
+#         issn = issn[0:4] + issn[5:9]
+#         print(issn)
+#         papers[key] = issn
+#     else:
+#         del papers[key]
 
-keys = list(papers)
+# keys = list(papers)
 
-print(papers)
+# print(papers)
+
+fields = []
+rows = []
+
+with open("scimagojr 2023.csv", "w") as file:
+    csvReader = csv.reader(file)
+    
