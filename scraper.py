@@ -73,8 +73,9 @@ keys = list(papers)
 
 #     print("done")
 
+
 import pandas as pd
 
-df = pd.read_csv("scimagojr-2023.csv")
+df = pd.read_csv("scimagojr-2023.csv", sep=";", decimal=",")
 
 print(df.head())
