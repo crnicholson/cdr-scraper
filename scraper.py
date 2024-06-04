@@ -82,10 +82,8 @@ issn = df["Issn"] == "17594782, 17594774"
 
 newDf = df[issn]
 
-print(newDf)
-
 sjr = newDf.iloc[0, 5]
 
-print(sjr)
+print("SJR: " + str(sjr))
 
 # print(df[issn])
