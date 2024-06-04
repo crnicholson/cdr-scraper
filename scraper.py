@@ -1,3 +1,8 @@
+# To-do
+# - Scrape the entire page
+# - Get the ISSN from the link
+# - Input the ISSN into the SJR
+
 import time
 from selenium import webdriver
 from bs4 import BeautifulSoup as soup
