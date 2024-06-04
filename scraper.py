@@ -29,12 +29,17 @@ page = soup(content, "html.parser")
 
 results = page.find_all(class_="so-article-list-item-title")
 
+array = []
+
 for result in results:
-    print(result.prettify())
-    found = result.find("p")
-    if found is not None:
+    # print(result.prettify())
+    found = result.find("a")
+    if found != None:
         string = found.get_text(strip=True)
-        print(string)
+        array.append(string)
+        # print(string)
+
+print(array)
 
 with open("page.txt", "w") as f:
     f.write(page.prettify())
