@@ -29,7 +29,7 @@ def wait_for_downloads():
     ):
         time.sleep(.5)
         print(".", end="")
-    print(" Done!")
+    print(" done!")
 
 # URL to be scraped
 url = "https://www.scienceopen.com/search#('v'~4_'id'~''_'queryType'~1_'context'~null_'kind'~77_'order'~1_'orderLowestFirst'~false_'query'~'carbon%20capture'_'filters'~!('kind'~38_'not'~false_'offset'~2_'timeUnit'~7)*_'hideOthers'~false)"
@@ -55,9 +55,7 @@ driver = webdriver.Chrome(service=service, options=options)
 driver.get(url)
 time.sleep(0.5)
 pageContent = driver.page_source
-
 parsedPage = soup(pageContent, "html.parser")
-
 allTitles = parsedPage.find_all(class_="so-article-list-item-title")
 
 papers = {}
@@ -69,12 +67,12 @@ for titles in allTitles:
         paperTitle = foundLink.get_text(strip=True)
         papers[paperTitle] = paperUrl
 
-keys = list(papers)
+titles = list(papers)
 
 driver = webdriver.Chrome(service=service, options=options)
 
-for key in keys:
-    driver.get(papers[key])
+for title in titles:
+    driver.get(papers[title])
     pageContent = driver.page_source
     parsedPage = soup(pageContent, "html.parser")
     issn = parsedPage.find(itemprop="issn")
@@ -83,24 +81,26 @@ for key in keys:
         issn = issn[0:4] + issn[5:9]
         newDf = df[df["Issn"].str.contains(issn)]
         sjr = newDf.iloc[0, 6]
-        print("Link: "+ papers[key] + " with an SJR quintile of: " + str(sjr))
+        print("Link: "+ papers[title] + " with an SJR quintile of: " + str(sjr))
         if sjr != "Q1":
-            del papers[key]
+            del papers[title]
     else:
-        del papers[key]
+        del papers[title]
 
 print("Done finding papers.")
 
-url = "https://www.scienceopen.com/document?vid=af69a724-0f56-4e4a-aaa9-7bde2f866333"
+titles = list(papers)
 
-vid = url[41:]
+for title in titles:
+    url = papers[title]
+    print("Downloading: " + title)
+    vid = url[41:]
+    downloadUrl = (
+        "https://www.scienceopen.com/document?-1.ILinkListener-header-action~bar-download~dropdown-pdf~link-link&vid=" + vid
+    )
+    driver.get(downloadUrl)
+    wait_for_downloads()
 
-downloadUrl = (
-    "https://www.scienceopen.com/document?-1.ILinkListener-header-action~bar-download~dropdown-pdf~link-link&vid="
-    + vid
-)
-
-driver.get(downloadUrl)
-wait_for_downloads()
+print("\nDone downloading papers.")
 
 driver.quit()
