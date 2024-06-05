@@ -78,38 +78,33 @@
 
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
+from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.chrome.options import Options
 
-import time
+# Set up Chrome options
+options = Options()
+options.add_experimental_option(
+    "prefs",
+    {
+        "download.default_directory": "</Users/Charlie/Documents/Code/webScraper/papers>",  # Change this path to your desired directory
+        "download.prompt_for_download": False,
+        "download.directory_upgrade": True,
+        "plugins.always_open_pdf_externally": True,
+    },
+)
 
-options = webdriver.ChromeOptions()
+# Set up WebDriver
+s = Service(ChromeDriverManager().install())
+driver = webdriver.Chrome(service=s, options=options)
 
-prefs = {"download.default_directory": "/Users/Charlie/Documents/Code/webScraper/papers"}
+url = "https://www.scienceopen.com/document?vid=af69a724-0f56-4e4a-aaa9-7bde2f866333"
+vid = url[41:]
+downloadUrl = (
+    "https://www.scienceopen.com/document?-1.ILinkListener-header-action~bar-download~dropdown-pdf~link-link&vid="
+    + vid
+)
 
-options.add_experimental_option("prefs", prefs)
+# Navigate to the download URL
+driver.get(downloadUrl)
 
-path = "/Users/Charlie/Documents/Code/webScraper/chromedriver"
-
-service = Service(path)
-
-driver = webdriver.Chrome(service=service, chrome_options=options)
-
-try:
-
-    driver.get("https://www.browserstack.com/test-on-the-right-mobile-devices")
-
-    downloadcsv = driver.find_element_by_css_selector(".icon-csv")
-
-    gotit = driver.find_element_by_id("accept-cookie-notification")
-
-    gotit.click()
-
-    downloadcsv.click()
-
-    time.sleep(5)
-
-    driver.close()
-
-except:
-
-    print("Invalid URL")
+# The PDF will be automatically downloaded to the specified directory
