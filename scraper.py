@@ -1,7 +1,9 @@
 # To-do
 # - Scrape the entire page
-# - Get the ISSN from the link
-# - Input the ISSN into the SJR
+# - Get the link again
+# - Download the paper
+# - Put the paper into a folder
+# - Automatically make a spreadsheet with the paper title, the paper link, the SJR quintile, and the paper itself
 
 import time
 import pandas as pd
