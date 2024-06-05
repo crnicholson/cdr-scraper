@@ -1,26 +1,25 @@
-# To-do
-# - Scrape the entire page
-# - Get the link again
-# - Download the paper
-# - Put the paper into a folder
-# - Automatically make a spreadsheet with the paper title, the paper link, the SJR quintile, and the paper itself
-
 import time
 import pandas as pd
 from selenium import webdriver
-from bs4 import BeautifulSoup as soup
+from selenium.webdriver.common.by import By
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.chrome.options import Options
 from webdriver_manager.chrome import ChromeDriverManager
+from bs4 import BeautifulSoup as soup
+import concurrent.futures
+import os
 
 # URL to be scraped
 url = "https://www.scienceopen.com/search#('v'~4_'id'~''_'queryType'~1_'context'~null_'kind'~77_'order'~1_'orderLowestFirst'~false_'query'~'carbon%20capture'_'filters'~!('kind'~38_'not'~false_'offset'~2_'timeUnit'~7)*_'hideOthers'~false)"
 
+# Load SJR data
 df = pd.read_csv("scimagojr-2023.csv", sep=";", decimal=",")
 
+# Setup Selenium options
 options = Options()
 options.add_argument("--headless")
-options.add_argument("--disable-gpu")
 options.add_experimental_option(
     "prefs",
     {
@@ -31,53 +30,78 @@ options.add_experimental_option(
     },
 )
 
-service = Service(ChromeDriverManager().install())
-driver = webdriver.Chrome(service=service, options=options)
+chrome_driver_path = ChromeDriverManager().install()
 
-driver.get(url)
-time.sleep(0.5)
-pageContent = driver.page_source
 
+def setup_driver():
+    service = Service(chrome_driver_path)
+    driver = webdriver.Chrome(service=service, options=options)
+    wait = WebDriverWait(driver, 10)
+    return driver, wait
+
+
+# Initialize the main driver to get the list of papers
+main_driver, main_wait = setup_driver()
+
+# Scrape the main page
+main_driver.get(url)
+main_wait.until(
+    EC.presence_of_element_located((By.CLASS_NAME, "so-article-list-item-title"))
+)
+pageContent = main_driver.page_source
 parsedPage = soup(pageContent, "html.parser")
-
 allTitles = parsedPage.find_all(class_="so-article-list-item-title")
 
 papers = {}
 
 for titles in allTitles:
     foundLink = titles.find("a")
-    if foundLink != None:
+    if foundLink:
         paperUrl = foundLink["href"]
         paperTitle = foundLink.get_text(strip=True)
         papers[paperTitle] = paperUrl
 
 keys = list(papers)
 
-driver = webdriver.Chrome(service=service, options=options)
 
-for key in keys:
+def process_paper(key):
+    driver, wait = setup_driver()
     driver.get(papers[key])
     pageContent = driver.page_source
     parsedPage = soup(pageContent, "html.parser")
     issn = parsedPage.find(itemprop="issn")
-    if issn != None:
-        issn = issn.get_text(strip=True)
-        issn = issn[0:4] + issn[5:9]
+    sjr_quintile = None
+
+    if issn:
+        issn = issn.get_text(strip=True).replace("-", "")
         newDf = df[df["Issn"].str.contains(issn)]
-        sjr = newDf.iloc[0, 6]
-        # print("Link: "+ papers[key] + " with an SJR quintile of: " + str(sjr))
-        if sjr != "Q1":
-            del papers[key]
-    else:
-        del papers[key]
+        if not newDf.empty:
+            sjr_quintile = newDf.iloc[0, 6]
+            if sjr_quintile != "Q1":
+                driver.quit()
+                return None
 
-url = "https://www.scienceopen.com/document?vid=af69a724-0f56-4e4a-aaa9-7bde2f866333"
+    vid = papers[key][41:]
+    downloadUrl = f"https://www.scienceopen.com/document?-1.ILinkListener-header-action~bar-download~dropdown-pdf~link-link&vid={vid}"
+    driver.get(downloadUrl)
+    time.sleep(15)  # Adjust sleep time based on download speed and file size
+    driver.quit()
+    return key, papers[key], sjr_quintile
 
-vid = url[41:]
 
-downloadUrl = "https://www.scienceopen.com/document?-1.ILinkListener-header-action~bar-download~dropdown-pdf~link-link&vid=" + vid
+results = []
 
-driver.get(downloadUrl)
-time.sleep(10)
+with concurrent.futures.ThreadPoolExecutor() as executor:
+    future_to_paper = {executor.submit(process_paper, key): key for key in keys}
+    for future in concurrent.futures.as_completed(future_to_paper):
+        result = future.result()
+        if result:
+            results.append(result)
 
-driver.quit()
+# Create a dataframe for the results
+result_df = pd.DataFrame(results, columns=["Title", "Link", "SJR Quintile"])
+
+# Save the results to a CSV file
+result_df.to_csv("papers_info.csv", index=False)
+
+main_driver.quit()
