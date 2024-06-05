@@ -44,8 +44,9 @@ for titles in allTitles:
 
 keys = list(papers)
 
+driver = webdriver.Chrome(service=service, options=options)
+
 for key in keys:
-    driver = webdriver.Chrome(service=service, options=options)
     driver.get(papers[key])
     # time.sleep(0.5)
     pageContent = driver.page_source
@@ -56,11 +57,11 @@ for key in keys:
         issn = issn[0:4] + issn[5:9]
         papers[key] = issn
         newDf = df[df["Issn"].str.contains(issn)]
-        sjr = newDf.iloc[0, 5]
-        print("ISSN: "+ issn + " with an SJR of: " + str(sjr))
+        sjr = newDf.iloc[0, 6]
+        print("ISSN: "+ issn + " with an SJR quintile of: " + str(sjr))
+        if sjr != "Q1":
+            del papers[key]
     else:
         del papers[key]
-
-
 
 driver.quit()
