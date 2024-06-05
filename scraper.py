@@ -1,3 +1,6 @@
+# To-do
+# - Scrape the entire page
+
 import time
 import pandas as pd
 from selenium import webdriver
@@ -17,13 +20,12 @@ url = "https://www.scienceopen.com/search#('v'~4_'id'~''_'queryType'~1_'context'
 # Load SJR data
 df = pd.read_csv("scimagojr-2023.csv", sep=";", decimal=",")
 
-# Setup Selenium options
 options = Options()
 options.add_argument("--headless")
 options.add_experimental_option(
     "prefs",
     {
-        "download.default_directory": "/Users/Charlie/Documents/Code/webScraper/papers",  # Change this path to your desired directory
+        "download.default_directory": "/Users/Charlie/Documents/Code/webScraper/papers",
         "download.prompt_for_download": False,
         "download.directory_upgrade": True,
         "plugins.always_open_pdf_externally": True,
@@ -32,18 +34,14 @@ options.add_experimental_option(
 
 chrome_driver_path = ChromeDriverManager().install()
 
-
 def setup_driver():
     service = Service(chrome_driver_path)
     driver = webdriver.Chrome(service=service, options=options)
     wait = WebDriverWait(driver, 10)
     return driver, wait
 
-
-# Initialize the main driver to get the list of papers
 main_driver, main_wait = setup_driver()
 
-# Scrape the main page
 main_driver.get(url)
 main_wait.until(
     EC.presence_of_element_located((By.CLASS_NAME, "so-article-list-item-title"))
@@ -62,7 +60,6 @@ for titles in allTitles:
         papers[paperTitle] = paperUrl
 
 keys = list(papers)
-
 
 def process_paper(key):
     driver, wait = setup_driver()
@@ -84,10 +81,24 @@ def process_paper(key):
     vid = papers[key][41:]
     downloadUrl = f"https://www.scienceopen.com/document?-1.ILinkListener-header-action~bar-download~dropdown-pdf~link-link&vid={vid}"
     driver.get(downloadUrl)
-    time.sleep(15)  # Adjust sleep time based on download speed and file size
+    # wait_for_downloads()
+    time.sleep(15)
     driver.quit()
     return key, papers[key], sjr_quintile
 
+def wait_for_downloads():
+    print("Waiting for downloads", end="")
+    while any(
+        [
+            filename.endswith(".crdownload")
+            for filename in os.listdir(
+                "/Users/Charlie/Documents/Code/webScraper/papers"
+            )
+        ]
+    ):
+        time.sleep(.5)
+        print(".", end="")
+    print("done!")
 
 results = []
 
@@ -98,10 +109,8 @@ with concurrent.futures.ThreadPoolExecutor() as executor:
         if result:
             results.append(result)
 
-# Create a dataframe for the results
 result_df = pd.DataFrame(results, columns=["Title", "Link", "SJR Quintile"])
 
-# Save the results to a CSV file
 result_df.to_csv("papers_info.csv", index=False)
 
 main_driver.quit()
