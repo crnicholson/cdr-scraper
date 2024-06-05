@@ -57,13 +57,14 @@ for key in keys:
     if issn != None:
         issn = issn.get_text(strip=True)
         issn = issn[0:4] + issn[5:9]
-        papers[key] = issn
         newDf = df[df["Issn"].str.contains(issn)]
         sjr = newDf.iloc[0, 6]
-        print("ISSN: "+ issn + " with an SJR quintile of: " + str(sjr))
+        print("Link: "+ papers[key] + " with an SJR quintile of: " + str(sjr))
         if sjr != "Q1":
             del papers[key]
     else:
         del papers[key]
+
+print(papers)
 
 driver.quit()
