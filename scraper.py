@@ -50,7 +50,6 @@ driver = webdriver.Chrome(service=service, options=options)
 
 for key in keys:
     driver.get(papers[key])
-    # time.sleep(0.5)
     pageContent = driver.page_source
     parsedPage = soup(pageContent, "html.parser")
     issn = parsedPage.find(itemprop="issn")
@@ -59,10 +58,20 @@ for key in keys:
         issn = issn[0:4] + issn[5:9]
         newDf = df[df["Issn"].str.contains(issn)]
         sjr = newDf.iloc[0, 6]
-        print("Link: "+ papers[key] + " with an SJR quintile of: " + str(sjr))
+        # print("Link: "+ papers[key] + " with an SJR quintile of: " + str(sjr))
         if sjr != "Q1":
             del papers[key]
     else:
         del papers[key]
+        
+url = "https://www.scienceopen.com/document?vid=af69a724-0f56-4e4a-aaa9-7bde2f866333"
+
+vid = url[41:]
+
+downloadUrl = "https://www.scienceopen.com/document?-1.ILinkListener-header-action~bar-download~dropdown-pdf~link-link&vid=" + vid
+
+print(downloadUrl)
+
+print(papers)
 
 driver.quit()
