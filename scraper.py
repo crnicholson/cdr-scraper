@@ -4,7 +4,7 @@
 # - Input the ISSN into the SJR
 
 import time
-import csv
+import pandas as pd
 from selenium import webdriver
 from bs4 import BeautifulSoup as soup
 from selenium.webdriver.chrome.service import Service
@@ -26,10 +26,14 @@ driver = webdriver.Chrome(service=service, options=options)
 driver.get(url)
 time.sleep(0.5)
 pageContent = driver.page_source
-driver.quit()
 
 parsedPage = soup(pageContent, "html.parser")
+
+print(parsedPage.prettify())
+
 allTitles = parsedPage.find_all(class_="so-article-list-item-title")
+
+print(allTitles)
 
 papers = {}
 
@@ -42,52 +46,33 @@ for titles in allTitles:
 
 keys = list(papers)
 
-# for key in keys:
-#     driver = webdriver.Chrome(service=service, options=options)
-#     driver.get(papers[key])
-#     time.sleep(0.5)
-#     pageContent = driver.page_source
-#     driver.quit()
-#     parsedPage = soup(pageContent, "html.parser")
-#     issn = parsedPage.find(itemprop="issn")
-#     if issn != None:
-#         issn = issn.get_text(strip=True)
-#         issn = issn[0:4] + issn[5:9]
-#         print(issn)
-#         papers[key] = issn
-#     else:
-#         del papers[key]
+for key in keys:
+    driver = webdriver.Chrome(service=service, options=options)
+    driver.get(papers[key])
+    time.sleep(0.5)
+    pageContent = driver.page_source
+    parsedPage = soup(pageContent, "html.parser")
+    issn = parsedPage.find(itemprop="issn")
+    if issn != None:
+        issn = issn.get_text(strip=True)
+        issn = issn[0:4] + issn[5:9]
+        print(issn)
+        papers[key] = issn
+    else:
+        del papers[key]
 
-# keys = list(papers)
+keys = list(papers)
 
-# print(papers)
-
-# fields = []
-# rows = []
-
-# with open("scimagojr 2023.csv", "w") as file:
-#     csvReader = csv.reader(file)
-
-#     for row in csvReader:
-#         rows.append(row)
-
-#     print("done")
-
-
-import pandas as pd
+print(papers)
 
 df = pd.read_csv("scimagojr-2023.csv", sep=";", decimal=",")
 
-# issns = ["17594782", "17594774"]
+issn = "17594782"
 
-issns = ["17594782"]
-
-newDf = df[df["Issn"].isin(issns)]
-
-print(newDf)
+newDf = df[df["Issn"].str.contains(issn)]
 
 sjr = newDf.iloc[0, 5]
 
 print("SJR: " + str(sjr))
 
-# print(df[issn])
+driver.quit()
