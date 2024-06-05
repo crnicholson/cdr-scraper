@@ -65,6 +65,4 @@ for key in keys:
     else:
         del papers[key]
 
-print(papers)
-
 driver.quit()
