@@ -1,8 +1,5 @@
 # To-do
 # - Scrape the entire page
-# - Get the link again
-# - Download the paper
-# - Put the paper into a folder
 # - Automatically make a spreadsheet with the paper title, the paper link, the SJR quintile, and the paper itself
 
 import time
@@ -12,6 +9,7 @@ from selenium import webdriver
 from bs4 import BeautifulSoup as soup
 from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.chrome.options import Options
+from selenium.webdriver.common.by import By
 from webdriver_manager.chrome import ChromeDriverManager
 from pathlib import Path
 
@@ -38,7 +36,7 @@ df = pd.read_csv("scimagojr-2023.csv", sep=";", decimal=",")
 
 options = Options()
 options.add_argument("--headless")
-# options.add_argument("--disable-gpu")
+options.add_argument("--disable-gpu")
 options.add_experimental_option(
     "prefs",
     {
@@ -53,7 +51,12 @@ service = Service(ChromeDriverManager().install())
 driver = webdriver.Chrome(service=service, options=options)
 
 driver.get(url)
+time.sleep(1)
+
+more = driver.find_element(by=By.CLASS_NAME, value="so-b3 so--tall so--centered so--green-2")
+more.click()
 time.sleep(0.5)
+
 pageContent = driver.page_source
 parsedPage = soup(pageContent, "html.parser")
 allTitles = parsedPage.find_all(class_="so-article-list-item-title")
