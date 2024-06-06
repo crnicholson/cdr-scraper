@@ -4,6 +4,7 @@
 # - Download even more
 
 import time
+import math
 import os
 import pandas as pd
 from selenium import webdriver
@@ -23,12 +24,31 @@ from selenium.common.exceptions import (
 
 cwd = str(Path.cwd())
 
+
 ##### Settings #####
 
+maximumPageLoads = 10
+
+# URL to be scraped
+url = "https://www.scienceopen.com/search#('v'~4_'id'~''_'queryType'~1_'context'~null_'kind'~77_'order'~1_'orderLowestFirst'~false_'query'~'carbon%20capture'_'filters'~!('kind'~38_'not'~false_'offset'~2_'timeUnit'~7)*_'hideOthers'~false)"
+
+options = Options()
+options.add_argument("--headless")
+options.add_argument("--disable-gpu")
+options.add_experimental_option(
+    "prefs",
+    {
+        "download.default_directory": cwd + "/papers",
+        "download.prompt_for_download": False,
+        "download.directory_upgrade": True,
+        "plugins.always_open_pdf_externally": True,
+    },
+)
 
 ##### End settings #####
 
 ##### Functions #####
+
 
 def waitForDownloads():
     print("Waiting for downloads", end="")
@@ -43,6 +63,7 @@ def waitForDownloads():
         time.sleep(0.5)
         print(".", end="")
     print(" done!")
+
 
 def getTotalSearchResults():
     WebDriverWait(driver, 30).until(
@@ -63,25 +84,37 @@ def getTotalSearchResults():
 
     return searchResults
 
+
+def loadAllResults():
+    searchResults = getTotalSearchResults()
+    searchResults = math.ceil(searchResults / 10)
+
+    if searchResults > maximumPageLoads:
+        searchResults = maximumPageLoads
+
+    print("Loading " + str(searchResults) + " pages of results. This may take a while.")
+
+    xpath = '//*[@id="id1"]/div/div/div/div[2]/div/div[6]/div[2]/div/button[1]'
+    WebDriverWait(driver, 30).until(EC.visibility_of_element_located((By.XPATH, xpath)))
+    print("Button is visible.")
+
+    more = driver.find_element(By.XPATH, xpath)
+
+    for i in range(searchResults):
+        try:
+            more.click()
+            print("Clicked the button.")
+            time.sleep(2.5)
+        except ElementClickInterceptedException:
+            print("Failed to click the button.")
+
+    return 0
+
+
 ##### End functions #####
 
-# URL to be scraped
-url = "https://www.scienceopen.com/search#('v'~4_'id'~''_'queryType'~1_'context'~null_'kind'~77_'order'~1_'orderLowestFirst'~false_'query'~'carbon%20capture'_'filters'~!('kind'~38_'not'~false_'offset'~2_'timeUnit'~7)*_'hideOthers'~false)"
 
 df = pd.read_csv("scimagojr-2023.csv", sep=";", decimal=",")
-
-options = Options()
-options.add_argument("--headless")
-options.add_argument("--disable-gpu")
-options.add_experimental_option(
-    "prefs",
-    {
-        "download.default_directory": cwd + "/papers",
-        "download.prompt_for_download": False,
-        "download.directory_upgrade": True,
-        "plugins.always_open_pdf_externally": True,
-    },
-)
 
 service = Service(ChromeDriverManager().install())
 driver = webdriver.Chrome(service=service, options=options)
@@ -91,26 +124,10 @@ driver.get(url)
 
 # Accept cookies
 driver.find_element(
-    By.XPATH, '/html/body/aside/div/div/div[2]/div[2]/div/div[2]/div[1]/button[1]'
+    By.XPATH, "/html/body/aside/div/div/div[2]/div[2]/div/div[2]/div[1]/button[1]"
 ).click()
 
-searchResults = getTotalSearchResults()
-
-more_xpath = '//*[@id="id1"]/div/div/div/div[2]/div/div[6]/div[2]/div/button[1]'
-WebDriverWait(driver, 30).until(
-    EC.visibility_of_element_located((By.XPATH, more_xpath))
-)
-print("Button is visible.")
-
-more = driver.find_element(By.XPATH, more_xpath)
-
-try:
-    more.click()
-    print("Clicked the button.")
-except ElementClickInterceptedException:
-    print("Failed to click the button.")
-
-time.sleep(5)
+loadAllResults()
 
 pageContent = driver.page_source
 parsedPage = soup(pageContent, "html.parser")
@@ -151,9 +168,15 @@ for title in titles:
 
 print("\nDone finding SJR quintile of papers.")
 
-print("\nDownloading", len(papers), "papers. " + str(totalPapers - len(papers)) + " papers were purged.")
+print(
+    "\nDownloading",
+    len(papers),
+    "papers. " + str(totalPapers - len(papers)) + " papers were purged.",
+)
 
-print("Downloading papers will take some time. It is recommended to move to a place with better WiFi.\n")
+print(
+    "Downloading papers will take some time. It is recommended to move to a place with better WiFi.\n"
+)
 
 titles = list(papers)
 
