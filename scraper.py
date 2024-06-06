@@ -23,7 +23,14 @@ from selenium.common.exceptions import (
 
 cwd = str(Path.cwd())
 
-def wait_for_downloads():
+##### Settings #####
+
+
+##### End settings #####
+
+##### Functions #####
+
+def waitForDownloads():
     print("Waiting for downloads", end="")
     while any(
         [
@@ -36,6 +43,27 @@ def wait_for_downloads():
         time.sleep(0.5)
         print(".", end="")
     print(" done!")
+
+def getTotalSearchResults():
+    WebDriverWait(driver, 30).until(
+        EC.visibility_of_element_located(
+            (
+                By.XPATH,
+                '/html/body/div[3]/div/div/div/div/div/div[2]/div/div[5]/div[1]/div/div[@class="so-b3-label so--borderless so--gray-5 so--secondary"]',
+            )
+        )
+    )
+
+    searchResults = driver.find_element(
+        By.XPATH,
+        '/html/body/div[3]/div/div/div/div/div/div[2]/div/div[5]/div[1]/div/div[@class="so-b3-label so--borderless so--gray-5 so--secondary"]',
+    )
+    searchResults = str(searchResults.text)
+    searchResults = int(searchResults.replace(" results", ""))
+
+    return searchResults
+
+##### End functions #####
 
 # URL to be scraped
 url = "https://www.scienceopen.com/search#('v'~4_'id'~''_'queryType'~1_'context'~null_'kind'~77_'order'~1_'orderLowestFirst'~false_'query'~'carbon%20capture'_'filters'~!('kind'~38_'not'~false_'offset'~2_'timeUnit'~7)*_'hideOthers'~false)"
@@ -66,23 +94,7 @@ driver.find_element(
     By.XPATH, '/html/body/aside/div/div/div[2]/div[2]/div/div[2]/div[1]/button[1]'
 ).click()
 
-WebDriverWait(driver, 30).until(
-    EC.visibility_of_element_located(
-        (
-            By.XPATH,
-            '/html/body/div[3]/div/div/div/div/div/div[2]/div/div[5]/div[1]/div/div[@class="so-b3-label so--borderless so--gray-5 so--secondary"]'
-        )
-    )
-)
-
-pageResults = driver.find_element(
-    By.XPATH,
-    '/html/body/div[3]/div/div/div/div/div/div[2]/div/div[5]/div[1]/div/div[@class="so-b3-label so--borderless so--gray-5 so--secondary"]'
-)
-pageResults = str(pageResults.text)
-pageResults = int(pageResults.replace(" results", ""))
-
-print(pageResults)
+searchResults = getTotalSearchResults()
 
 more_xpath = '//*[@id="id1"]/div/div/div/div[2]/div/div[6]/div[2]/div/button[1]'
 WebDriverWait(driver, 30).until(
@@ -154,7 +166,7 @@ for title in titles:
         + vid
     )
     driver.get(downloadUrl)
-    wait_for_downloads()
+    waitForDownloads()
 
 print("\nDone downloading papers.")
 
