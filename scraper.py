@@ -96,15 +96,14 @@ def loadAllResults():
     WebDriverWait(driver, 30).until(EC.visibility_of_element_located((By.XPATH, xpath)))
     print("Button is visible.")
 
-    more = driver.find_element(By.XPATH, xpath)
-
     i = 0
     while i < searchResults:
-        i+=1
+        i += 1
         try:
+            more = driver.find_element(By.XPATH, xpath)
             more.click()
             print("Clicked the button.")
-            time.sleep(2.5)
+            time.sleep(5)
         except ElementClickInterceptedException:
             print("Failed to click the button.")
 
