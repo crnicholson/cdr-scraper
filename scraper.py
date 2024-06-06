@@ -60,15 +60,16 @@ time.sleep(1)
 #     '//*[@id="id1"]/div/div/div/div[2]/div/div[6]/div[2]/div/button[@class="so-b3 so--tall so--centered so--green-2"]'
 # )
 
-more = WebDriverWait(driver, 10).until(
+print("Finding 'Show more' button")
+
+more = WebDriverWait(driver, 20).until(
     EC.element_to_be_clickable(
-        By.XPATH,
-        '//*[@id="id1"]/div/div/div/div[2]/div/div[6]/div[2]/div/button[@class="so-b3 so--tall so--centered so--green-2"]',
+        (
+            By.XPATH,
+            '//*[@id="id1"]/div/div/div/div[2]/div/div[6]/div[2]/div/button[@class="so-b3 so--tall so--centered so--green-2"]',
+        )
     )
 )
-
-
-print(more.is_enabled())
 
 print(more)
 
