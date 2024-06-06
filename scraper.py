@@ -54,10 +54,15 @@ options.add_experimental_option(
 
 service = Service(ChromeDriverManager().install())
 driver = webdriver.Chrome(service=service, options=options)
+time.sleep(1)
 
 driver.get(url)
 
 print("Waiting for page to load fully.")
+
+driver.find_element(
+    By.XPATH, "/html/body/aside/div/div/div[2]/div[2]/div/div[2]/div[1]/button[1]"
+).click()
 
 try:
     # Wait for the button to be present and visible
