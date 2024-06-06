@@ -1,6 +1,7 @@
 # To-do:
 # - Rename the file of the paper to the title of the paper
 # - Input data into ChatGPT
+# - Download even more
 
 import time
 import os
@@ -62,10 +63,28 @@ driver.get(url)
 
 # Accept cookies
 driver.find_element(
-    By.XPATH, "/html/body/aside/div/div/div[2]/div[2]/div/div[2]/div[1]/button[1]"
+    By.XPATH, '/html/body/aside/div/div/div[2]/div[2]/div/div[2]/div[1]/button[1]'
 ).click()
 
-more_xpath = '//*[@id="id1"]/div/div/div/div[2]/div/div[6]/div[2]/div/button[@class="so-b3 so--tall so--centered so--green-2"]'
+WebDriverWait(driver, 30).until(
+    EC.visibility_of_element_located(
+        (
+            By.XPATH,
+            '/html/body/div[3]/div/div/div/div/div/div[2]/div/div[5]/div[1]/div/div[@class="so-b3-label so--borderless so--gray-5 so--secondary"]'
+        )
+    )
+)
+
+pageResults = driver.find_element(
+    By.XPATH,
+    '/html/body/div[3]/div/div/div/div/div/div[2]/div/div[5]/div[1]/div/div[@class="so-b3-label so--borderless so--gray-5 so--secondary"]'
+)
+pageResults = str(pageResults.text)
+pageResults = int(pageResults.replace(" results", ""))
+
+print(pageResults)
+
+more_xpath = '//*[@id="id1"]/div/div/div/div[2]/div/div[6]/div[2]/div/button[1]'
 WebDriverWait(driver, 30).until(
     EC.visibility_of_element_located((By.XPATH, more_xpath))
 )
@@ -101,8 +120,6 @@ for titles in allTitles:
 print("\nTotal papers found: " + str(totalPapers) + "\n")
 
 titles = list(papers)
-
-# driver = webdriver.Chrome(service=service, options=options)
 
 for title in titles:
     driver.get(papers[title])
