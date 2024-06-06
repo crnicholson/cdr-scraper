@@ -53,7 +53,15 @@ driver = webdriver.Chrome(service=service, options=options)
 driver.get(url)
 time.sleep(1)
 
-more = driver.find_element(by=By.CLASS_NAME, value="so-b3 so--tall so--centered so--green-2")
+more = driver.find_element(
+    By.XPATH,
+    '//*[@id="id1"]/div/div/div/div[2]/div/div[6]/div[2]/div/button[@class="so-b3 so--tall so--centered so--green-2"]'
+)
+
+print(more)
+
+print("Clicking 'Show more' button")
+
 more.click()
 time.sleep(0.5)
 
