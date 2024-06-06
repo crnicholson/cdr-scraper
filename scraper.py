@@ -1,7 +1,6 @@
 # To-do:
 # - Rename the file of the paper to the title of the paper
 # - Input data into ChatGPT
-# - Download even more
 
 import time
 import math
@@ -23,7 +22,6 @@ from selenium.common.exceptions import (
 )
 
 cwd = str(Path.cwd())
-
 
 ##### Settings #####
 
@@ -100,7 +98,9 @@ def loadAllResults():
 
     more = driver.find_element(By.XPATH, xpath)
 
-    for i in range(searchResults):
+    i = 0
+    while i < searchResults:
+        i+=1
         try:
             more.click()
             print("Clicked the button.")
@@ -112,7 +112,6 @@ def loadAllResults():
 
 
 ##### End functions #####
-
 
 df = pd.read_csv("scimagojr-2023.csv", sep=";", decimal=",")
 
