@@ -72,7 +72,7 @@ WebDriverWait(driver, 30).until(
 print("Button is visible.")
 
 more = driver.find_element(By.XPATH, more_xpath)
-    
+
 try:
     more.click()
     print("Clicked the button.")
@@ -97,14 +97,12 @@ for titles in allTitles:
         paperTitle = paperTitle.replace("\n", " ")
         # print("Found: " + paperTitle + " with URL: " + paperUrl)
         papers[paperTitle] = paperUrl
-        
+
 print("\nTotal papers found: " + str(totalPapers) + "\n")
 
 titles = list(papers)
 
 # driver = webdriver.Chrome(service=service, options=options)
-
-totalPapers = 0
 
 for title in titles:
     driver.get(papers[title])
@@ -112,7 +110,6 @@ for title in titles:
     parsedPage = soup(pageContent, "html.parser")
     issn = parsedPage.find(itemprop="issn")
     if issn != None:
-        totalPapers += 0
         issn = issn.get_text(strip=True)
         issn = issn[0:4] + issn[5:9]
         newDf = df[df["Issn"].str.contains(issn)]
@@ -123,7 +120,11 @@ for title in titles:
     else:
         del papers[title]
 
-print("\nDone finding SJR quintile of papers.\n")
+print("\nDone finding SJR quintile of papers.")
+
+print("\nDownloading", len(papers), "papers. " + str(totalPapers - len(papers)) + " papers were purged.")
+
+print("Downloading papers will take some time. It is recommended to move to a place with better WiFi.\n")
 
 titles = list(papers)
 
