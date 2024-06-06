@@ -104,7 +104,11 @@ except TimeoutException:
         "Failed. The 'Load more results' button was not found, visible, or clickable within the specified time."
     )
 
-more.click()
+# more = driver.find_element(By.XPATH,
+#     '//*[@id="id1"]/div/div/div/div[2]/div/div[6]/div[2]/div/button[@class="so-b3 so--tall so--centered so--green-2"]'
+# )
+
+# more.click()
 
 pageContent = driver.page_source
 parsedPage = soup(pageContent, "html.parser")
