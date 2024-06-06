@@ -65,49 +65,51 @@ WebDriverWait(driver, 30).until(
     )
 )
 
-try:
-    print("Done. Now waiting until the button is present in the DOM.")
-    element_present = WebDriverWait(driver, 20).until(
-        EC.presence_of_element_located(
-            (
-                By.XPATH,
-                '//*[@id="id1"]/div/div/div/div[2]/div/div[6]/div[2]/div/button[@class="so-b3 so--tall so--centered so--green-2"]',
-            )
-        )
-    )
-    print("Done. Now waiting until the element is visible.")
-    element_visible = WebDriverWait(driver, 20).until(
-        EC.visibility_of_element_located(
-            (
-                By.XPATH,
-                '//*[@id="id1"]/div/div/div/div[2]/div/div[6]/div[2]/div/button[@class="so-b3 so--tall so--centered so--green-2"]',
-            )
-        )
-    )
+# try:
+#     print("Done. Now waiting until the button is present in the DOM.")
+#     element_present = WebDriverWait(driver, 20).until(
+#         EC.presence_of_element_located(
+#             (
+#                 By.XPATH,
+#                 '//*[@id="id1"]/div/div/div/div[2]/div/div[6]/div[2]/div/button[@class="so-b3 so--tall so--centered so--green-2"]',
+#             )
+#         )
+#     )
+#     print("Done. Now waiting until the element is visible.")
+#     element_visible = WebDriverWait(driver, 20).until(
+#         EC.visibility_of_element_located(
+#             (
+#                 By.XPATH,
+#                 '//*[@id="id1"]/div/div/div/div[2]/div/div[6]/div[2]/div/button[@class="so-b3 so--tall so--centered so--green-2"]',
+#             )
+#         )
+#     )
 
-    # Scroll to the button
-    driver.execute_script("arguments[0].scrollIntoView(true);", element_visible)
+#     # Scroll to the button
+#     driver.execute_script("arguments[0].scrollIntoView(true);", element_visible)
 
-    print("Done. Now checking if the element is clickable.")
-    more = WebDriverWait(driver, 20).until(
-        EC.element_to_be_clickable(
-            (
-                By.XPATH,
-                '//*[@id="id1"]/div/div/div/div[2]/div/div[6]/div[2]/div/button[@class="so-b3 so--tall so--centered so--green-2"]',
-            )
-        )
-    )
-    more.click()
-    print("Done. Now clicking 'Load more results' button.")
-except TimeoutException:
-    print(
-        "Failed. The 'Load more results' button was not found, visible, or clickable within the specified time."
-    )
+#     print("Done. Now checking if the element is clickable.")
+#     more = WebDriverWait(driver, 20).until(
+#         EC.element_to_be_clickable(
+#             (
+#                 By.XPATH,
+#                 '//*[@id="id1"]/div/div/div/div[2]/div/div[6]/div[2]/div/button[@class="so-b3 so--tall so--centered so--green-2"]',
+#             )
+#         )
+#     )
+#     more.click()
+#     print("Done. Now clicking 'Load more results' button.")
+# except TimeoutException:
+#     print(
+#         "Failed. The 'Load more results' button was not found, visible, or clickable within the specified time."
+#     )
 
-# more = driver.find_element(By.XPATH,
-#     '//*[@id="id1"]/div/div/div/div[2]/div/div[6]/div[2]/div/button[@class="so-b3 so--tall so--centered so--green-2"]'
-# )
-
+more = driver.find_element(
+    By.XPATH, '//*[@id="id1"]/div/div/div/div[2]/div/div[6]/div[2]/div/button'
+)
+print(more.tag_name)
+print(more.text)
+print(more.is_displayed())
 # more.click()
 
 pageContent = driver.page_source
