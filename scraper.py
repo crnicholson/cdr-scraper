@@ -10,7 +10,11 @@ from selenium.webdriver.common.by import By
 from webdriver_manager.chrome import ChromeDriverManager
 from pathlib import Path
 from selenium.webdriver.support.ui import WebDriverWait
-from selenium.common.exceptions import TimeoutException
+from selenium.common.exceptions import (
+    TimeoutException,
+    ElementClickInterceptedException,
+    NoSuchElementException,
+)
 
 cwd = str(Path.cwd())
 
@@ -36,7 +40,7 @@ url = "https://www.scienceopen.com/search#('v'~4_'id'~''_'queryType'~1_'context'
 df = pd.read_csv("scimagojr-2023.csv", sep=";", decimal=",")
 
 options = Options()
-options.add_argument("--headless")
+# options.add_argument("--headless")
 options.add_argument("--disable-gpu")
 options.add_experimental_option(
     "prefs",
@@ -55,61 +59,52 @@ driver.get(url)
 
 print("Waiting for page to load fully.")
 
-# Wait for the page to load fully
-WebDriverWait(driver, 30).until(
-    EC.presence_of_element_located(
-        (
-            By.XPATH,
-            '//*[@id="id1"]/div/div/div/div[2]/div/div[6]/div[2]/div/button[@class="so-b3 so--tall so--centered so--green-2"]',
-        )
+try:
+    # Wait for the button to be present and visible
+    button_xpath = '//*[@id="id1"]/div/div/div/div[2]/div/div[6]/div[2]/div/button[@class="so-b3 so--tall so--centered so--green-2"]'
+    WebDriverWait(driver, 30).until(
+        EC.presence_of_element_located((By.XPATH, button_xpath))
     )
-)
+    print("Button is present in the DOM.")
+    WebDriverWait(driver, 30).until(
+        EC.visibility_of_element_located((By.XPATH, button_xpath))
+    )
+    print("Button is visible.")
 
-# try:
-#     print("Done. Now waiting until the button is present in the DOM.")
-#     element_present = WebDriverWait(driver, 20).until(
-#         EC.presence_of_element_located(
-#             (
-#                 By.XPATH,
-#                 '//*[@id="id1"]/div/div/div/div[2]/div/div[6]/div[2]/div/button[@class="so-b3 so--tall so--centered so--green-2"]',
-#             )
-#         )
-#     )
-#     print("Done. Now waiting until the element is visible.")
-#     element_visible = WebDriverWait(driver, 20).until(
-#         EC.visibility_of_element_located(
-#             (
-#                 By.XPATH,
-#                 '//*[@id="id1"]/div/div/div/div[2]/div/div[6]/div[2]/div/button[@class="so-b3 so--tall so--centered so--green-2"]',
-#             )
-#         )
-#     )
+    # Scroll into view
+    button = driver.find_element(By.XPATH, button_xpath)
+    driver.execute_script("arguments[0].scrollIntoView(true);", button)
+    time.sleep(1)
 
-#     # Scroll to the button
-#     driver.execute_script("arguments[0].scrollIntoView(true);", element_visible)
+    # Try clicking the button, retrying if necessary
+    for attempt in range(3):
+        try:
+            button.click()
+            print("Clicked the button.")
+            break
+        except (ElementClickInterceptedException, NoSuchElementException) as e:
+            print(f"Attempt {attempt+1} failed: {e}. Retrying...")
+            time.sleep(2)
+    else:
+        print("Failed to click the button after several attempts.")
 
-#     print("Done. Now checking if the element is clickable.")
-#     more = WebDriverWait(driver, 20).until(
-#         EC.element_to_be_clickable(
-#             (
-#                 By.XPATH,
-#                 '//*[@id="id1"]/div/div/div/div[2]/div/div[6]/div[2]/div/button[@class="so-b3 so--tall so--centered so--green-2"]',
-#             )
-#         )
-#     )
-#     more.click()
-#     print("Done. Now clicking 'Load more results' button.")
-# except TimeoutException:
-#     print(
-#         "Failed. The 'Load more results' button was not found, visible, or clickable within the specified time."
-#     )
+except TimeoutException:
+    print(
+        "Failed. The 'Load more results' button was not found, visible, or clickable within the specified time."
+    )
 
-more = driver.find_element(
-    By.XPATH, '//*[@id="id1"]/div/div/div/div[2]/div/div[6]/div[2]/div/button'
-)
-print(more.tag_name)
-print(more.text)
-print(more.is_displayed())
+time.sleep(5)
+
+try:
+    more = driver.find_element(
+        By.XPATH, '//*[@id="id1"]/div/div/div/div[2]/div/div[6]/div[2]/div/button'
+    )
+    print(more.tag_name)
+    print(more.text)
+    print(more.is_displayed())
+except NoSuchElementException:
+    print("The 'Load more results' button is not found.")
+
 # more.click()
 
 pageContent = driver.page_source
