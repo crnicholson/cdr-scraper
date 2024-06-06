@@ -1,7 +1,3 @@
-# To-do
-# - Scrape the entire page
-# - Automatically make a spreadsheet with the paper title, the paper link, the SJR quintile, and the paper itself
-
 import time
 import os
 import pandas as pd
@@ -14,8 +10,10 @@ from selenium.webdriver.common.by import By
 from webdriver_manager.chrome import ChromeDriverManager
 from pathlib import Path
 from selenium.webdriver.support.ui import WebDriverWait
+from selenium.common.exceptions import TimeoutException
 
 cwd = str(Path.cwd())
+
 
 def wait_for_downloads():
     print("Waiting for downloads", end="")
@@ -27,9 +25,10 @@ def wait_for_downloads():
             )
         ]
     ):
-        time.sleep(.5)
+        time.sleep(0.5)
         print(".", end="")
     print(" done!")
+
 
 # URL to be scraped
 url = "https://www.scienceopen.com/search#('v'~4_'id'~''_'queryType'~1_'context'~null_'kind'~77_'order'~1_'orderLowestFirst'~false_'query'~'carbon%20capture'_'filters'~!('kind'~38_'not'~false_'offset'~2_'timeUnit'~7)*_'hideOthers'~false)"
@@ -42,7 +41,7 @@ options.add_argument("--disable-gpu")
 options.add_experimental_option(
     "prefs",
     {
-        "download.default_directory": cwd + "/papers", 
+        "download.default_directory": cwd + "/papers",
         "download.prompt_for_download": False,
         "download.directory_upgrade": True,
         "plugins.always_open_pdf_externally": True,
@@ -53,17 +52,12 @@ service = Service(ChromeDriverManager().install())
 driver = webdriver.Chrome(service=service, options=options)
 
 driver.get(url)
-time.sleep(1)
 
-# more = driver.find_element(
-#     By.XPATH,
-#     '//*[@id="id1"]/div/div/div/div[2]/div/div[6]/div[2]/div/button[@class="so-b3 so--tall so--centered so--green-2"]'
-# )
+print("Waiting for page to load fully.")
 
-print("Finding 'Show more' button")
-
-more = WebDriverWait(driver, 20).until(
-    EC.element_to_be_clickable(
+# Wait for the page to load fully
+WebDriverWait(driver, 30).until(
+    EC.presence_of_element_located(
         (
             By.XPATH,
             '//*[@id="id1"]/div/div/div/div[2]/div/div[6]/div[2]/div/button[@class="so-b3 so--tall so--centered so--green-2"]',
@@ -71,12 +65,46 @@ more = WebDriverWait(driver, 20).until(
     )
 )
 
-print(more)
+try:
+    print("Done. Now waiting until the button is present in the DOM.")
+    element_present = WebDriverWait(driver, 20).until(
+        EC.presence_of_element_located(
+            (
+                By.XPATH,
+                '//*[@id="id1"]/div/div/div/div[2]/div/div[6]/div[2]/div/button[@class="so-b3 so--tall so--centered so--green-2"]',
+            )
+        )
+    )
+    print("Done. Now waiting until the element is visible.")
+    element_visible = WebDriverWait(driver, 20).until(
+        EC.visibility_of_element_located(
+            (
+                By.XPATH,
+                '//*[@id="id1"]/div/div/div/div[2]/div/div[6]/div[2]/div/button[@class="so-b3 so--tall so--centered so--green-2"]',
+            )
+        )
+    )
 
-print("Clicking 'Show more' button")
+    # Scroll to the button
+    driver.execute_script("arguments[0].scrollIntoView(true);", element_visible)
 
-# more.click()
-time.sleep(0.5)
+    print("Done. Now checking if the element is clickable.")
+    more = WebDriverWait(driver, 20).until(
+        EC.element_to_be_clickable(
+            (
+                By.XPATH,
+                '//*[@id="id1"]/div/div/div/div[2]/div/div[6]/div[2]/div/button[@class="so-b3 so--tall so--centered so--green-2"]',
+            )
+        )
+    )
+    more.click()
+    print("Done. Now clicking 'Load more results' button.")
+except TimeoutException:
+    print(
+        "Failed. The 'Load more results' button was not found, visible, or clickable within the specified time."
+    )
+
+more.click()
 
 pageContent = driver.page_source
 parsedPage = soup(pageContent, "html.parser")
@@ -105,7 +133,7 @@ for title in titles:
         issn = issn[0:4] + issn[5:9]
         newDf = df[df["Issn"].str.contains(issn)]
         sjr = newDf.iloc[0, 6]
-        print("Link: "+ papers[title] + " with an SJR quintile of: " + str(sjr))
+        print("Link: " + papers[title] + " with an SJR quintile of: " + str(sjr))
         if sjr != "Q1":
             del papers[title]
     else:
@@ -120,7 +148,8 @@ for title in titles:
     print("Downloading: " + title)
     vid = url[41:]
     downloadUrl = (
-        "https://www.scienceopen.com/document?-1.ILinkListener-header-action~bar-download~dropdown-pdf~link-link&vid=" + vid
+        "https://www.scienceopen.com/document?-1.ILinkListener-header-action~bar-download~dropdown-pdf~link-link&vid="
+        + vid
     )
     driver.get(downloadUrl)
     wait_for_downloads()
