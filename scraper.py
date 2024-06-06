@@ -90,11 +90,11 @@ def loadAllResults():
     if searchResults > maximumPageLoads:
         searchResults = maximumPageLoads
 
-    print("Loading " + str(searchResults) + " pages of results. This may take a while.")
+    print("\nLoading " + str(searchResults) + " pages of results. This may take a while.\n")
 
     xpath = '//*[@id="id1"]/div/div/div/div[2]/div/div[6]/div[2]/div/button[1]'
     WebDriverWait(driver, 30).until(EC.visibility_of_element_located((By.XPATH, xpath)))
-    print("Button is visible.")
+    print("Button is visible.\n")
 
     i = 0
     while i < searchResults:
@@ -157,9 +157,12 @@ for title in titles:
         issn = issn.get_text(strip=True)
         issn = issn[0:4] + issn[5:9]
         newDf = df[df["Issn"].str.contains(issn)]
-        sjr = newDf.iloc[0, 6]
-        print("Paper: " + title + " with an SJR quintile of: " + str(sjr))
-        if sjr != "Q1":
+        try:
+            sjr = newDf.iloc[0, 6]
+            print("Paper: " + title + " with an SJR quintile of: " + str(sjr))
+            if sjr != "Q1":
+                del papers[title]
+        except IndexError:
             del papers[title]
     else:
         del papers[title]
