@@ -1,3 +1,7 @@
+# To-do:
+# - Rename the file of the paper to the title of the paper
+# - Input data into ChatGPT
+
 import time
 import os
 import pandas as pd
@@ -38,7 +42,7 @@ url = "https://www.scienceopen.com/search#('v'~4_'id'~''_'queryType'~1_'context'
 df = pd.read_csv("scimagojr-2023.csv", sep=";", decimal=",")
 
 options = Options()
-# options.add_argument("--headless")
+options.add_argument("--headless")
 options.add_argument("--disable-gpu")
 options.add_experimental_option(
     "prefs",
@@ -61,33 +65,19 @@ driver.find_element(
     By.XPATH, "/html/body/aside/div/div/div[2]/div[2]/div/div[2]/div[1]/button[1]"
 ).click()
 
-try:
-    # Wait for the button to be present and visible
-    more_xpath = '//*[@id="id1"]/div/div/div/div[2]/div/div[6]/div[2]/div/button[@class="so-b3 so--tall so--centered so--green-2"]'
-    WebDriverWait(driver, 30).until(
-        EC.presence_of_element_located((By.XPATH, more_xpath))
-    )
-    print("Button is present in the DOM.")
-    WebDriverWait(driver, 30).until(
-        EC.visibility_of_element_located((By.XPATH, more_xpath))
-    )
-    print("Button is visible.")
+more_xpath = '//*[@id="id1"]/div/div/div/div[2]/div/div[6]/div[2]/div/button[@class="so-b3 so--tall so--centered so--green-2"]'
+WebDriverWait(driver, 30).until(
+    EC.visibility_of_element_located((By.XPATH, more_xpath))
+)
+print("Button is visible.")
 
-    # Scroll into view
-    more = driver.find_element(By.XPATH, more_xpath)
-    # driver.execute_script("arguments[0].scrollIntoView(true);", button)
-    time.sleep(1)
+more = driver.find_element(By.XPATH, more_xpath)
     
-    try:
-        more.click()
-        print("Clicked the button.")
-    except ElementClickInterceptedException:
-        print("Failed to click the button.")
-
-except TimeoutException:
-    print(
-        "Failed. The 'Load more results' button was not found, visible, or clickable within the specified time."
-    )
+try:
+    more.click()
+    print("Clicked the button.")
+except ElementClickInterceptedException:
+    print("Failed to click the button.")
 
 time.sleep(5)
 
@@ -96,17 +86,25 @@ parsedPage = soup(pageContent, "html.parser")
 allTitles = parsedPage.find_all(class_="so-article-list-item-title")
 
 papers = {}
+totalPapers = 0
 
 for titles in allTitles:
     foundLink = titles.find("a")
     if foundLink != None:
+        totalPapers += 1
         paperUrl = foundLink["href"]
         paperTitle = foundLink.get_text(strip=True)
+        paperTitle = paperTitle.replace("\n", " ")
+        # print("Found: " + paperTitle + " with URL: " + paperUrl)
         papers[paperTitle] = paperUrl
+        
+print("\nTotal papers found: " + str(totalPapers) + "\n")
 
 titles = list(papers)
 
-driver = webdriver.Chrome(service=service, options=options)
+# driver = webdriver.Chrome(service=service, options=options)
+
+totalPapers = 0
 
 for title in titles:
     driver.get(papers[title])
@@ -114,17 +112,18 @@ for title in titles:
     parsedPage = soup(pageContent, "html.parser")
     issn = parsedPage.find(itemprop="issn")
     if issn != None:
+        totalPapers += 0
         issn = issn.get_text(strip=True)
         issn = issn[0:4] + issn[5:9]
         newDf = df[df["Issn"].str.contains(issn)]
         sjr = newDf.iloc[0, 6]
-        print("Link: " + papers[title] + " with an SJR quintile of: " + str(sjr))
+        print("Paper: " + title + " with an SJR quintile of: " + str(sjr))
         if sjr != "Q1":
             del papers[title]
     else:
         del papers[title]
 
-print("Done finding papers.")
+print("\nDone finding SJR quintile of papers.\n")
 
 titles = list(papers)
 
