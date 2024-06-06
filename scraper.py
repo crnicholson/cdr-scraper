@@ -9,9 +9,11 @@ from selenium import webdriver
 from bs4 import BeautifulSoup as soup
 from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.chrome.options import Options
+from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.by import By
 from webdriver_manager.chrome import ChromeDriverManager
 from pathlib import Path
+from selenium.webdriver.support.ui import WebDriverWait
 
 cwd = str(Path.cwd())
 
@@ -53,16 +55,26 @@ driver = webdriver.Chrome(service=service, options=options)
 driver.get(url)
 time.sleep(1)
 
-more = driver.find_element(
-    By.XPATH,
-    '//*[@id="id1"]/div/div/div/div[2]/div/div[6]/div[2]/div/button[@class="so-b3 so--tall so--centered so--green-2"]'
+# more = driver.find_element(
+#     By.XPATH,
+#     '//*[@id="id1"]/div/div/div/div[2]/div/div[6]/div[2]/div/button[@class="so-b3 so--tall so--centered so--green-2"]'
+# )
+
+more = WebDriverWait(driver, 10).until(
+    EC.element_to_be_clickable(
+        By.XPATH,
+        '//*[@id="id1"]/div/div/div/div[2]/div/div[6]/div[2]/div/button[@class="so-b3 so--tall so--centered so--green-2"]',
+    )
 )
+
+
+print(more.is_enabled())
 
 print(more)
 
 print("Clicking 'Show more' button")
 
-more.click()
+# more.click()
 time.sleep(0.5)
 
 pageContent = driver.page_source
