@@ -18,7 +18,7 @@ def answer_question_from_pdf(pdf_path, question):
     pdf_text = extract_text_from_pdf(pdf_path)
 
     # Initialize the chat model
-    chat = ChatGroq(temperature=0, model_name="mixtral-8x7b-32768")
+    chat = ChatGroq(temperature=0, model_name="llama3-8b-8192")
 
     # Define the system and human messages
     system = (
@@ -35,6 +35,6 @@ def answer_question_from_pdf(pdf_path, question):
 
 
 # Example usage
-pdf_path = "papers/553a2d1a-196c-4a3d-9994-c6be19db78cc.pdf"
-question = "Explain community engagement in CDR."
+pdf_path = "papers/3706709c-9c5a-4b21-9969-22a453f84d18.pdf"
+question = "Explain this article."
 print(answer_question_from_pdf(pdf_path, question))
