@@ -1,6 +1,7 @@
 # To-do:
 # - Rename the file of the paper to the title of the paper
-# - Input data into ChatGPT
+# - Input data into Langchain
+# - Only download files that aren't already downloaded
 
 import time
 import math
