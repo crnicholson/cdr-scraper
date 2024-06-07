@@ -1,27 +1,11 @@
-from funcs import *
-from langchain_community.llms import Ollama
-from langchain_core.prompts import PromptTemplate
+from langchain_core.prompts import ChatPromptTemplate
+from langchain_groq import ChatGroq
 
-# Loading orca-mini from Ollama
-llm = Ollama(model="llama3", temperature=0)
+chat = ChatGroq(temperature=0, model_name="mixtral-8x7b-32768")
 
-# Loading the Embedding Model
-embed = load_embedding_model(model_path="all-MiniLM-L6-v2")
+system = "You are a helpful assistant."
+human = "{text}"
+prompt = ChatPromptTemplate.from_messages([("system", system), ("human", human)])
 
-# loading and splitting the documents
-docs = load_pdf_data(file_path="papers/0feedb41-a9b8-4ff7-b360-a1795ec8ac3b.pdf")
-documents = split_docs(documents=docs)
-
-# creating vectorstore
-vectorstore = create_embeddings(documents, embed)
-
-# converting vectorstore to a retriever
-retriever = vectorstore.as_retriever()
-
-# Creating the prompt from the template which we created before
-prompt = PromptTemplate.from_template(template)
-
-# Creating the chain
-chain = load_qa_chain(retriever, llm, prompt)
-
-get_response("Summarize this research paper", chain)
+chain = prompt | chat
+print(chain.invoke({"text": "Explain carbon dioxide removal."}))
