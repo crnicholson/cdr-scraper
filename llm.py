@@ -1,28 +1,27 @@
-import os
+from funcs import *
 from langchain_community.llms import Ollama
-from langchain.document_loaders import PyPDFLoader
-from langchain.vectorstores import FAISS
-from langchain.embeddings import OpenAIEmbeddings
-from langchain.chains import RetrievalQA
+from langchain_core.prompts import PromptTemplate
 
-# Step 1: Load all PDFs from a folder and extract the text
-folder_path = "/Users/Charlie/Documents/Code/webScraper/papers"
-documents = []
+# Loading orca-mini from Ollama
+llm = Ollama(model="llama3", temperature=0)
 
-for filename in os.listdir(folder_path):
-    if filename.endswith(".pdf"):
-        pdf_loader = PyPDFLoader(file_path=os.path.join(folder_path, filename))
-        documents.extend(pdf_loader.load())
+# Loading the Embedding Model
+embed = load_embedding_model(model_path="all-MiniLM-L6-v2")
 
-# Step 2: Create a retriever from the extracted text
-embeddings = OpenAIEmbeddings()
-vectorstore = FAISS.from_documents(documents, embeddings)
+# loading and splitting the documents
+docs = load_pdf_data(file_path="papers/0feedb41-a9b8-4ff7-b360-a1795ec8ac3b.pdf")
+documents = split_docs(documents=docs)
+
+# creating vectorstore
+vectorstore = create_embeddings(documents, embed)
+
+# converting vectorstore to a retriever
 retriever = vectorstore.as_retriever()
 
-# Step 3: Use the retriever in combination with the language model to perform the query
-llm = Ollama(model="llama3")
-qa_chain = RetrievalQA(llm=llm, retriever=retriever)
+# Creating the prompt from the template which we created before
+prompt = PromptTemplate.from_template(template)
 
-# Step 4: Perform the query
-response = qa_chain.run("Summarize carbon dioxide removal technologies.")
-print(response)
+# Creating the chain
+chain = load_qa_chain(retriever, llm, prompt)
+
+get_response("Summarize this research paper", chain)
