@@ -1,6 +1,6 @@
-# CDR Wescraper
+# CDR (Carbon Dioxide Removal) Webscraper
 
-This webscraper automatically scrapes the web for carbon dioxide removal papers, checks their SJR quintile (the rating of the journal) and then automatically downloads them.
+This webscraper automatically scrapes the web for CDR papers, checks their SJR quintile (the rating of the journal) and then automatically downloads them.
 
 # Quickstart
 
